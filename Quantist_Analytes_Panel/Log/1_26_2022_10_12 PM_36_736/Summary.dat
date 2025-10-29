@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44587.9258074074"/>
+						<Prp name="name" type="S" value="Analytes_Panel_Reset_Included"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings">
+							<Node name="warning1">
+								<Prp name="msg" type="S" value="There may be an error (or errors) caused by test self-healing."/>
+							</Node>
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="The &quot;ButtonAll&quot; object was replaced with a similar object."/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The execution process was interrupted."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The script execution was interrupted."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADIAMwBCAEYAMAA2ADUALQAxADUARgA5AC0ANAAzAEMAMQAtADkAQwAzAEMALQA3ADcANgA3AEEAMwA1AEIAMgBDAEIAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="duration" type="I" value="32680"/>
+						<Prp name="starttime" type="D" value="44587.9254291204"/>
+						<Prp name="name" type="S" value="Analytes_Panel_Copy_Rows"/>
+						<Prp name="durationwithoutchildren" type="I" value="32680"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="3"/>
+						<Prp name="duration" type="I" value="0"/>
+						<Prp name="starttime" type="D" value="44587.9258074074"/>
+						<Prp name="name" type="S" value="Analytes_Panel_Row_Operations"/>
+						<Prp name="durationwithoutchildren" type="I" value="0"/>
+					</Node>
+				</Node>
+				<Prp name="duration" type="I" value="32680"/>
+				<Prp name="starttime" type="D" value="44587.9254291204"/>
+				<Prp name="failedtests" type="I" value="1"/>
+				<Prp name="incompletedtests" type="I" value="2"/>
+				<Prp name="name" type="S" value="Quantist_Analytes_Panel"/>
+				<Prp name="warningtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="host" type="S" value="USSJO-WKS05-V"/>
+		<Prp name="name" type="S" value="Quantist"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="user" type="S" value="duc"/>
+		<Prp name="testname" type="S" value="Quantist_Analytes_Panel: Quantist_SQA_Analytes_Panel"/>
+		<Prp name="tests" type="I" value="3"/>
+		<Prp name="stop" type="D" value="44587.9258081481"/>
+		<Prp name="starttime" type="D" value="44587.9254281944"/>
+		<Prp name="failedtests" type="I" value="1"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="2"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="key" type="S" value="{61FE1739-55BF-4197-965C-55C46676C3D9}"/>
+	</Node>
+</Nodes>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val0" type="D" value="9587976"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{09E24D45-FAAC-437E-A9EB-FBEB6CA2B116}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{A14587C5-6263-4DFA-A42C-37B4472BC6EB}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="date" type="D" value="44550.7874081366"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="message" type="S" value="The application &quot;E:\0.0.0.1-x64\Quantist.Wpf.exe&quot; started."/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The process ID is 6612."/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="as html" type="B" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val0" type="D" value="100"/>
+			</Node>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{D30C1892-D008-4F23-B717-9E273EA098CD}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val0" type="D" value="84.5569881574616"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="color" type="I" value="15780518"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{95DB7194-C73F-4AB2-9B83-DA807A75E121}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val0" type="D" value="44550.7874558912"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{0B005240-515C-4F4C-89F3-EA934AE3F996}"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="color" type="I" value="32768"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{D8904120-7E9A-4F4A-8F59-31AF46D1B05C}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val0" type="I" value="18231"/>
+			</Node>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="id" type="S" value="{887AA3ED-7EB6-465A-A405-39245232C8A8}"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

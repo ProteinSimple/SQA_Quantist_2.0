@@ -1,0 +1,60 @@
+﻿def CC_Configuration():
+  
+  mainWindowView = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView
+  CF = mainWindowView.CurveFit_5PL
+  CF.ClickItem("FivePL")
+  CW = mainWindowView.CurveW_Box
+  CW.ClickItem("None")
+  RR = mainWindowView.Recovery_Box
+  RR.ClickItem("From60To140")
+
+  # Verify Default ULOQ/LLOQ and Standard7 Recovery Range is out of the range 60-140%
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.LLOQ_5PL_None_60_140, "Text", cmpEqual, "192.057613168724")
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.ULOQ, "Text", cmpEqual, "46670")
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.Std7_5PL_None_60_140, "DisplayText", cmpEqual, "38.57")
+
+  # Verify Standard1's ULOQ and Standard6's LLOQ recovery range 60-140%    
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.Std1_5PL_None_60_140, "DisplayText", cmpEqual, "46670")
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.Std6_5PL_None_60_140, "DisplayText", cmpEqual, "192.057613168724")  
+
+  
+  
+  
+def Test1():
+  Coeff_A = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.CoeffA
+  Coeff_B = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.CoeffB
+  Coeff_C = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.CoeffC
+  Coeff_D = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.CoeffD
+  Coeff_G = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.CoeffG
+  LLOQ    = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.LLOQ
+  ULOQ    = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.ULOQ
+          
+  Log.Message(Coeff_A.WPFControlText)
+  Log.Message(Coeff_B.WPFControlText)
+  Log.Message(Coeff_C.WPFControlText)
+  Log.Message(Coeff_D.WPFControlText)  
+  Log.Message(Coeff_G.WPFControlText)
+
+
+def Test2():
+  mainWindowView = Aliases.Quantist.HwndSource_MainWindowView.MainWindowView
+  CW = mainWindowView.CurveW_Box
+  CW.ClickItem("None")
+
+  RG = mainWindowView.Recovery_Box
+  RG.ClickItem("From90To110")
+  
+
+  OCR.Recognize(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.LLOQ_None).CheckText("*576.172839506173\n*")
+  OCR.Recognize(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.ULOQ).CheckText("*46670\n*")
+  
+  CW = mainWindowView.CurveW_Box
+  CW.ClickItem("OneOverYSquared")
+
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.LLOQ_1Ysq, "WPFControlText", cmpEqual, 64.0192043895748)
+
+
+def Test3():
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.InplaceBaseEdit2, "DisplayText", cmpEqual, "46670")
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.InplaceBaseEdit2, "Enabled", cmpEqual, True)
+  aqObject.CheckProperty(Aliases.Quantist.HwndSource_MainWindowView.MainWindowView.InplaceBaseEdit3, "DisplayText", cmpEqual, "192.057613168724")

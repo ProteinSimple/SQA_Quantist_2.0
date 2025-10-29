@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val0" type="D" value="10203940"/>
+			</Node>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{03866387-112D-46D5-B814-E9372784EA71}"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{13B23FA5-7D62-4E45-83B3-BBAA801F8552}"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="color" type="I" value="32768"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{AB516682-926D-44BB-A729-39305D0B645F}"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val0" type="D" value="84.023545888258"/>
+			</Node>
+			<Prp name="color" type="I" value="15780518"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{BE63901D-8362-4D26-B3E0-FCF5F21983EF}"/>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{DB0841D3-C064-4772-A91A-E109B2AB6F01}"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val0" type="I" value="18116"/>
+			</Node>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="id" type="S" value="{51C69119-DFF0-4654-A851-FB0F624A79B5}"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="original">
+					<Prp name="object left" type="I" value="-8"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object right" type="I" value="1374"/>
+					<Prp name="image file name" type="S" value="tcvi613278189921.png"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="datetime" type="D" value="44462.7165972222"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="click point y" type="I" value="10"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="line #" type="I" value="1"/>
+					<Prp name="click point x" type="I" value="1340"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist_WPF.HwndSource_MainWindowView"/>
+					<Prp name="object bottom" type="I" value="736"/>
+					<Prp name="object top" type="I" value="-8"/>
+				</Node>
+			</Node>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="line no" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="The close command was sent to the window with the 'Quantist™' caption. &#xA;&#xA;Tested object:&#xA;Aliases.Quantist&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;))"/>
+			<Prp name="message" type="S" value="The process &quot;Quantist.Wpf&quot; was closed."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44550.7905295139"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val0" type="D" value="44550.7905772222"/>
+			</Node>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="length" type="I" value="1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{4F6F6809-60A6-423E-8258-511635039744}"/>
+		</Node>
+		<Node name="stack"/>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

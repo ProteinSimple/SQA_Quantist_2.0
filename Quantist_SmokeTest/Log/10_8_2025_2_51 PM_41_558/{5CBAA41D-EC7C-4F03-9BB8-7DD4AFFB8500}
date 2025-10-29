@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row7">
+				<Prp name="end time" type="D" value="45938.6208826505"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1220_Entering_Notes [Script\Quantist_Entering_Notes - Entering_Notes]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{1695B25A-BA54-4CC6-9787-377CE05092E5}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.620516331"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="7"/>
+			</Node>
+			<Node name="row12">
+				<Prp name="end time" type="D" value="45938.623951331"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1550_Saved_Notes [Script\Quantist_Entering_Notes - Entering_Notes]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{10CE70FE-DA6F-414A-83D8-62909680318E}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6236081018"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="12"/>
+			</Node>
+			<Node name="row14">
+				<Prp name="end time" type="D" value="45938.6244827546"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1530_Well_Assignments_View [Script\Quantist_Well_Assignments_View - Well_Assignments_View]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{1EB40371-AF67-4216-9633-B963E0CFAFE8}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6242095255"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="14"/>
+			</Node>
+			<Node name="row5">
+				<Prp name="end time" type="D" value="45938.6201818982"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1300_Expand_Tree_Files [Script\Quantist_Expand_CSV_Files - Expanding_CSV_Files]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{CE8D538E-9885-48A2-A900-FD73337BC5B3}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6200601852"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="5"/>
+			</Node>
+			<Node name="row6">
+				<Prp name="end time" type="D" value="45938.6205162732"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1400_Removing_Files_From_Tree [Script\Quantist_Removing_Files - Removing_CSV_Files]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{2109C997-06EF-4E8A-949B-B6A738B46938}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6201818982"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="6"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="end time" type="D" value="45938.6194493518"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1150_About [Script\Quantist_About - About]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{AD361604-E798-4DCF-8608-D5DB01B54A1D}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6193195486"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="1"/>
+			</Node>
+			<Node name="row10">
+				<Prp name="end time" type="D" value="45938.62297875"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1510_Analytes_Curve_Plots [Script\Quantist_Curve_Plots - Analytes_Curve_Plots]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{05000041-3605-4F46-A51E-7BDADE92B9EB}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6220922454"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="10"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="end time" type="D" value="45938.6200601852"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1200_Load_CSV_Files [Script\Quantist_Load_CSV_Files - Load_CSV_Files]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{A0A4208F-7DFB-45B9-B977-B39E71315E17}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6197208565"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="4"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="end time" type="D" value="45938.619319456"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1100_Launch [Script\Quantist_Launch - Launch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{69492787-68BF-4041-A75D-1EC0867CDC71}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6192312384"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+			</Node>
+			<Node name="row11">
+				<Prp name="end time" type="D" value="45938.6236079861"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1520_Remove_Outliers [Script\Remove_Outliers - Remove_Outliers]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{A9581C29-483C-48C3-B662-37D1DD05E3DA}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.62297875"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="11"/>
+			</Node>
+			<Node name="row13">
+				<Prp name="end time" type="D" value="45938.6242094792"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1560_Installation_Files [Script\Quantist_Installation_Files - List_Installation_Files]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{EA373FAE-1982-4366-8DDB-2AF883EE71CD}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.623951412"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="13"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="end time" type="D" value="45938.6197208565"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1210_CsvFile_CRC_Calculator [Script\Quantist_CRC_Calculator - CRC_Calculator]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{1C41DA02-8A8C-4273-8D00-CF5A7C18ED61}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6195175231"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="3"/>
+			</Node>
+			<Node name="row15">
+				<Prp name="end time" type="D" value="45938.6245490625"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1600_Close [Script\Quantist_Close - Close]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{03C011E8-8C76-481D-A413-EF4C37530C78}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6244827546"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="15"/>
+			</Node>
+			<Node name="row8">
+				<Prp name="end time" type="D" value="45938.6217533218"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1210_Verify_Rsquared_value [Script\Quantist_R_Squared - Rsquared_value]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{A3E048FB-424B-4B54-BC39-7F7564490799}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6208826736"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="8"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="end time" type="D" value="45938.6195174769"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1160_Main_Menu [Script\Quantist_About - Main_Menu]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{9EE129F3-4D47-46D6-AB77-D0A62EA05135}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6194494676"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+			</Node>
+			<Node name="row9">
+				<Prp name="end time" type="D" value="45938.6220922222"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="name" type="S" value="SQA_1500_Analyte_Results_Curve_Configuration [Script\Quantist_Curve_View - Analyte_Results_Curve_Configuration_View]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="details" type="S" value="{F01208E7-14E7-4979-9897-C3C9A107237E}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="start time" type="D" value="45938.6217534028"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="index" type="I" value="9"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

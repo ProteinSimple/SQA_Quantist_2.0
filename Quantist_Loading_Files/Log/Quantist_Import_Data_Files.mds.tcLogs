@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44732.6171755787"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{67B4E82F-E654-468B-B1ED-296BCD6DD910}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SQA_Import_Data_Files"/>
+				<Prp name="relpath" type="S" value="6_20_2022_2_48 PM_43_971\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44738.5193835301"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{4603365B-EA13-4D37-AC6C-3AFEAAA46C7E}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SQA_Import_Data_Files"/>
+				<Prp name="relpath" type="S" value="6_26_2022_12_27 PM_54_737\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value="Quantist_SQA_Import_Data_Files 10/13/2025 3:00:52 PM 2.0"/>
+				<Prp name="datetime" type="D" value="45943.6256128704"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B7FB4FFE-3B88-4615-9ADA-5CAD28C7C97B}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SQA_Import_Data_Files"/>
+				<Prp name="relpath" type="S" value="10_13_2025_3_00 PM_52_952\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.560814537"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{D6AD340A-6562-4FBC-A04E-8DC681FD673B}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Loading_50_plus_CSV_Files\Loading_50_Plus]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_1_27 PM_34_376\Description.tcLog"/>
+				<Prp name="status" type="I" value="1"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.5670571181"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{82BF7099-EB92-4FCE-B244-8CB3A6DEC399}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Load_CSV_Files\Load_CSV_Files]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_1_36 PM_33_735\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

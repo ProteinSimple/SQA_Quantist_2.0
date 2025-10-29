@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 4">
+			<Prp name="message" type="S" value="Installation Directory: C:\Program Files\Bio-Techne\Quantist\"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="83"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4640949653"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="message" type="S" value="Golden File Location: C:\\Quantist\\SQA-Quantist\\Test_Data\\Output\\Quantist_Installation_Files.txt"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="19"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4640066782"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val0" type="D" value="85"/>
+				<Prp name="val8" type="D" value="85"/>
+				<Prp name="val1" type="D" value="85"/>
+				<Prp name="val2" type="D" value="85"/>
+				<Prp name="val6" type="D" value="85"/>
+				<Prp name="val9" type="D" value="85"/>
+				<Prp name="val4" type="D" value="85"/>
+				<Prp name="val3" type="D" value="85"/>
+				<Prp name="val7" type="D" value="85"/>
+				<Prp name="val5" type="D" value="85"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="id" type="S" value="{15342EDE-B993-4B2A-99A3-D772B73E8223}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="12274561"/>
+			<Prp name="description" type="S" value="Memory usage in percent."/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val6" type="D" value="2"/>
+				<Prp name="val9" type="D" value="0"/>
+				<Prp name="val4" type="D" value="2"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val7" type="D" value="2"/>
+				<Prp name="val5" type="D" value="2"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="id" type="S" value="{ACBFA03B-2400-4F02-878A-B927BED0CA0F}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+		</Node>
+		<Node name="child data">
+			<Prp name="child 0" type="S" value="{7783F80E-963F-4C51-BEE0-630434AF4B60}"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val0" type="D" value="1116248"/>
+				<Prp name="val8" type="D" value="1131312"/>
+				<Prp name="val1" type="D" value="1116248"/>
+				<Prp name="val2" type="D" value="1116248"/>
+				<Prp name="val6" type="D" value="1130592"/>
+				<Prp name="val9" type="D" value="1131312"/>
+				<Prp name="val4" type="D" value="1130592"/>
+				<Prp name="val3" type="D" value="1116248"/>
+				<Prp name="val7" type="D" value="1130592"/>
+				<Prp name="val5" type="D" value="1130592"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="id" type="S" value="{56B71FB2-38DC-447B-90A5-616380BE8548}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val0" type="D" value="44749.4640066319"/>
+				<Prp name="val8" type="D" value="44749.464108206"/>
+				<Prp name="val1" type="D" value="44749.4640066782"/>
+				<Prp name="val2" type="D" value="44749.4640066782"/>
+				<Prp name="val6" type="D" value="44749.4640950116"/>
+				<Prp name="val9" type="D" value="44749.4641094907"/>
+				<Prp name="val4" type="D" value="44749.4640949653"/>
+				<Prp name="val3" type="D" value="44749.464006713"/>
+				<Prp name="val7" type="D" value="44749.4640950579"/>
+				<Prp name="val5" type="D" value="44749.464095"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="description" type="S" value=""/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="message" type="S" value="File Comparison Result [Quantist_Installation_Files]"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="line no" type="I" value="92"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="6"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;p&gt;This test has a log associated with it.&lt;/p&gt;&lt;p style=&quot;margin-top: 12px;&quot;&gt;&lt;a href=&quot;logchild://{7783F80E-963F-4C51-BEE0-630434AF4B60}&quot;&gt;View detailed logs&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="date" type="D" value="44749.464108206"/>
+			<Prp name="link" type="S" value="&lt;a rel=&quot;child&quot; href=&quot;0&quot;&gt;Details&lt;/a&gt;"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="message" type="S" value="This Test runs on Machine: USSJO-3DXZNK3-D"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4639593982"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="4"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val6" type="D" value="9"/>
+				<Prp name="val9" type="D" value="4"/>
+				<Prp name="val4" type="D" value="9"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val7" type="D" value="9"/>
+				<Prp name="val5" type="D" value="9"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="id" type="S" value="{58069FE2-AE65-47A2-A580-44A586474308}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="92"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="stacktext" type="S" value="List_Installation_Files"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val0" type="I" value="12628"/>
+				<Prp name="val8" type="I" value="12609"/>
+				<Prp name="val1" type="I" value="12628"/>
+				<Prp name="val2" type="I" value="12628"/>
+				<Prp name="val6" type="I" value="12607"/>
+				<Prp name="val9" type="I" value="12609"/>
+				<Prp name="val4" type="I" value="12607"/>
+				<Prp name="val3" type="I" value="12628"/>
+				<Prp name="val7" type="I" value="12607"/>
+				<Prp name="val5" type="I" value="12607"/>
+			</Node>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="id" type="S" value="{122B83D5-E287-42C2-9F85-01A94E615498}"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="message" type="S" value="License Directory: C:\ProgramData\Bio-techne\Quantist\"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4640066782"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="message" type="S" value="The file checkpoint &quot;Quantist_Installation_Files&quot; failed. See Details for additional information."/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="line no" type="I" value="92"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value="Picture150.png"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;logchild://{7783F80E-963F-4C51-BEE0-630434AF4B60}&quot;&gt;Show comparison results.&lt;/a&gt;&lt;br&gt;&lt;br&gt;The files &quot;Quantist_Installation_Files&quot; and &quot;C:\\Quantist\\SQA-Quantist\\Test_Data\\Output\\Quantist_Installation_Files.txt&quot; are not equal. The files are of different size. 8 bytes are different.&lt;br&gt;The size of the file &quot;Quantist_Installation_Files&quot; is 58474 bytes.&lt;br&gt;The size of the file &quot;C:\\Quantist\\SQA-Quantist\\Test_Data\\Output\\Quantist_Installation_Files.txt&quot; is 57871 bytes.&lt;br&gt;&lt;br&gt;&lt;p&gt;&lt;a href=&quot;projectnode://{BB4C8504-D81D-4AC6-8CAB-5A1C5D264D0E}&quot;&gt; Click here to show or modify data of the checkpoint &quot;Quantist_Installation_Files&quot;. &lt;/a&gt;&lt;/p&gt;The difference between the files is 1 %.&lt;br&gt;There is a slight difference between the compared files. If you want the checkpoint to report them as equal, set its Allowed Difference parameter to 9.&lt;br&gt;&lt;br&gt;&lt;a href=&quot;checkpointupdate://1|{0606873D-1781-4B99-BDCE-942B429A6D53}|{1980E724-E6B9-449A-8112-F3A23F18711B}|Quantist_Installation_Files|CheckpointData\checkpoint_7_7_2022.bin|&quot;&gt;Update the &quot;Quantist_Installation_Files&quot; checkpoint data.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="date" type="D" value="44749.4641094907"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="stack beginning" type="I" value="0"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{07948AC5-41EF-40F3-BF21-16F188ECE81C}"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="message" type="S" value="Expected Number of Files from Installation Directory: 347"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="84"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.464095"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="message" type="S" value="  1: C:\ProgramData\Bio-techne\Quantist\bt-Quantist.lic"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.464006713"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="message" type="S" value="Actual total number of files matches: Passed"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="88"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4640950579"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="message" type="S" value="Actual total number of files: 347"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="85"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="date" type="D" value="44749.4640950116"/>
+			<Prp name="link" type="S" value=""/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="6"/>
+	</Node>
+</Nodes>

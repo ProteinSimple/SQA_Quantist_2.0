@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="logs">
+				<Prp name="key" type="S" value="{CF4233A8-71B2-468A-939E-3FE9C77B5544}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav4">
+					<Node name="var0">
+						<Prp name="name" type="S" value="CurveData1"/>
+					</Node>
+					<Node name="var1">
+						<Prp name="name" type="S" value="CurveData2"/>
+					</Node>
+					<Node name="var10">
+						<Prp name="name" type="S" value="CurveData11"/>
+					</Node>
+					<Node name="var11">
+						<Prp name="name" type="S" value="CurveData12"/>
+					</Node>
+					<Node name="var2">
+						<Prp name="name" type="S" value="CurveData3"/>
+					</Node>
+					<Node name="var3">
+						<Prp name="name" type="S" value="CurveData4"/>
+					</Node>
+					<Node name="var4">
+						<Prp name="name" type="S" value="CurveData5"/>
+					</Node>
+					<Node name="var5">
+						<Prp name="name" type="S" value="CurveData6"/>
+					</Node>
+					<Node name="var6">
+						<Prp name="name" type="S" value="CurveData7"/>
+					</Node>
+					<Node name="var7">
+						<Prp name="name" type="S" value="CurveData8"/>
+					</Node>
+					<Node name="var8">
+						<Prp name="name" type="S" value="CurveData9"/>
+					</Node>
+					<Node name="var9">
+						<Prp name="name" type="S" value="CurveData10"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="4"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>

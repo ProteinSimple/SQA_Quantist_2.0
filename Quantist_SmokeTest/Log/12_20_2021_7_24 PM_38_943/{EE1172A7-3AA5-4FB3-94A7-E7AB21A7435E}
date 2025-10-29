@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val1" type="D" value="24"/>
+				<Prp name="val2" type="D" value="37"/>
+				<Prp name="val5" type="D" value="35"/>
+				<Prp name="val4" type="D" value="35"/>
+				<Prp name="val3" type="D" value="18"/>
+				<Prp name="val9" type="D" value="15"/>
+				<Prp name="val0" type="D" value="100"/>
+				<Prp name="val6" type="D" value="16"/>
+				<Prp name="val7" type="D" value="27"/>
+				<Prp name="val8" type="D" value="36"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{BE0F2EA7-C26C-4031-BC8E-2544128C5EDE}"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="color" type="I" value="4106722"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="date" type="D" value="44550.8091705208"/>
+			<Prp name="remarks" type="S" value="Cannot get a picture object from the input parameter."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;DataPoints_B7_H1_5PL_1Ysq_80_120&quot; failed. See Details for additional information."/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="line no" type="I" value="14"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="150"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="136"/>
+					<Prp name="image file name" type="S" value="visImage0.png"/>
+					<Prp name="object left" type="I" value="128"/>
+					<Prp name="line #" type="I" value="8"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="144"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.RunTreeView.TreeViewItem.Delete_Button"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1421204977"/>
+					<Prp name="click point y" type="I" value="158"/>
+					<Prp name="object bottom" type="I" value="166"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.8087902546"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.RunTreeView.TreeViewItem.Delete_Button&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;RunMenuView&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;RunTreeView&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;❌&quot;, 1))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="8"/>
+		</Node>
+		<Node name="message 9">
+			<Prp name="date" type="D" value="44550.8100878356"/>
+			<Prp name="remarks" type="S" value="Cannot get a picture object from the input parameter."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture4.png"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;DataPoints_B7_H1_5PL_1Ysq_80_120&quot; failed. See Details for additional information."/>
+			<Prp name="stack beginning" type="I" value="3"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="line no" type="I" value="27"/>
+		</Node>
+		<Node name="item 2">
+			<Prp name="line no" type="I" value="25"/>
+			<Prp name="stacktext" type="S" value="Remove_Outliers"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val5" type="D" value="2"/>
+				<Prp name="val4" type="D" value="2"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val9" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{8475CC55-F4F4-4CC8-A3CC-51CCB1D849FD}"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="color" type="I" value="6577528"/>
+		</Node>
+		<Node name="message 8">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="248"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage9.png"/>
+					<Prp name="object left" type="I" value="1692"/>
+					<Prp name="line #" type="I" value="26"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1804"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.MainView.RecoveryRangeBox"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1431483912"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="271"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.8098169213"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.MainView.RecoveryRangeBox&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentListView&quot;, &quot;&quot;, 1).WPFObject(&quot;DynamicGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveBuilderViewModel_e5ccbeb04b024842a0a72b47462598d8&quot;).WPFObject(&quot;userControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveSettingsView&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Configure Curve&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBox&quot;, &quot;&quot;, 3))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The combo box item 'From80To120' was selected."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="line no" type="I" value="26"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val1" type="D" value="86.7513613046034"/>
+				<Prp name="val2" type="D" value="86.7697689884272"/>
+				<Prp name="val5" type="D" value="87.313882654373"/>
+				<Prp name="val4" type="D" value="87.313882654373"/>
+				<Prp name="val3" type="D" value="87.4268290091834"/>
+				<Prp name="val9" type="D" value="87.5375831005018"/>
+				<Prp name="val0" type="D" value="86.7445309149904"/>
+				<Prp name="val6" type="D" value="87.4855850095594"/>
+				<Prp name="val7" type="D" value="87.5148996216047"/>
+				<Prp name="val8" type="D" value="87.3920066019967"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{4CBCECB3-5997-4F96-995D-EFFF011AE8A1}"/>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+			<Prp name="color" type="I" value="15780518"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="5"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage2.png"/>
+					<Prp name="object left" type="I" value="5"/>
+					<Prp name="line #" type="I" value="4"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="201"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;MenuItem&quot;, &quot;Import Data Files&quot;, 1)"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1421792361"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="28"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.8088482407"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.Menu.WPFMenu&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Menu&quot;, &quot;&quot;, 1).WPFMenu)"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The menu item 'File|Import Data Files' was clicked."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="line no" type="I" value="4"/>
+		</Node>
+		<Node name="item 3">
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="stacktext" type="S" value="Remove_Outliers"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="stacktext" type="S" value="Remove_Outliers"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val1" type="D" value="10134376"/>
+				<Prp name="val2" type="D" value="10135732"/>
+				<Prp name="val5" type="D" value="10023324"/>
+				<Prp name="val4" type="D" value="10023324"/>
+				<Prp name="val3" type="D" value="10007248"/>
+				<Prp name="val9" type="D" value="9998540"/>
+				<Prp name="val0" type="D" value="10137300"/>
+				<Prp name="val6" type="D" value="10002248"/>
+				<Prp name="val7" type="D" value="9995660"/>
+				<Prp name="val8" type="D" value="10012868"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{C6FA7821-2C2C-4F41-96EC-F6B787675F94}"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="color" type="I" value="14288002"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="date" type="D" value="44550.8094558796"/>
+			<Prp name="remarks" type="S" value="Cannot get a picture object from the input parameter."/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;DataPoints_B7_H1_5PL_1Ysq_90_110_RemoveOutliers&quot; failed. See Details for additional information."/>
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="line no" type="I" value="20"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val9" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{357C90F5-0CAA-4110-BEE6-5AC46E2F3ED2}"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="color" type="I" value="32768"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="248"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage6.png"/>
+					<Prp name="object left" type="I" value="1692"/>
+					<Prp name="line #" type="I" value="18"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1804"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.MainView.RecoveryRangeBox"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1425081944"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="271"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.8091767824"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.MainView.RecoveryRangeBox&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentListView&quot;, &quot;&quot;, 1).WPFObject(&quot;DynamicGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveBuilderViewModel_e5ccbeb04b024842a0a72b47462598d8&quot;).WPFObject(&quot;userControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveSettingsView&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Configure Curve&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ComboBox&quot;, &quot;&quot;, 3))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The combo box item 'From90To110' was selected."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="line no" type="I" value="18"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 2" type="S" value="{4C610126-6D9E-42D8-8F52-5852424732A4}"/>
+			<Prp name="unit 1" type="S" value="{1E8BB097-D155-4D5E-8E4E-46803FC70B84}"/>
+			<Prp name="unit 0" type="S" value="{A28FD0F7-9E69-41FC-8B7F-C9D16F08359A}"/>
+		</Node>
+		<Node name="message 5">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="315"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="1697"/>
+					<Prp name="image file name" type="S" value="visImage7.png"/>
+					<Prp name="object left" type="I" value="1590"/>
+					<Prp name="line #" type="I" value="19"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1804"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.MainView.RemoveOutlier_CurrentCurve_Btn"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1425112269"/>
+					<Prp name="click point y" type="I" value="325"/>
+					<Prp name="object bottom" type="I" value="336"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.809179375"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.MainView.RemoveOutlier_CurrentCurve_Btn&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentListView&quot;, &quot;&quot;, 1).WPFObject(&quot;DynamicGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveBuilderViewModel_e5ccbeb04b024842a0a72b47462598d8&quot;).WPFObject(&quot;userControl&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ScrollViewer&quot;, &quot;&quot;, 1).WPFObject(&quot;StackPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;CurveSettingsView&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Configure Curve&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;For Current Curve Only&quot;, 1))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="line no" type="I" value="19"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val1" type="I" value="18704"/>
+				<Prp name="val2" type="I" value="18708"/>
+				<Prp name="val5" type="I" value="18825"/>
+				<Prp name="val4" type="I" value="18825"/>
+				<Prp name="val3" type="I" value="18849"/>
+				<Prp name="val9" type="I" value="18873"/>
+				<Prp name="val0" type="I" value="18702"/>
+				<Prp name="val6" type="I" value="18862"/>
+				<Prp name="val7" type="I" value="18868"/>
+				<Prp name="val8" type="I" value="18842"/>
+			</Node>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="id" type="S" value="{3F9C2E6C-70B2-4E50-836F-FDFE382C652F}"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="color" type="I" value="14544240"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val1" type="D" value="44550.8088482407"/>
+				<Prp name="val2" type="D" value="44550.8088566667"/>
+				<Prp name="val5" type="D" value="44550.809179375"/>
+				<Prp name="val4" type="D" value="44550.8091767824"/>
+				<Prp name="val3" type="D" value="44550.8091705208"/>
+				<Prp name="val9" type="D" value="44550.8100878356"/>
+				<Prp name="val0" type="D" value="44550.8088382986"/>
+				<Prp name="val6" type="D" value="44550.8094558796"/>
+				<Prp name="val7" type="D" value="44550.8098114815"/>
+				<Prp name="val8" type="D" value="44550.8098169213"/>
+			</Node>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="length" type="I" value="10"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="color" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="image file name" type="S" value="visImage4.png"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="line #" type="I" value="10"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="1085"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.dlgOpen"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44551.1421863773"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object bottom" type="I" value="648"/>
+				</Node>
+			</Node>
+			<Prp name="date" type="D" value="44550.8088566667"/>
+			<Prp name="remarks" type="S" value="The file 'TestData.csv' was opened as a 'Consumable Files (*.csv;*.quantist)' file.&#xA;&#xA;&#xA;Tested object:&#xA;Aliases.Quantist.dlgOpen&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).Window(&quot;#32770&quot;, &quot;Open&quot;, 1))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The file 'TestData.csv' was selected in the Open dialog."/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="line no" type="I" value="10"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="stacktext" type="S" value="Remove_Outliers"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 7">
+			<Prp name="date" type="D" value="44550.8098114815"/>
+			<Prp name="remarks" type="S" value="&#xA;&#xA;Tested object:&#xA;Aliases.Quantist.MainWindowView.MainView.ButtonStandards&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 2).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentListView&quot;, &quot;&quot;, 1).WPFObject(&quot;DynamicGridControl&quot;, &quot;&quot;, 1).WPFObject(&quot;ResultsViewModel_e5ccbeb04b024842a0a72b47462598d8&quot;).WPFObject(&quot;ResultsView&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;TableMultiOptionsView&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;GroupBox&quot;, &quot;Multi Analyte Results Table Options&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;Standards&quot;, 3))"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture3.png"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The button 'Standards' is invisible. The action cannot be executed."/>
+			<Prp name="stack beginning" type="I" value="2"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="line no" type="I" value="25"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

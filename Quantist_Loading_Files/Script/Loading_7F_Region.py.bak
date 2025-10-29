@@ -1,0 +1,19 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def loading_7F_region():
+  main = Aliases.Quantist.MainWindowView
+  treeView = main.RunTreeView
+  
+  #flag = True
+  while (treeView.HasItems):
+     treeView.TreeViewItem.DeleteButton.ClickButton()
+     
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleInvalidCSVFolder, "7F_Region.csv")
+      
+  aqUtils.Delay(ProjectSuite.Variables.Long_Delay)    
+  
+    
+  pass
+

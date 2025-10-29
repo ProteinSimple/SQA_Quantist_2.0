@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val0" type="D" value="44749.4597323958"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="description" type="S" value=""/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="id" type="S" value="{693F5925-2136-4F00-AFB8-F3B89A46E6DB}"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val0" type="D" value="86"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="countertype" type="I" value="1"/>
+			<Prp name="id" type="S" value="{03638E01-30DA-49DC-9C38-CDFABD40AA0A}"/>
+			<Prp name="color" type="I" value="12274561"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Memory usage in percent."/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val0" type="I" value="12820"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="id" type="S" value="{E544C369-41AD-4728-BDD8-F938FE8FA7BE}"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{0B005240-515C-4F4C-89F3-EA934AE3F996}"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="message" type="S" value="The application &quot;C:\Program Files\Bio-Techne\Quantist\Quantist.exe&quot; started."/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="date" type="D" value="44749.4596730903"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="remarks" type="S" value="The process ID is 21532."/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val0" type="D" value="0"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="id" type="S" value="{71CB00C3-88D4-4653-8272-42178AD6AE1D}"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val0" type="D" value="680792"/>
+			</Node>
+			<Prp name="length" type="I" value="1"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{5BA893D6-B9F9-471C-B674-31E1458BAD2C}"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+		</Node>
+		<Node name="child data"/>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="6"/>
+	</Node>
+</Nodes>

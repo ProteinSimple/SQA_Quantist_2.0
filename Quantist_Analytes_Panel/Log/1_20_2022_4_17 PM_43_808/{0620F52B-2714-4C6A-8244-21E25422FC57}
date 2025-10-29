@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="name" type="S" value="Analytes_Panel_Reset_Included [Script\AsP_Reset_Included - Analytes_Panel_Reset_Included]"/>
+				<Prp name="start time" type="D" value="44581.6789848958"/>
+				<Prp name="end time" type="D" value="44581.6789851389"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{ED30DB07-CCD6-416A-907D-857DDC4F26B5}"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="Analytes_Panel_Row_Operations [Script\AsP_Row_Operations - Analytes_Panel_Row_Ops]"/>
+				<Prp name="start time" type="D" value="44581.6789845255"/>
+				<Prp name="end time" type="D" value="44581.6789848264"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{70BEB404-19BE-412C-8062-E58F8097AEB6}"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="Analytes_Panel_Copy_Rows [Script\AsP_Copy_Rows_To_Clipboard - Analytes_Panel_Copy_Rows]"/>
+				<Prp name="start time" type="D" value="44581.6789813889"/>
+				<Prp name="end time" type="D" value="44581.678984456"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="details" type="S" value="{83FE97B9-F18F-4F02-BBFE-CFC7477CAD9B}"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

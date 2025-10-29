@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="44581.675906875"/>
+				<Prp name="name" type="S" value="SQA_MA_Selected Field [Script\MA_Selected_Field - MA_Selected_Field]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{51F7E2ED-1AD6-48AB-90E0-A5B5E1FB1F6A}"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="44581.6759064352"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="44581.6759072569"/>
+				<Prp name="name" type="S" value="SQA_MA_All_Curve_Data [Script\MA_Curve_Data - MA_All_Curve_Data]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{07925992-198F-468D-80C0-F4B5F49A711F}"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="44581.6759069444"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="end time" type="D" value="44581.6759064005"/>
+				<Prp name="name" type="S" value="SQA_MA_Remove_Outliers [Script\MA_Remove_Outliers - MA_Remove_Outliers]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{642E756F-A49D-4BCB-A966-4726923DF6AE}"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="44581.675903588"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

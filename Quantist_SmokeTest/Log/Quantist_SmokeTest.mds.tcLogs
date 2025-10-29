@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44725.4471308102"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6E16F3F3-AC9D-42BC-AC93-8D278CD3C749}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="6_13_2022_10_43 AM_52_103\Description.tcLog"/>
+				<Prp name="status" type="I" value="0"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44749.4596440509"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{148D8323-4A1E-4436-80FC-2A0BE7348237}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="7_7_2022_11_01 AM_53_246\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="44750.5263667245"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6BF231BC-949B-459E-A200-6A4ECA6D1CB3}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="7_8_2022_12_37 PM_58_85\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value="Quantist_1000_SmokeTest 10/8/2025 2:51:41 PM 1.0"/>
+				<Prp name="datetime" type="D" value="45938.6192309954"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2573B5C8-EBBF-455A-92CF-1B1C7B6C2739}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="10_8_2025_2_51 PM_41_558\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value="Quantist_1000_SmokeTest 10/13/2025 2:36:03 PM 2.0"/>
+				<Prp name="datetime" type="D" value="45943.608375081"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B1E99343-C099-4A5A-B5B3-32C56CA6979D}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="10_13_2025_2_36 PM_03_607\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.5262096875"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{8A83872B-472E-4E09-8424-04C228555F26}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Quantist_Load_CSV_Files\Load_CSV_Files]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_12_37 PM_44_517\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.669200544"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{0513AB95-2B79-4A2A-A901-01A0CAC475ED}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SmokeTest"/>
+				<Prp name="relpath" type="S" value="10_28_2025_4_03 PM_38_927\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.671135544"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{B8C1DFB0-C90B-4899-9477-AC2D5CC5AC3D}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="10_28_2025_4_06 PM_26_111\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0008">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.6729667824"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{66FB9560-4BB1-4940-B2AB-4A973E7483EB}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_1000_SmokeTest"/>
+				<Prp name="relpath" type="S" value="10_28_2025_4_09 PM_04_330\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0009">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.6788488079"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{5B2574DE-5F5C-439E-AE2F-80A23F805C5F}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [Quantist_Entering_Notes\Entering_Notes]"/>
+				<Prp name="relpath" type="S" value="10_28_2025_4_17 PM_32_537\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

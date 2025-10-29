@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row3">
+				<Prp name="end time" type="D" value="44564.6883145255"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="The execution process was interrupted."/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44564.6883145255"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="details" type="S" value=""/>
+			</Node>
+			<Node name="row2">
+				<Prp name="end time" type="D" value="44564.6883145255"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_1200_Load_CSV_Files [Script\Quantist_Load_CSV_Files - Load_CSV_Files]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44564.6880835648"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="details" type="S" value="{4C49146D-E8E1-4F7D-83A4-8A1DFBCD24B6}"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="end time" type="D" value="44564.6880835185"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_1150_About [Script\Quantist_About - About]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44564.68800625"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{A4984755-806B-497D-B223-638E12039090}"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="end time" type="D" value="44564.6880061806"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_1100_Launch [Script\Quantist_Launch - Launch]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44564.6879394097"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{E2B80ED3-91F7-4636-92AD-D497CFBA27F0}"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

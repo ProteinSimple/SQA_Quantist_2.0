@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 2">
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="Python runtime error.&#xA;&#xA;AttributeError: 'NoneType' object has no attribute 'CheckText'&#xA;&#xA;Error location:&#xA;Unit: &quot;Quantist\Quantist_SmokeTest\Script\Quantist_About&quot;&#xA;Line: 6 Column: 1."/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="date" type="D" value="44538.4983888194"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="AttributeError: 'NoneType' object has no attribute 'CheckText'"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 1">
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="remarks" type="S" value="&lt;!doctype html&gt; &lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;} th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;style&gt;.wide{width: 100%; margin: 0; padding:0; border:0;} .clsimg{width: 200px; margin: auto; border:0} td.row1{width: *;}  td.row2{width: 250px;}&lt;/style&gt;&lt;body&gt;&lt;div class=&quot;wide&quot;&gt;&lt;table class=&quot;wide&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;td class=&quot;row1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;row2&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;Unable to find the following object when executing the &lt;code&gt;Recognize&lt;/code&gt; command:&lt;/p&gt;&lt;p style=&quot;margin-left: 10px;&quot;&gt;&lt;code&gt;Aliases.&amp;#8203;Quantist.&amp;#8203;MainWindowView.&amp;#8203;&lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.MainWindowView.Text_Version&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;Text_Version&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt; &lt;style&gt; a.btn { background-color: #00b2ff; color: white; padding: 5px 20px; text-decoration: none; font-weight : bold; }&lt;/style&gt;&lt;a class=&quot;btn&quot; href=&quot;helpme://54Wh5r2zAQAEAHJvb3QLAAYAY29uZmlnAQAVAERlZmF1bHQgQ29uZmlndXJhdGlvbggAY2FsbG5h&#xA;bWUBACwAQWxpYXNlcy5RdWFudGlzdC5NYWluV2luZG93Vmlldy5UZXh0X1ZlcnNpb24BAGIAAGkA&#xA;BAB0eXBlAQALAFJlY29nbml0aW9uAQByAADFggABAGwAABMAAQB0AABPAAcAcGljZmlsZQEAKgB7&#xA;NzgxMEE2ODgtRDU2OS00RkRCLUE4MkItRkEwMzUxNjk2QTdFfS5wbmcJAHByb3Bjb3VudAAAAgAC&#xA;AG5tAQAkAERDMzI1M0JEeEQ5RDF4NDcyRng5OTNCeDlDMjQxMDA3QkY1MQcAcHJvamVjdAEAJAAy&#xA;QkVCNTU0M3g1MkNFeDQzODV4OTYzMnhGRkRGNDFBQUUyOEIEAAcAbWF0Y2hlZAIAAQAwAADvv7/n&#xA;v78BADEAAAEAAAAGAHZhbHVlcwIAAQAwAQDChQBANTMwMDc5MDA3MzAwNzQwMDY1MDA2RDAwMkUw&#xA;MDU3MDA2OTAwNkUwMDY0MDA2RjAwNzcwMDczMDAyRTAwNDMwMDZGMDA2RTAwNzQwMDcyMDA2RjAw&#xA;NkMwMDczMDAyRTAwNTQwMDY1MDA3ODAwNzQwMDQyMDA2QzAwNkYwMDYzMDA2QjAwAQAxAQBhAEA1&#xA;MjAwNjUwMDZDMDA2NTAwNjEwMDczMDA2NTAwMjAwMDU2MDA2NTAwNzIwMDczMDA2OTAwNkYwMDZF&#xA;MDAzQTAwMjAwMDMwMDAyRTAwMzAwMDJFMDAzMDAwMkUwMDMzMDAAAAsAZm91bmR2YWx1ZXMCAAEA&#xA;MAEAwoUAQDUzMDA3OTAwNzMwMDc0MDA2NTAwNkQwMDJFMDA1NzAwNjkwMDZFMDA2NDAwNkYwMDc3&#xA;MDA3MzAwMkUwMDQzMDA2RjAwNkUwMDc0MDA3MjAwNkYwMDZDMDA3MzAwMkUwMDU0MDA2NTAwNzgw&#xA;MDc0MDA0MjAwNkMwMDZGMDA2MzAwNkIwMAEAMQEAMQBANTIwMDU1MDA0RTAwNTMwMDIwMDA0MzAw&#xA;NEYwMDRFMDA1NDAwNTIwMDRGMDA0QzAwAAAFAG5hbWVzAgABADABABAAQ2xyRnVsbENsYXNzTmFt&#xA;ZQEAMQEADgBXUEZDb250cm9sVGV4dAAA&quot;&gt;Intelligent Fix&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;The &lt;span style=&quot;color: red;&quot;&gt;missing object&lt;/span&gt; could be absent during the test run. Check the screenshot on the &lt;a href=&quot;showpicture://pic&quot;&gt;Picture&lt;/a&gt;  tab if the object existed.&lt;/li&gt;&lt;li&gt;If the object existed, &lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.MainWindowView.Text_Version&quot;&gt;view and change&lt;/a&gt; its recognition attributes.&lt;/li&gt;&lt;li&gt;If the object didn't exist, check if earlier test steps worked correctly.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn more&lt;/a&gt; about possible causes of the error.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;text-align:center&quot;&gt; &lt;a href=&quot;showpicturedialog://%%LogDir%%\{DC3253BD-D9D1-472F-993B-9C241007BF51}.png&quot;&gt; &lt;img title=&quot;The expected state of the tested application. The missing object (red frame) and the called test object (blue frame).&quot; class=&quot;clsimg&quot; src=&quot;file:///%%LogDir%%\{DC3253BD-D9D1-472F-993B-9C241007BF51}.png&quot;&gt; &lt;/a&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture1.png"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="date" type="D" value="44538.4983041898"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The object whose text you are trying to recognize does not exist."/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val1" type="D" value="44538.4983041898"/>
+				<Prp name="val0" type="D" value="44538.4981791204"/>
+				<Prp name="val2" type="D" value="44538.4983888194"/>
+				<Prp name="val3" type="D" value="44538.4983893982"/>
+			</Node>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="remarks" type="S" value="Possible reasons:&#xA; - An error or warning occurred during the test run. See the preceding log entries to locate and identify the error.&#xA; - The test run was stopped manually.&#xA; - The test run was terminated as a result of the Runner.Halt method call."/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture2.png"/>
+			<Prp name="stack beginning" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="date" type="D" value="44538.4983893982"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="message" type="S" value="The script execution was interrupted."/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val1" type="D" value="2"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{8D3C4B63-760B-44F1-80B4-62E1E233A71F}"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="3"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{669BEA10-452A-418E-9D84-839D812FCA17}"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val1" type="D" value="35.0608048809368"/>
+				<Prp name="val0" type="D" value="34.3503088770319"/>
+				<Prp name="val2" type="D" value="34.9533647380195"/>
+				<Prp name="val3" type="D" value="34.9533647380195"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{F6072BEB-104A-4C63-9E05-7EB128D3F809}"/>
+			<Prp name="color" type="I" value="15780518"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="stacktext" type="S" value="About"/>
+		</Node>
+		<Node name="item 2">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="stacktext" type="S" value=""/>
+		</Node>
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val1" type="D" value="11535436"/>
+				<Prp name="val0" type="D" value="11644072"/>
+				<Prp name="val2" type="D" value="11542944"/>
+				<Prp name="val3" type="D" value="11542944"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{44650478-A606-4E42-92F4-B4597694F3AC}"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="object bottom" type="I" value="28"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="5"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;MenuItem&quot;, &quot;About&quot;, 1)"/>
+					<Prp name="line #" type="I" value="2"/>
+					<Prp name="object left" type="I" value="5"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object right" type="I" value="123"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="datetime" type="D" value="44538.8314623264"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="rect color" type="I" value="255"/>
+				</Node>
+			</Node>
+			<Prp name="line no" type="I" value="2"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.Menu.WPFMenu&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Menu&quot;, &quot;&quot;, 1).WPFMenu)"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="date" type="D" value="44538.4981316204"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The menu item 'Help|About' was clicked."/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val1" type="I" value="6597"/>
+				<Prp name="val0" type="I" value="6463"/>
+				<Prp name="val2" type="I" value="6576"/>
+				<Prp name="val3" type="I" value="6576"/>
+			</Node>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{8FD6C781-335A-461F-993C-9181066243B7}"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="2"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val1" type="D" value="50"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val2" type="D" value="10"/>
+				<Prp name="val3" type="D" value="10"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{06572B9B-33E6-471E-927F-B2971CE6E7B0}"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="0"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="length" type="I" value="4"/>
+			<Prp name="id" type="S" value="{82C502BD-064D-45CE-9D14-353B2992AE00}"/>
+			<Prp name="color" type="I" value="32768"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="5"/>
+			<Prp name="stacktext" type="S" value="About"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

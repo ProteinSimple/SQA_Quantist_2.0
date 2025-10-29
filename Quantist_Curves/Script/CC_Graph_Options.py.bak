@@ -1,0 +1,220 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def Graph_Options_Show_Unknowns_Controls():
+  #TestedApps.Quantist.Run(1, True)
+  #BuiltIn.ShowMessage("Launching Quantist successful!")
+  
+#  Blank is Gray
+#  Standard is Dark Blue
+#  Unknown is Light Blue
+#  Control stays Orange
+#
+#  ======================
+#
+#  Medium Blue (006699) = Standard
+#  Dark Blue (003366) = Blank
+#  Light Blue (00CCFF) = Unknown
+#  Orange (FF8022) = Control
+  
+  main = Aliases.Quantist.MainWindowView.MainView
+  curvePanel = main.CurvePanel
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView #List of files
+  analyte = curvePanel.AnalyteBox
+
+  flag = True
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)
+    
+  if not (treeView.HasItems): 
+    quantist = Aliases.Quantist
+    quantist.MainWindowView.LoadButton.ClickButton()
+    
+    sampleFoder = ProjectSuite.Variables.SampleDataFolder
+    file = ProjectSuite.Variables.sample_csv_unknown_control
+    quantist.dlgOpen.OpenFile(sampleFoder + file, "Supported Files (*csv;*.quantist)")
+        
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xx34_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xx34_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  scrollViewer = Aliases.Quantist.MainWindowView.MainView.CurvePanel
+  checkBox = scrollViewer.CheckboxShowUnknowns
+  checkBox.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection 
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1x34_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1x34_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)  
+  
+  checkBox2 = scrollViewer.CheckboxLogarithmicXAxis
+  checkBox2.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection   
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1xx4_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1xx4_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbChecked)
+  checkBox3 = scrollViewer.CheckboxLogarithmicYAxis
+  checkBox3.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection   
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1x3x_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1x3x_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+  
+  checkBox2.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1xxx_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1xxx_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xxxx_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xxxx_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)  
+
+  checkBox4 = scrollViewer.CheckboxShowControls
+  checkBox4.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x2xx_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x2xx_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)  
+
+  checkBox3.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x2x4_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x2x4_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbChecked)
+  checkBox3.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x23x_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x23x_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox3.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x234_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_x234_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1234_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_1234_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbUnchecked)
+  checkBox3.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_12xx_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_12xx_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_123x_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_123x_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbUnchecked)
+  checkBox3.ClickButton(cbChecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_12x4_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_12x4_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+  checkBox2.ClickButton(cbChecked)
+  checkBox.ClickButton(cbUnchecked)
+  checkBox4.ClickButton(cbUnchecked)
+  Aliases.Quantist.MainWindowView.RunTreeView.Click() #to clear objects' highlight/selection  
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xx34_plot.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  Regions.BAFF_5PL_1Y2_20Pct_80_120_xx34_options.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxGraphOptions)
+
+
+def Graph_Options_Show_Controls():
+  Log.Message("Refer to Graph_Options_Show_Unknowns_Controls test case")
+  pass
+
+def Graph_Options_Log_X_Y_Axis():
+  Log.Message("Refer to Graph_Options_Show_Unknowns_Controls test case")
+  pass
+
+def Graph_Options_Log_Y_Axis():
+  Log.Message("Refer to Graph_Options_Show_Unknowns_Controls test case")  
+  pass
+
+def bk1():
+  analyte.ClickItem(2)
+  
+#  curvePanel.CheckboxLogarithmicYAxis.ClickButton(cbUnchecked)
+#  curvePanel.CheckboxLogarithmicXAxis.ClickButton(cbUnchecked)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  chkBoxX = curvePanel.CheckboxLogarithmicXAxis
+  chkBoxX.ClickButton(cbUnchecked)
+  Regions.CCL3_LogX_off.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  chkBoxY = curvePanel.CheckboxLogarithmicYAxis
+  chkBoxY.ClickButton(cbUnchecked)
+  Regions.CCL3_LogX_LogY_off.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  chkBoxX.ClickButton(cbChecked)
+  Regions.CCL3_LogY_off.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  chkBoxY.ClickButton(cbChecked)
+  Regions.CCL3_LogX_LogY_on.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+def bk2():
+  main = Aliases.Quantist.MainWindowView.MainView
+  curvePanel = main.CurvePanel
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView #List of files
+  analyte = curvePanel.AnalyteBox
+    
+  flag = True
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)  
+    
+  if not (treeView.HasItems): 
+    quantist = Aliases.Quantist
+    quantist.MainWindowView.LoadButton.ClickButton()
+
+    sampleFoder = ProjectSuite.Variables.SampleDataFolder
+    file = ProjectSuite.Variables.sample_csv_unknown_control
+    quantist.dlgOpen.OpenFile(sampleFoder + file, "Supported Files (*csv;*.quantist)")
+
+#  curvePanel.CheckboxShowUnknowns.ClickButton(cbChecked)
+#  curvePanel.CheckboxShowControls.ClickButton(cbChecked)
+    
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)    
+  analyte.ClickItem(0)
+  Regions.BAFF_before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  analyte.ClickItem(1)
+  Regions.CCL2_Before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  analyte.ClickItem(2)
+  Regions.CCL3_Before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  checkBox = curvePanel.CheckboxShowUnknowns
+  checkBox.ClickButton(cbChecked)
+  analyte.ClickItem(0)
+  Regions.BAFF_Unks_after.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+  
+  analyte.ClickItem(1)
+  Regions.CCL2_Unks_after.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)  
+
+  analyte.ClickItem(2)
+  Regions.CCL3_Unks_after.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)  
+
+  checkBox2 = curvePanel.CheckboxShowControls
+  checkBox2.ClickButton(cbChecked)
+  Regions.CCL3_Unks_Ctrls_After.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  analyte.ClickItem(1)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  analyte.ClickItem(1)
+  Regions.CCL2_Unks_Ctrls_After.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  analyte.ClickItem(0)
+  Regions.BAFF_Unks_Ctrls_After.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  checkBox.ClickButton(cbUnchecked)
+  checkBox2.ClickButton(cbUnchecked)
+  Regions.BAFF_before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  analyte.ClickItem(1)
+  Regions.CCL2_before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)
+
+  analyte.ClickItem(2)
+  Regions.CCL3_before.Check(Aliases.Quantist.MainWindowView.MainView.CurveChart)

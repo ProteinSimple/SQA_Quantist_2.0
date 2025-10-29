@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="name" type="S" value="Analytes_Panel_Reset_Included [Script\AsP_Reset_Included - Analytes_Panel_Reset_Included]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="44571.6682799421"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value="{63E9DA86-7634-4205-B997-A4BD5A3EBF05}"/>
+				<Prp name="start time" type="D" value="44571.6682797106"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="Analytes_Panel_Copy_Rows [Script\AsP_Copy_Rows_To_Clipboard - Analytes_Panel_Copy_Rows]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="44571.6682793634"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="details" type="S" value="{E1FFCB9B-DCD2-4039-8759-89D6034539DD}"/>
+				<Prp name="start time" type="D" value="44571.6682764815"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="name" type="S" value="Analytest_Panel_Edit_Analyte_Names [Script\AsP_Edit_Analytes_Names - Analytes_Panel_Edit_Analyte_Names]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="44571.6682808796"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="details" type="S" value="{B1DFB721-C7EA-4869-B2EF-F8B9838BB4FF}"/>
+				<Prp name="start time" type="D" value="44571.6682806134"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="Analytes_Panel_Row_Operations [Script\AsP_Row_Operations - Analytes_Panel_Row_Ops]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="44571.6682796759"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="details" type="S" value="{7C62AA5A-BA01-446B-A200-72BF4FD80E10}"/>
+				<Prp name="start time" type="D" value="44571.6682793981"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="name" type="S" value="Analytes_Panel_Edit_Unit [Script\AsP_Edit_Unit - Analytes_Panel_Edit_Units]"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="end time" type="D" value="44571.6682805787"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="details" type="S" value="{1FC9C9B8-0494-46FE-9A7B-4BC31483FC6E}"/>
+				<Prp name="start time" type="D" value="44571.6682799884"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

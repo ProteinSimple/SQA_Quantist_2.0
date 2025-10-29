@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row2">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{B77CD72B-399E-46FE-81AC-1AC320DD538A}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44565.7472899537"/>
+				<Prp name="name" type="S" value="Analytes_Panel_Reset_Included [Script\AsP_Reset_Included - Analytes_Panel_Reset_Included]"/>
+				<Prp name="end time" type="D" value="44565.7472901968"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{77153BB9-6599-46AE-907C-54D7DE5BE98B}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44565.7472896644"/>
+				<Prp name="name" type="S" value="Analytes_Panel_Row_Operations [Script\AsP_Row_Operations - Analytes_Panel_Row_Ops]"/>
+				<Prp name="end time" type="D" value="44565.7472899074"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{09ED1CF8-7385-4395-B0A3-3CCBE21E2F0D}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="start time" type="D" value="44565.747286794"/>
+				<Prp name="name" type="S" value="Analytes_Panel_Copy_Rows [Script\AsP_Copy_Rows_To_Clipboard - Analytes_Panel_Copy_Rows]"/>
+				<Prp name="end time" type="D" value="44565.7472895718"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

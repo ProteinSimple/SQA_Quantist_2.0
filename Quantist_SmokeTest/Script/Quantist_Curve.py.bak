@@ -1,0 +1,16 @@
+﻿def Analyte_Results_Curve_Configuration_View():
+  
+  #try to reuse Load_CSV_Files from CSV_Files project
+  quantist = Aliases.Quantist
+  mainWindowView = quantist.MainWindowView
+  #gridSplitter = mainWindowView.GridSplitter
+  mainWindowView.LoadButton.ClickButton()
+  quantist.dlgOpen.OpenFile(ProjectSuite.Variables.SampleDataFolder + ProjectSuite.Variables.sample_csv_pm8800)
+  aqUtils.Delay(ProjectSuite.Variables.Long_Delay)
+  ##
+  Regions.PM8800_Tree.Check(Aliases.Quantist.MainWindowView.RunTreeView.TreeViewItem)
+  Regions.PM8800_Chart.Check(Aliases.Quantist.MainWindowView.Border.zchart)
+  Regions.PM8800_Options.Check(Aliases.Quantist.MainWindowView.Border.ScrollViewer)
+  Regions.PM8800_main.Check(Aliases.Quantist.MainWindowView)    
+
+

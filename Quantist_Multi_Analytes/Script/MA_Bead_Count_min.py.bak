@@ -1,0 +1,61 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def bead_count_min():
+  
+  mainWindowView = Aliases.Quantist.MainWindowView  
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView
+  Xbutton = treeView.TreeViewItem.Button
+  
+  flag = True
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)
+  
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleDataFolder, "PM8800.csv")
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  hwndSource = Aliases.Quantist.MainWindowView
+  treeView = hwndSource.RunTreeView
+  treeView.ClickItem("|[0]|[1]")
+  border = hwndSource.MainView
+  dockPanel = border.MA_Panel
+  dockPanel.SelectedField.ClickItem("BeadCount")
+  Regions.PM8800_BeadCount_Before.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.All_Curve_Data)
+  dockPanel.ButtonRemoveLowBeadCountsLessThan50.ClickButton()
+  treeListControl = border.CurveData
+  treeListView = treeListControl.All_Curve_Data
+  treeListView.RowMarginControl.Click(11, 6)
+  Regions.PM8800_BeadCount_After.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.All_Curve_Data)
+  treeView.ClickItem("|[0]|[0]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  
+  treeListView.Drag(1228, 84, -8, 159)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  
+  treeListControl.RowMarginControl6.Click(11, 9)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_BeadCount_GridData_After_B7H1.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.All_Curve_Data)
+
+  border = Aliases.Quantist.MainWindowView.MainView
+  analyteBox = border.CurvePanel.AnalyteBox
+
+  analyteBox.ClickItem(1)
+  treeListControl = border.CurveData
+  treeListView = treeListControl.All_Curve_Data
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+    
+  treeListView.Drag(1227, 89, -12, 144)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_BeadCount_GridData_After_CD40.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.All_Curve_Data)
+
+  analyteBox.ClickItem(2)
+  treeListView.Drag(1226, 78, -9, 167)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+    
+  #treeListControl.RowMarginControl2.Click(6, 13)
+  #aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+    
+  #Regions.PM8800_BeadCount_GridData_After_EGF.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.All_Curve_Data)
+
+

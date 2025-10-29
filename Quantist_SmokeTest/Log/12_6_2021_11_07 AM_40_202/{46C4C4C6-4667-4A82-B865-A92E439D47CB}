@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{6509C023-BC6E-4508-A91C-39F02FB982B7}"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648103241"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Item: 4 is in the tree view"/>
+		</Node>
+		<Node name="message 13">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.464810787"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Item: 5 is in the tree view"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648087384"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Visible? True"/>
+		</Node>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val4" type="D" value="9"/>
+				<Prp name="val11" type="D" value="9"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="9"/>
+				<Prp name="val9" type="D" value="9"/>
+				<Prp name="val10" type="D" value="9"/>
+				<Prp name="val7" type="D" value="9"/>
+				<Prp name="val5" type="D" value="9"/>
+				<Prp name="val6" type="D" value="9"/>
+				<Prp name="val12" type="D" value="9"/>
+				<Prp name="val1" type="D" value="10"/>
+				<Prp name="val3" type="D" value="9"/>
+				<Prp name="val2" type="D" value="10"/>
+				<Prp name="val13" type="D" value="9"/>
+			</Node>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{D53835BF-0638-4694-8D5B-12DD21E14E3D}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="countertype" type="I" value="0"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val4" type="I" value="6051"/>
+				<Prp name="val11" type="I" value="6051"/>
+				<Prp name="val0" type="I" value="6067"/>
+				<Prp name="val8" type="I" value="6051"/>
+				<Prp name="val9" type="I" value="6051"/>
+				<Prp name="val10" type="I" value="6051"/>
+				<Prp name="val7" type="I" value="6051"/>
+				<Prp name="val5" type="I" value="6051"/>
+				<Prp name="val6" type="I" value="6051"/>
+				<Prp name="val12" type="I" value="6051"/>
+				<Prp name="val1" type="I" value="6076"/>
+				<Prp name="val3" type="I" value="6051"/>
+				<Prp name="val2" type="I" value="6056"/>
+				<Prp name="val13" type="I" value="6051"/>
+			</Node>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{58A8ADB3-0ABC-46A6-82C9-A658C4B5FF30}"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="countertype" type="I" value="2"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 9">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648092014"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Item: 3 is in the tree view"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="click point y" type="I" value="115"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="128"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="102"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44536.7977862963"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="click point x" type="I" value="296"/>
+					<Prp name="line #" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object right" type="I" value="309"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="image file name" type="S" value="visImage12.png"/>
+					<Prp name="object left" type="I" value="283"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.CollapseButton"/>
+				</Node>
+			</Node>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="2"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4644552431"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.CollapseButton&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;RunMenuView&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;▷&quot;, 1))"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.464810787"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Visible? True"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648090857"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Visible? True"/>
+		</Node>
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val4" type="D" value="11996332"/>
+				<Prp name="val11" type="D" value="11996332"/>
+				<Prp name="val0" type="D" value="11971768"/>
+				<Prp name="val8" type="D" value="11996332"/>
+				<Prp name="val9" type="D" value="11996332"/>
+				<Prp name="val10" type="D" value="11996332"/>
+				<Prp name="val7" type="D" value="11996332"/>
+				<Prp name="val5" type="D" value="11996332"/>
+				<Prp name="val6" type="D" value="11996332"/>
+				<Prp name="val12" type="D" value="11996332"/>
+				<Prp name="val1" type="D" value="11965632"/>
+				<Prp name="val3" type="D" value="11996332"/>
+				<Prp name="val2" type="D" value="11995724"/>
+				<Prp name="val13" type="D" value="11996332"/>
+			</Node>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{AC705F64-BCDF-4C34-8E6B-3CD89B402E02}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="picture" type="S" value="Picture13.png;Picture14.png;Picture15.png"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="date" type="D" value="44536.4648077778"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{1F98B931-A408-440E-BD3C-03C9D0AD8A49}&quot;&gt; Click here to show or modify data of the checkpoint &quot;RunTreeView_Expand&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;The images are not equal. The size of the images is different.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;checkpointupdate://1|{A3C3CAF2-8A82-4853-B117-9BA139E13DCA}|{1980E724-E6B9-449A-8112-F3A23F18711B}|RunTreeView_Expand|CheckpointData\checkpoint_12_6_2021_4.bmp|&quot;&gt;Update the &quot;RunTreeView_Expand&quot; checkpoint data.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;RunTreeView_Expand&quot; failed. See Details for additional information."/>
+			<Prp name="stack end" type="I" value="1"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="stacktext" type="S" value="Expanding_CSV_Files"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val4" type="D" value="44536.4648083912"/>
+				<Prp name="val11" type="D" value="44536.4648103241"/>
+				<Prp name="val0" type="D" value="44536.4645025"/>
+				<Prp name="val8" type="D" value="44536.4648090857"/>
+				<Prp name="val9" type="D" value="44536.4648092014"/>
+				<Prp name="val10" type="D" value="44536.4648103241"/>
+				<Prp name="val7" type="D" value="44536.4648088542"/>
+				<Prp name="val5" type="D" value="44536.4648085069"/>
+				<Prp name="val6" type="D" value="44536.4648087384"/>
+				<Prp name="val12" type="D" value="44536.464810787"/>
+				<Prp name="val1" type="D" value="44536.4646242708"/>
+				<Prp name="val3" type="D" value="44536.4648077778"/>
+				<Prp name="val2" type="D" value="44536.4646857292"/>
+				<Prp name="val13" type="D" value="44536.464810787"/>
+			</Node>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 2">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="click point y" type="I" value="115"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="object bottom" type="I" value="128"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="object top" type="I" value="102"/>
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="datetime" type="D" value="44536.7980168981"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="click point x" type="I" value="261"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="object right" type="I" value="274"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="image file name" type="S" value="visImage13.png"/>
+					<Prp name="object left" type="I" value="248"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.ExpandingButton"/>
+				</Node>
+			</Node>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4646857292"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.ExpandingButton&#xA;(Sys.Process(&quot;Quantist.Wpf&quot;).WPFObject(&quot;HwndSource: MainWindowView&quot;, &quot;Quantist™&quot;).WPFObject(&quot;MainWindowView&quot;, &quot;Quantist™&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentControl&quot;, &quot;&quot;, 1).WPFObject(&quot;RunMenuView&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;◢&quot;, 2))"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648088542"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Item: 2 is in the tree view"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648083912"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Visible? True"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture10.png;Picture11.png;Picture12.png"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="date" type="D" value="44536.4646242708"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{CF538C0E-C75E-40E9-9776-3D927C6EA6AE}&quot;&gt; Click here to show or modify data of the checkpoint &quot;RunTreeView_Collapse&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;The images are not equal. The size of the images is different.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;a href=&quot;checkpointupdate://1|{A3C3CAF2-8A82-4853-B117-9BA139E13DCA}|{1980E724-E6B9-449A-8112-F3A23F18711B}|RunTreeView_Collapse|CheckpointData\checkpoint_12_6_2021_3.bmp|&quot;&gt;Update the &quot;RunTreeView_Collapse&quot; checkpoint data.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;RunTreeView_Collapse&quot; failed. See Details for additional information."/>
+			<Prp name="stack end" type="I" value="0"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val4" type="D" value="32.1621629950037"/>
+				<Prp name="val11" type="D" value="32.1621629950037"/>
+				<Prp name="val0" type="D" value="32.2447725413937"/>
+				<Prp name="val8" type="D" value="32.1621629950037"/>
+				<Prp name="val9" type="D" value="32.1621629950037"/>
+				<Prp name="val10" type="D" value="32.1621629950037"/>
+				<Prp name="val7" type="D" value="32.1621629950037"/>
+				<Prp name="val5" type="D" value="32.1621629950037"/>
+				<Prp name="val6" type="D" value="32.1621629950037"/>
+				<Prp name="val12" type="D" value="32.1621629950037"/>
+				<Prp name="val1" type="D" value="32.2948905016051"/>
+				<Prp name="val3" type="D" value="32.1621629950037"/>
+				<Prp name="val2" type="D" value="32.1844607200903"/>
+				<Prp name="val13" type="D" value="32.1621629950037"/>
+			</Node>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{A7DF0BC5-CBD0-4EFF-A0CC-91959AE41540}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="15780518"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="7"/>
+			<Prp name="stacktext" type="S" value="Expanding_CSV_Files"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val11" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+				<Prp name="val9" type="D" value="0"/>
+				<Prp name="val10" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+				<Prp name="val12" type="D" value="0"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val13" type="D" value="0"/>
+			</Node>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{2E24AD04-12D9-4E7D-B63A-7C46ACAA7017}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="32768"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="12"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648103241"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Visible? True"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val11" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+				<Prp name="val9" type="D" value="0"/>
+				<Prp name="val10" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+				<Prp name="val12" type="D" value="0"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val13" type="D" value="0"/>
+			</Node>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="14"/>
+			<Prp name="id" type="S" value="{C79189A1-F5AF-4EC4-9EFB-86333318960F}"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="countertype" type="I" value="3"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="13"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="date" type="D" value="44536.4648085069"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="message" type="S" value="Item: 1 is in the tree view"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

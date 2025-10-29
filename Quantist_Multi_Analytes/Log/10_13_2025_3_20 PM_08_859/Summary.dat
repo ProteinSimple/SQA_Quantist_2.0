@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_MA_Sorting_B7_H1&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;Expand_Panel_top&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_MA_Sorting_CD40&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45943.6399768519"/>
+						<Prp name="name" type="S" value="SQA_MA_All_Curve_Data"/>
+						<Prp name="durationwithoutchildren" type="I" value="64004"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="64004"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADAARQA2AEEAMQBBADkALQA0ADEAMQBBAC0ANABBAEUAOAAtAEEAOAA0ADQALQA3ADUARAAxADYAMQBFADgAMgBGADYANAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_BeadCount_GridData_After_CD40&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45943.6407176389"/>
+						<Prp name="name" type="S" value="SQA_MA_Bead_Count_min"/>
+						<Prp name="durationwithoutchildren" type="I" value="36689"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="36689"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyAEMAMABBADEARgAzADYALQBFADgANwAyAC0ANAAwAEUAOAAtADgAMgA5ADcALQBEAEYAMAAzADMAQwA0ADAAQQBFAEYAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="AttributeError: 'NoneType' object has no attribute 'Click'"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The object &quot;Edit&quot; does not exist."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The script execution was interrupted."/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value="An exception occurred while the element specified in the 'SQA_MA_Selected Field' test item was being executed."/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45943.639751956"/>
+						<Prp name="name" type="S" value="SQA_MA_Selected Field"/>
+						<Prp name="durationwithoutchildren" type="I" value="19431"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="19431"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADYANwA0AEIAOQA5ADMALQAxADUAQQAzAC0ANAA0ADcAOQAtAEEAQQA5ADEALQA2AEEANgBBAEIAQQA4ADkAQwAxAEYAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="AttributeError: 'NoneType' object has no attribute 'Click'"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The object &quot;Edit&quot; does not exist."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The script execution was interrupted."/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value="An exception occurred while the element specified in the 'SQA_MA_Remove_Outliers' test item was being executed."/>
+							</Node>
+						</Node>
+						<Prp name="starttime" type="D" value="45943.6389917245"/>
+						<Prp name="name" type="S" value="SQA_MA_Remove_Outliers"/>
+						<Prp name="durationwithoutchildren" type="I" value="65678"/>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="duration" type="I" value="65678"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzADQAMAAzADIAMwA3ADIALQA4ADQANQAzAC0ANAA0ADUAOQAtAEIAOQA3AEIALQA2AEMARQBEADkAQQA5ADcAQgA5ADEAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+				</Node>
+				<Prp name="starttime" type="D" value="45943.6389917245"/>
+				<Prp name="name" type="S" value="Quantist_Multi_Analytes"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="185802"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="failedtests" type="I" value="4"/>
+			</Node>
+		</Node>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="45943.6389914931"/>
+		<Prp name="key" type="S" value="{30E0B295-D46F-4848-8439-8C08D8433A55}"/>
+		<Prp name="user" type="S" value="duc-khac.nguyen"/>
+		<Prp name="failedtests" type="I" value="4"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="host" type="S" value="USSJO-3DXZNK3-D"/>
+		<Prp name="name" type="S" value="Quantist"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="tests" type="I" value="4"/>
+		<Prp name="testname" type="S" value="Quantist_Multi_Analytes: Quantist_SQA_Multi_Analytes"/>
+		<Prp name="stop" type="D" value="45943.6411439236"/>
+	</Node>
+</Nodes>

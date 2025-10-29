@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row0">
+				<Prp name="name" type="S" value="SQA_MA_Remove_Outliers [Script\MA_Remove_Outliers - MA_Remove_Outliers]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="end time" type="D" value="44589.765428912"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{709A577E-0C6B-43A3-A02C-01578C408D89}"/>
+				<Prp name="start time" type="D" value="44589.7650600116"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="name" type="S" value="SQA_MA_All_Curve_Data [Script\MA_Curve_Data - MA_All_Curve_Data]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="end time" type="D" value="44589.7669497917"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{6ACEA0B7-0D94-493F-BC06-FCE0FB3C159A}"/>
+				<Prp name="start time" type="D" value="44589.7665207639"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="SQA_MA_Selected Field [Script\MA_Selected_Field - MA_Selected_Field]"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="end time" type="D" value="44589.766520706"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{6D0B8379-23E7-4ECF-8B7F-1552188C7EA2}"/>
+				<Prp name="start time" type="D" value="44589.7654290162"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

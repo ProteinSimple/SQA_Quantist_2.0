@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="folders"/>
+		<Node name="logs">
+			<Node name="log idx=0000">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.6485583912"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6014E650-4122-4C69-AF42-D0154F8EBE10}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [AsP_Reset_Included\Analytes_Panel_Reset_Included]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_3_33 PM_55_445\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0001">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.6518278125"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{DAA5BCDC-D17B-4B05-98D3-7A6F6FA06A0E}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [AsP_Reset_Included\Analytes_Panel_Reset_Included]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_3_38 PM_37_923\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0002">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.6525099421"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{2D049C86-A8F9-42AC-8CEC-C90322AC45B4}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [AsP_Reset_Included\Analytes_Panel_Reset_Included]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_3_39 PM_36_859\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0003">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.6775453241"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{47A8C8A8-281B-40A0-A906-B06533BCD310}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [AsP_Edit_Analytes_Names\Analytes_Panel_Edit_Analyte_Names]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_4_15 PM_39_916\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0004">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.6919550347"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{BD98B33A-567A-416B-80A5-A38FAA1F754C}"/>
+				<Prp name="nameofroot" type="S" value="Script Test Log [AsP_Sorting_Region\Sorting_Region]"/>
+				<Prp name="relpath" type="S" value="10_21_2025_4_36 PM_24_915\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0005">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45951.7603997569"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{6351F72C-3FFD-461F-B747-D969C7C6CD69}"/>
+				<Prp name="nameofroot" type="S" value="Analytes_Panel_Sorting_Region"/>
+				<Prp name="relpath" type="S" value="10_21_2025_6_14 PM_58_539\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0006">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.6559192708"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{073D0E6E-57CA-466B-98A4-B3FCB51B571D}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SQA_Analytes_Panel"/>
+				<Prp name="relpath" type="S" value="10_28_2025_3_44 PM_31_425\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+			<Node name="log idx=0007">
+				<Prp name="caption" type="S" value=""/>
+				<Prp name="datetime" type="D" value="45958.658481331"/>
+				<Prp name="description" type="S" value=""/>
+				<Prp name="key" type="S" value="{C3F3829D-B687-491A-A9C4-3D9E70EFA559}"/>
+				<Prp name="nameofroot" type="S" value="Quantist_SQA_Analytes_Panel"/>
+				<Prp name="relpath" type="S" value="10_28_2025_3_48 PM_12_789\Description.tcLog"/>
+				<Prp name="status" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{681DCC69-A39F-4C4D-8E7D-B2D9362FAF4F}"/>
+		<Prp name="version" type="S" value="11.0"/>
+	</Node>
+</Nodes>

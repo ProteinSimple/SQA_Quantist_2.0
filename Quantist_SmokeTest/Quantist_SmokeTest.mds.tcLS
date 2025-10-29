@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="logs">
+				<Prp name="key" type="S" value="{79A77494-F97B-43FE-9541-E7BA98F7CD80}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav4">
+					<Node name="var0">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value=" "/>
+						</Node>
+						<Prp name="name" type="S" value="CopyRight"/>
+					</Node>
+					<Node name="var1">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value="43003A005C005C005100750061006E0074006900730074005C005C005300510041005F005100750061006E0074006900730074005F0032002E0030005C005C0054006500730074005F0044006100740061005C005C004F00750074007000750074005C005C005100750061006E0074006900730074005F0049006E007300740061006C006C006100740069006F006E005F00460069006C00650073002E00740078007400"/>
+						</Node>
+						<Prp name="name" type="S" value="QuantistInstallationFiles"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="intvalue" type="I" value="347"/>
+						</Node>
+						<Prp name="name" type="S" value="expectedNumOfFiles"/>
+					</Node>
+					<Node name="var3">
+						<Prp name="name" type="S" value="SampleInvalidCSVFolder"/>
+					</Node>
+					<Node name="var4">
+						<Prp name="name" type="S" value="SavedChangesFolder"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="4"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{49FC0C30-9EF7-4DBD-97A8-B7A00E79A2AF}"/>
+	</Node>
+</Nodes>

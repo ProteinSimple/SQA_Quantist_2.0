@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="item 2">
+			<Prp name="stacktext" type="S" value="About"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="line no" type="I" value="4"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture1.png;Picture2.png;Picture3.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{EF9EC7F5-E18C-4C1E-9049-2CBC99F50D4F}&quot;&gt; Click here to show or modify data of the checkpoint &quot;Quantist_AboutView&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;The images are not equal.&lt;br&gt;&lt;br&gt;The pixel difference is 3 %.&lt;br&gt;The color difference is 100 %.&lt;br&gt;&lt;br&gt;There is a slight difference between the compared images. If you want the checkpoint to report them as equal, set its Pixel Tolerance parameter to 14016.&lt;br&gt;&lt;br&gt;&lt;a href=&quot;checkpointupdate://1|{A3C3CAF2-8A82-4853-B117-9BA139E13DCA}|{1980E724-E6B9-449A-8112-F3A23F18711B}|Quantist_AboutView|CheckpointData\checkpoint_7_8_2022.bmp|&quot;&gt;Update the &quot;Quantist_AboutView&quot; checkpoint data.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;Quantist_AboutView&quot; failed. See Details for additional information."/>
+			<Prp name="date" type="D" value="44750.5266115625"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="picture" type="S" value="Picture9.png;Picture10.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{78C6E34B-38D4-4B06-A28E-76869F4B8145}&quot;&gt; Click here to show or modify data of the checkpoint &quot;QuantistSplashScreen&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;QuantistSplashScreen&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5267848264"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="line no" type="I" value="16"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="picture" type="S" value="Picture6.png;Picture7.png;Picture8.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{665D63A4-F0EA-4A72-979E-FF310DE2DB9F}&quot;&gt; Click here to show or modify data of the checkpoint &quot;Quantist_TM&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;Quantist_TM&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5267802431"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val7" type="D" value="1"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+				<Prp name="val2" type="D" value="1"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val1" type="D" value="1"/>
+				<Prp name="val4" type="D" value="0"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="id" type="S" value="{D3C4F667-76EE-47E1-971B-19117803459B}"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="countertype" type="I" value="3"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val7" type="D" value="2265476"/>
+				<Prp name="val3" type="D" value="2272872"/>
+				<Prp name="val5" type="D" value="2256968"/>
+				<Prp name="val6" type="D" value="2284436"/>
+				<Prp name="val2" type="D" value="2275796"/>
+				<Prp name="val0" type="D" value="2271532"/>
+				<Prp name="val1" type="D" value="2279620"/>
+				<Prp name="val4" type="D" value="2252464"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="id" type="S" value="{41AF9CAB-1EA3-41BA-94AC-D85D55E566D8}"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{669BEA10-452A-418E-9D84-839D812FCA17}"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="3"/>
+			<Prp name="line no" type="I" value="9"/>
+			<Prp name="stack end" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture5.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;!doctype html&gt; &lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;} th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;style&gt;.wide{width: 100%; margin: 0; padding:0; border:0;} .clsimg{width: 400px; margin: auto; border:0} td.row1{width: *;}  td.row2{width: 250px;}&lt;/style&gt;&lt;body&gt;&lt;div class=&quot;wide&quot;&gt;&lt;table class=&quot;wide&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;td class=&quot;row1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;row2&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;text-align:left&quot;&gt;&lt;p&gt;Unable to find the following object when executing the &lt;code&gt;aqObject.CheckProperty&lt;/code&gt; command:&lt;/p&gt;&lt;p style=&quot;margin-left: 10px;&quot;&gt;&lt;code&gt;Aliases.&amp;#8203;Quantist.&amp;#8203;&lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.About&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;About&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;On the &lt;a href=&quot;showpicture://pic&quot;&gt;Picture&lt;/a&gt; tab, check if the object existed during the test run.&lt;/li&gt;&lt;li&gt;View the search criteria for the object in the &lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.About&quot;&gt;NameMapping editor&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn more&lt;/a&gt; about possible causes of the error.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;text-align:center&quot;&gt; &lt;a href=&quot;showpicturedialog://%%LogDir%%\{7CED5476-92B0-4633-8A5C-0ACF40F9BB17}.png&quot;&gt; &lt;img title=&quot;The expected state of the tested application. The missing object (red frame) and the called test object (blue frame).&quot; class=&quot;clsimg&quot; src=&quot;file:///%%LogDir%%\{7CED5476-92B0-4633-8A5C-0ACF40F9BB17}.png&quot;&gt; &lt;/a&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="Unable to verify a value with the property checkpoint, because the target object does not exist."/>
+			<Prp name="date" type="D" value="44750.5267388657"/>
+		</Node>
+		<Node name="message 0">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="kind" type="I" value="0"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="datetime" type="D" value="44750.8182039699"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.HwndSource_PopupRoot.PopupRoot.WPFObject(&quot;Decorator&quot;, &quot;&quot;, 1).WPFObject(&quot;NonLogicalAdornerDecorator&quot;, &quot;&quot;, 1).WPFObject(&quot;MenuItem&quot;, &quot;About&quot;, 3)"/>
+					<Prp name="image file name" type="S" value="visImage1.png"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="object right" type="I" value="174"/>
+					<Prp name="object top" type="I" value="57"/>
+					<Prp name="object left" type="I" value="5"/>
+					<Prp name="object bottom" type="I" value="80"/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="line #" type="I" value="3"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="line no" type="I" value="3"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.Menu.WPFMenu&#xA;(Sys.Process(&quot;Quantist&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Menu&quot;, &quot;&quot;, 1).WPFMenu)"/>
+			<Prp name="message" type="S" value="The menu item 'Help|About' was clicked."/>
+			<Prp name="date" type="D" value="44750.5265401736"/>
+		</Node>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val7" type="D" value="8"/>
+				<Prp name="val3" type="D" value="2"/>
+				<Prp name="val5" type="D" value="7"/>
+				<Prp name="val6" type="D" value="6"/>
+				<Prp name="val2" type="D" value="6"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val1" type="D" value="2"/>
+				<Prp name="val4" type="D" value="8"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="id" type="S" value="{424F742C-BF6E-453F-9164-BC72E9ADEF4E}"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="countertype" type="I" value="0"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="stack beginning" type="I" value="1"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="stack end" type="I" value="1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture4.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="Sys.Process(&quot;Quantist&quot;).WPFObject(&quot;HwndSource: AboutView&quot;, &quot;About&quot;)"/>
+			<Prp name="message" type="S" value="Unexpected window: 'About'"/>
+			<Prp name="date" type="D" value="44750.5266531134"/>
+		</Node>
+		<Node name="item 1">
+			<Prp name="stacktext" type="S" value="About"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val7" type="D" value="44750.5267848264"/>
+				<Prp name="val3" type="D" value="44750.5267127199"/>
+				<Prp name="val5" type="D" value="44750.5267750116"/>
+				<Prp name="val6" type="D" value="44750.5267802431"/>
+				<Prp name="val2" type="D" value="44750.5266531134"/>
+				<Prp name="val0" type="D" value="44750.5265874653"/>
+				<Prp name="val1" type="D" value="44750.5266115741"/>
+				<Prp name="val4" type="D" value="44750.5267388657"/>
+			</Node>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="4"/>
+		</Node>
+		<Node name="item 4">
+			<Prp name="stacktext" type="S" value="About"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="2"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="stack end" type="I" value="2"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture5.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;!doctype html&gt; &lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;} th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;style&gt;.wide{width: 100%; margin: 0; padding:0; border:0;} .clsimg{width: 400px; margin: auto; border:0} td.row1{width: *;}  td.row2{width: 250px;}&lt;/style&gt;&lt;body&gt;&lt;div class=&quot;wide&quot;&gt;&lt;table class=&quot;wide&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;td class=&quot;row1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;row2&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;text-align:left&quot;&gt;&lt;p&gt;Unable to find the following object when executing the &lt;code&gt;aqObject.CheckProperty&lt;/code&gt; command:&lt;/p&gt;&lt;p style=&quot;margin-left: 10px;&quot;&gt;&lt;code&gt;Aliases.&amp;#8203;Quantist.&amp;#8203;MainWindowView.&amp;#8203;MainViewRunCtr.&amp;#8203;&lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.MainWindowView.MainViewRunCtr.Version&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;Version&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt; &lt;style&gt; a.btn { background-color: #00b2ff; color: white; padding: 5px 20px; text-decoration: none; font-weight : bold; }&lt;/style&gt;&lt;a class=&quot;btn&quot; href=&quot;helpme://54Wh5r2zAQAEAHJvb3QMAAcAcHJvamVjdAEAJAAyQkVCNTU0M3g1MkNFeDQzODV4OTYzMnhGRkRG&#xA;NDFBQUUyOEIBAGwAAEMACQBwcm9wY291bnQAAAIAAQByAADClwACAG5tAQAkADhCMjU1QjBEeEVD&#xA;QUN4NDg1RnhBNjExeERCNEZCNUYzRkVCMAEAdAAA0KEACABjYWxsbmFtZQEANgBBbGlhc2VzLlF1&#xA;YW50aXN0Lk1haW5XaW5kb3dWaWV3Lk1haW5WaWV3UnVuQ3RyLlZlcnNpb24EAG1vZGUAAAAABwBw&#xA;aWNmaWxlAQAqAHs2REEzMTVBRS01NkQyLTQ3RTYtQjAwRC1ERTA5Qzc4OTdBNEV9LnBuZwEAYgAA&#xA;0LYABAB0eXBlAQALAFJlY29nbml0aW9uBgBjb25maWcBABUARGVmYXVsdCBDb25maWd1cmF0aW9u&#xA;BAAFAG5hbWVzAgABADABABAAQ2xyRnVsbENsYXNzTmFtZQEAMQEADgBXUEZDb250cm9sVGV4dAAA&#xA;CwBmb3VuZHZhbHVlcwIAAQAwAQDChQBANTMwMDc5MDA3MzAwNzQwMDY1MDA2RDAwMkUwMDU3MDA2&#xA;OTAwNkUwMDY0MDA2RjAwNzcwMDczMDAyRTAwNDMwMDZGMDA2RTAwNzQwMDcyMDA2RjAwNkMwMDcz&#xA;MDAyRTAwNTQwMDY1MDA3ODAwNzQwMDQyMDA2QzAwNkYwMDYzMDA2QjAwAQAxAQBBAEA1NjAwNjUw&#xA;MDcyMDA3MzAwNjkwMDZGMDA2RTAwM0EwMDIwMDAzMTAwMkUwMDMwMDAyRTAwMzAwMDJFMDAyQTAw&#xA;AAAGAHZhbHVlcwIAAQAwAQDChQBANTMwMDc5MDA3MzAwNzQwMDY1MDA2RDAwMkUwMDU3MDA2OTAw&#xA;NkUwMDY0MDA2RjAwNzcwMDczMDAyRTAwNDMwMDZGMDA2RTAwNzQwMDcyMDA2RjAwNkMwMDczMDAy&#xA;RTAwNTQwMDY1MDA3ODAwNzQwMDQyMDA2QzAwNkYwMDYzMDA2QjAwAQAxAQBBAEA1NjAwNjUwMDcy&#xA;MDA3MzAwNjkwMDZGMDA2RTAwM0EwMDIwMDAzMTAwMkUwMDMwMDAyRTAwMzAwMDJFMDAzMDAwAAAH&#xA;AG1hdGNoZWQCAAEAMAAA77+/57+/AQAxAAABAAAA&quot;&gt;Intelligent Fix&lt;/a&gt;&lt;/p&gt;&lt;br/&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;On the &lt;a href=&quot;showpicture://pic&quot;&gt;Picture&lt;/a&gt; tab, check if the object existed during the test run.&lt;/li&gt;&lt;li&gt;View the search criteria for the object in the &lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.MainWindowView.MainViewRunCtr.Version&quot;&gt;NameMapping editor&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn more&lt;/a&gt; about possible causes of the error.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;text-align:center&quot;&gt; &lt;a href=&quot;showpicturedialog://%%LogDir%%\{8B255B0D-ECAC-485F-A611-DB4FB5F3FEB0}.png&quot;&gt; &lt;img title=&quot;The expected state of the tested application. The missing object (red frame) and the called test object (blue frame).&quot; class=&quot;clsimg&quot; src=&quot;file:///%%LogDir%%\{8B255B0D-ECAC-485F-A611-DB4FB5F3FEB0}.png&quot;&gt; &lt;/a&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="Unable to verify a value with the property checkpoint, because the target object does not exist."/>
+			<Prp name="date" type="D" value="44750.5267127199"/>
+		</Node>
+		<Node name="item 3">
+			<Prp name="stacktext" type="S" value="About"/>
+			<Prp name="line no" type="I" value="9"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="pictype" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="stack beginning" type="I" value="4"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="stack end" type="I" value="4"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="priority" type="I" value="400"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="picture" type="S" value="Picture5.png"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="remarks" type="S" value="&lt;!doctype html&gt; &lt;html&gt;&lt;style&gt;body {font-family : Segoe UI, Tahoma, Arial, Helvetica, sans-serif; font-size : 10pt; font-weight : normal; padding : 14px 8px 8px 14px; margin : 0 0 0 0;} p {margin : 4px 0 4px 0; padding : 0 0 0 0;} h4 {font-size: 10pt; font-weight : bold; margin : 12px 0 0 16px; padding : 0 0 0 0;} table {margin-left : 16px; border-top: 1px solid grey;} td {font-size : 10pt; font-weight : normal; padding-left : 8px;} &lt;/style&gt;&lt;style&gt;p, td, th{font-size: 10pt;} td, th {border-bottom: 1px solid #cdcdcd; padding: 2px 10px 2px 10px;} th {text-align: left; background: #cdcdcd; font-weight : normal;}  p {padding : 0; margin : 4 0 4 0px; line-height: 16pt;} table {border: 0px;}&lt;/style&gt;&lt;style&gt;.wide{width: 100%; margin: 0; padding:0; border:0;} .clsimg{width: 400px; margin: auto; border:0} td.row1{width: *;}  td.row2{width: 250px;}&lt;/style&gt;&lt;body&gt;&lt;div class=&quot;wide&quot;&gt;&lt;table class=&quot;wide&quot;&gt;&lt;thead&gt;&lt;tr&gt;&lt;td class=&quot;row1&quot;&gt;&lt;/td&gt;&lt;td class=&quot;row2&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;vertical-align:top;text-align:left&quot;&gt;&lt;p&gt;Unable to find the following object when executing the &lt;code&gt;Close&lt;/code&gt; command:&lt;/p&gt;&lt;p style=&quot;margin-left: 10px;&quot;&gt;&lt;code&gt;Aliases.&amp;#8203;Quantist.&amp;#8203;&lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.About&quot; title=&quot;Missing object. Click to view and change its recognition settings.&quot;&gt;&lt;span style=&quot;color: red; font-weight: bold;&quot;&gt;About&lt;/span&gt;&lt;/a&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;&amp;nbsp;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: #777;&quot;&gt;Tips&lt;/b&gt;&lt;/p&gt;&lt;ul style=&quot;margin-top: 10px&quot;&gt;&lt;li&gt;On the &lt;a href=&quot;showpicture://pic&quot;&gt;Picture&lt;/a&gt; tab, check if the object existed during the test run.&lt;/li&gt;&lt;li&gt;View the search criteria for the object in the &lt;a href=&quot;lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.Aliases.Quantist.About&quot;&gt;NameMapping editor&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;aqa-help://2201&quot;&gt;Learn more&lt;/a&gt; about possible causes of the error.&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;td style=&quot;vertical-align:top;text-align:center&quot;&gt; &lt;a href=&quot;showpicturedialog://%%LogDir%%\{7CED5476-92B0-4633-8A5C-0ACF40F9BB17}_1.png&quot;&gt; &lt;img title=&quot;The expected state of the tested application. The missing object (red frame) and the called test object (blue frame).&quot; class=&quot;clsimg&quot; src=&quot;file:///%%LogDir%%\{7CED5476-92B0-4633-8A5C-0ACF40F9BB17}_1.png&quot;&gt; &lt;/a&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="message" type="S" value="The object &quot;About&quot; does not exist."/>
+			<Prp name="date" type="D" value="44750.5267750116"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val7" type="D" value="48"/>
+				<Prp name="val3" type="D" value="48"/>
+				<Prp name="val5" type="D" value="48"/>
+				<Prp name="val6" type="D" value="48"/>
+				<Prp name="val2" type="D" value="48"/>
+				<Prp name="val0" type="D" value="47"/>
+				<Prp name="val1" type="D" value="48"/>
+				<Prp name="val4" type="D" value="48"/>
+			</Node>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="description" type="S" value="Memory usage in percent."/>
+			<Prp name="id" type="S" value="{D0473337-ACC8-464E-AEE7-4812C520914E}"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="color" type="I" value="12274561"/>
+			<Prp name="countertype" type="I" value="1"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="stacktext" type="S" value="About"/>
+			<Prp name="line no" type="I" value="4"/>
+			<Prp name="unit id" type="I" value="0"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val7" type="I" value="6708"/>
+				<Prp name="val3" type="I" value="6697"/>
+				<Prp name="val5" type="I" value="6704"/>
+				<Prp name="val6" type="I" value="6685"/>
+				<Prp name="val2" type="I" value="6684"/>
+				<Prp name="val0" type="I" value="6682"/>
+				<Prp name="val1" type="I" value="6696"/>
+				<Prp name="val4" type="I" value="6706"/>
+			</Node>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="id" type="S" value="{5A582B8C-08BB-49B2-90B3-1EB2F4A54558}"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="length" type="I" value="8"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="countertype" type="I" value="2"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="6"/>
+	</Node>
+</Nodes>

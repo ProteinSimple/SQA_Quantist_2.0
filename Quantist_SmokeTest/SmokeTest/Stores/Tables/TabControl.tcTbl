@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{F1D3EE30-C2A8-4AFF-801C-1D39E2C902F0}" version="14.0">
+	<Table Name="TabControl">
+		<Source Object="Aliases.Quantist_WPF.HwndSource_MainWindowView.MainWindowView.Grid.TabControl">
+			<DataExtraction Type="OpticalTableRecognition" DetectionMode="ByCoordinates" SelectionPreference="Largest" HasHeader="True">
+				<Rectangle Left="2" Top="0" Right="301" Bottom="241" />
+			</DataExtraction>
+		</Source>
+		<Columns>
+			<Column>Configure All Curves Configure</Column>
+			<Column>Current Curve</Column>
+		</Columns>
+		<Rows>
+			<Row>
+				<Cell Type="String">Curve Fit: 5PL</Cell>
+				<Cell Type="String"></Cell>
+			</Row>
+			<Row>
+				<Cell Type="String">Curve Weighting: 1/72</Cell>
+				<Cell Type="String"></Cell>
+			</Row>
+			<Row>
+				<Cell Type="String">Recovery Range: 80% to 120%</Cell>
+				<Cell Type="String"></Cell>
+			</Row>
+			<Row>
+				<Cell Type="String">Remove Outliers Based on</Cell>
+				<Cell Type="String">Recoveries (All)</Cell>
+			</Row>
+		</Rows>
+	</Table>
+</Root>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+			</Node>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="description" type="S" value="This counter is the sum of four other counters; Gen 0 Heap Size; Gen 1 Heap Size; Gen 2 Heap Size and the Large Object Heap Size. This counter indicates the current memory allocated in bytes on the GC Heaps."/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="32768"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{528E22FE-C004-4C33-A578-E0CF3D4CE1C5}"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val2" type="I" value="11897"/>
+				<Prp name="val5" type="I" value="11894"/>
+				<Prp name="val1" type="I" value="11897"/>
+				<Prp name="val7" type="I" value="11894"/>
+				<Prp name="val3" type="I" value="11897"/>
+				<Prp name="val0" type="I" value="11897"/>
+				<Prp name="val8" type="I" value="11894"/>
+				<Prp name="val4" type="I" value="11894"/>
+				<Prp name="val6" type="I" value="11894"/>
+			</Node>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="datatype" type="I" value="0"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="id" type="S" value="{72550625-9422-45D7-860B-C81DD950A839}"/>
+		</Node>
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.451483831"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="License Directory: C:\ProgramData\Bio-techne\Quantist\"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 1">
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.451483831"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Golden File Location: C:\\Quantist\\SQA-Quantist\\Test_Data\\Output\\Quantist_Installation_Files.txt"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="19"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4514344213"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="This Test runs on Machine: USSJO-WKS05-V"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="18"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="n-6">
+			<Node name="data">
+				<Prp name="val2" type="D" value="8486288"/>
+				<Prp name="val5" type="D" value="8481476"/>
+				<Prp name="val1" type="D" value="8486288"/>
+				<Prp name="val7" type="D" value="8481476"/>
+				<Prp name="val3" type="D" value="8486288"/>
+				<Prp name="val0" type="D" value="8486288"/>
+				<Prp name="val8" type="D" value="8481476"/>
+				<Prp name="val4" type="D" value="8481476"/>
+				<Prp name="val6" type="D" value="8481476"/>
+			</Node>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{C24C265E-3856-4F05-9CC6-0BB84D38A8A3}"/>
+		</Node>
+		<Node name="message 3">
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4514838542"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="  1: C:\ProgramData\Bio-techne\Quantist\bt-Quantist.lic"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 0" type="S" value="{07948AC5-41EF-40F3-BF21-16F188ECE81C}"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="date" type="D" value="44725.4516041088"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{BB4C8504-D81D-4AC6-8CAB-5A1C5D264D0E}&quot;&gt; Click here to show or modify data of the checkpoint &quot;Quantist_Installation_Files&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="message" type="S" value="The file checkpoint &quot;Quantist_Installation_Files&quot; passed."/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="92"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val2" type="D" value="63.2293923905188"/>
+				<Prp name="val5" type="D" value="63.2151293482667"/>
+				<Prp name="val1" type="D" value="63.2293923905188"/>
+				<Prp name="val7" type="D" value="63.2151293482667"/>
+				<Prp name="val3" type="D" value="63.2293923905188"/>
+				<Prp name="val0" type="D" value="63.2293923905188"/>
+				<Prp name="val8" type="D" value="63.2151293482667"/>
+				<Prp name="val4" type="D" value="63.2151293482667"/>
+				<Prp name="val6" type="D" value="63.2151293482667"/>
+			</Node>
+			<Prp name="name" type="S" value="% Committed Bytes In Use [localhost]"/>
+			<Prp name="description" type="S" value="% Committed Bytes In Use is the ratio of Memory\\Committed Bytes to the Memory\\Commit Limit. Committed memory is the physical memory in use for which space has been reserved in the paging file should it need to be written to disk. The commit limit is determined by the size of the paging file.  If the paging file is enlarged, the commit limit increases, and the ratio is reduced). This counter displays the current percentage value only; it is not an average."/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="15780518"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{BD75101F-4322-4A2D-AA88-24289E56A443}"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val2" type="D" value="44725.451483831"/>
+				<Prp name="val5" type="D" value="44725.4516032986"/>
+				<Prp name="val1" type="D" value="44725.451483831"/>
+				<Prp name="val7" type="D" value="44725.4516033565"/>
+				<Prp name="val3" type="D" value="44725.4514838542"/>
+				<Prp name="val0" type="D" value="44725.4514837731"/>
+				<Prp name="val8" type="D" value="44725.4516041088"/>
+				<Prp name="val4" type="D" value="44725.4516030324"/>
+				<Prp name="val6" type="D" value="44725.4516033102"/>
+			</Node>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="datatype" type="I" value="2"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4516033102"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Actual total number of files: 347"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="85"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="message 4">
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4516030324"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Installation Directory: C:\Program Files\Bio-Techne\Quantist\"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="83"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val7" type="D" value="0"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="0"/>
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val6" type="D" value="0"/>
+			</Node>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="id" type="S" value="{6733EBF1-BF68-4448-94F9-548216EEF3D6}"/>
+		</Node>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val5" type="D" value="45"/>
+				<Prp name="val1" type="D" value="0"/>
+				<Prp name="val7" type="D" value="45"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val8" type="D" value="45"/>
+				<Prp name="val4" type="D" value="45"/>
+				<Prp name="val6" type="D" value="45"/>
+			</Node>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="datatype" type="I" value="1"/>
+			<Prp name="length" type="I" value="9"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="id" type="S" value="{42C3CFFA-FEE4-40BB-BBDB-83FD30146638}"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4516033565"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Actual total number of files matches: Passed"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="88"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="date" type="D" value="44725.4516032986"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="message" type="S" value="Expected Number of Files from Installation Directory: 347"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="line no" type="I" value="84"/>
+			<Prp name="owner id" type="I" value="-1"/>
+		</Node>
+		<Prp name="status" type="I" value="0"/>
+		<Prp name="perfcounterslength" type="I" value="7"/>
+	</Node>
+</Nodes>

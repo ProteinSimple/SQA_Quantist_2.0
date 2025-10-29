@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row9">
+				<Prp name="name" type="S" value="SQA_2600_CC_Table_Row_Expand_All [Script\CC_Table_Options - Row_Operations_Expand_All]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="9"/>
+				<Prp name="start time" type="D" value="44581.7021494792"/>
+				<Prp name="end time" type="D" value="44581.7021497338"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{807D72FE-906F-47D2-9D7C-266292F746B7}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row5">
+				<Prp name="name" type="S" value="SQA_2400_CC_Remove_Outliers_Current_Curve [Script\CC_Remove_Outliers - CC_Remove_Outliers_Current]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="start time" type="D" value="44581.7021484954"/>
+				<Prp name="end time" type="D" value="44581.7021488542"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{39B9A169-78EA-4154-BEB1-6DFA12EE93F1}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row8">
+				<Prp name="name" type="S" value="SQA_2530_CC_Graph_Log_X_Y_Axis [Script\CC_Graph_Options - Graph_Options_Log_X_Y_Axis]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="start time" type="D" value="44581.7021493287"/>
+				<Prp name="end time" type="D" value="44581.7021494329"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{B92AC7CE-7BD4-48AA-88E5-0FB31095C492}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row11">
+				<Prp name="name" type="S" value="SQA_2620_CC_Table_Copy_Row_Aggregate [Script\CC_Table_Options - Copy_Rows_To_Clipboard_Agg]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="start time" type="D" value="44581.702149919"/>
+				<Prp name="end time" type="D" value="44581.7021501505"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{502F88CF-E25B-4FA7-8319-C951710AC5D8}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row7">
+				<Prp name="name" type="S" value="SQA_2510_CC_Graph_Show_Unknows_Controls [Script\CC_Graph_Options - Graph_Options_Show_Unknowns_Controls]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="start time" type="D" value="44581.7021490509"/>
+				<Prp name="end time" type="D" value="44581.7021492824"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{FC797529-36BF-4DC5-882B-CB31C41C7415}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="name" type="S" value="SQA_2100_CC_Configure_Curve [Script\CC_Configure_Curve - CC_Configuration]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="44581.7021465625"/>
+				<Prp name="end time" type="D" value="44581.702146875"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{3B0EDA36-0338-423B-9543-6F2F755F00BC}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row12">
+				<Prp name="name" type="S" value="SQA_2630_CC_Table_Copy_Row_Replicates [Script\CC_Table_Options - Copy_Rows_To_Clipboard_Replicates]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="12"/>
+				<Prp name="start time" type="D" value="44581.7021502778"/>
+				<Prp name="end time" type="D" value="44581.7021504282"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{94B076E3-F703-4E20-8792-C39C01D9B21E}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="SQA_2000_CC_Loading_Curve_File [Script\CC_Loading_Curve_Files - Launch]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="44581.7021432523"/>
+				<Prp name="end time" type="D" value="44581.7021465162"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{A4DE0F42-74E1-4219-B3A0-540778667754}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="name" type="S" value="SQA_2350_CC_4PL [Script\CC_5PL_4PL - Calculate_netMFI_4PL]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="start time" type="D" value="44581.7021483218"/>
+				<Prp name="end time" type="D" value="44581.7021484606"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{5E176A1B-D7C9-4B99-80D7-80D484B59023}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="name" type="S" value="SQA_2300_CC_5PL [Script\CC_5PL_4PL - Calculate_netMFI_5PL]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="start time" type="D" value="44581.702147419"/>
+				<Prp name="end time" type="D" value="44581.702148287"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{849851B9-56F6-4562-9087-8E307D8420E6}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row10">
+				<Prp name="name" type="S" value="SQA_2610_CC_Table_Row_Collapse_All [Script\CC_Table_Options - Row_Operations_Collapse_All]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="start time" type="D" value="44581.7021497801"/>
+				<Prp name="end time" type="D" value="44581.7021498727"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{C1837F03-6848-4C10-8CB1-CBE37A6551F3}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row6">
+				<Prp name="name" type="S" value="SQA_2410_CC_Remove_Outliers_All [Script\CC_Remove_Outliers - CC_Remove_Outliers_All]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="start time" type="D" value="44581.7021488889"/>
+				<Prp name="end time" type="D" value="44581.7021490046"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{A096324A-A87D-4B22-AAE5-121F2B26CAB7}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="name" type="S" value="SQA_2200_CC_Current_Data [Script\CC_Current_Data - CC_Current_Data]"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="44581.7021469213"/>
+				<Prp name="end time" type="D" value="44581.7021473264"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="details" type="S" value="{D0F8BACE-4918-445C-A26E-2A9FFAC0E32C}"/>
+				<Prp name="testdata item" type="B" value="0"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

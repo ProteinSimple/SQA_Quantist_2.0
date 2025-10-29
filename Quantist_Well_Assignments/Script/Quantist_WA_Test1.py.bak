@@ -1,0 +1,44 @@
+﻿import Quantist_Removing_Files
+import Load_CSV_File
+
+
+def Test1():
+  mainWindowView = Aliases.Quantist.MainWindowView  
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView
+  Xbutton = treeView.TreeViewItem.Button
+  
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files()
+  
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleDataFolder, "PM8800.csv")
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)    
+ 
+  
+
+def Test2():
+  main = Aliases.Quantist.MainWindowView
+  main.RunTreeView.ClickItem("|[0]|[2]")
+  border = main.MainView
+  wellplate = border.ItemsControl.wellplate
+  wellplate.ClickItem(0)
+  wellplate.ClickItem(0)
+  wellplate.ClickItem(0)
+  wellplate.ClickItem(0)
+  wellplate.Ellipse5.Click(28, 17)
+  wellplate.ClickItem(0)
+  wellplate.ClickItem(0)
+  border.ButtonBlank.ClickButton()
+  border.ButtonStandard.ClickButton()
+  button = hwndSource.MainViewRunCtr.ButtonErrorSettingWellsAtLeastOneWellNeeds
+  aqObject.CheckProperty(button, "WPFControlText", cmpEqual, "Error Setting Wells:\r\n• At Least One Well Needs To Be Selected!\r\n• Replicate Count Needs To Be Set!")
+  border.ButtonControl.ClickButton()
+  aqObject.CheckProperty(button, "WPFControlText", cmpEqual, "Error Setting Wells:\r\n• At Least One Well Needs To Be Selected!\r\n• Replicate Count Needs To Be Set!")
+  border.ButtonUnknown.ClickButton()
+  aqObject.CheckProperty(button, "WPFControlText", cmpEqual, "Error Setting Wells:\r\n• At Least One Well Needs To Be Selected!\r\n• Replicate Count Needs To Be Set!")
+  border.Button.ClickButton()
+  textBox = border.TextboxReplicateCount
+  textBox.Click(6, 7)
+  textBox.SetText("2")
+  border.Togglebutton.ClickButton(cbUnchecked)

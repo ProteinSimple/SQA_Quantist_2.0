@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root signature="{24B6FA0B-0143-461A-9758-AEB9E9A9428B}" version="15.0" key="{8A844982-A8CC-4E21-8FF0-3257FB4133C6}">
+	<children>
+		<child name="Quantist_SmokeTest" key="{1980E724-E6B9-449A-8112-F3A23F18711B}" path="Quantist_SmokeTest\Quantist_SmokeTest.mds" />
+		<child name="Quantist_Import_Data_Files" key="{700570DB-E507-4320-AA17-6D7068AB22D0}" path="Quantist_Import_CSV_Files\Quantist_Import_Data_Files.mds" />
+		<child name="Quantist_Calibration_Curves" key="{87ECD5D2-E7C6-4781-8725-12953827FACF}" path="Quantist_Curves\Quantist_Calibration_Curves.mds" />
+		<child name="Quantist_Results" key="{D195603E-77FB-49AE-A159-67293441391F}" path="Quantist_Results\Quantist_Results.mds" />
+		<child name="Quantist_Well_Assignments" key="{30FD7668-4E9E-408F-A560-1FE37A818FE7}" path="Quantist_Well_Assignments\Quantist_Well_Assignments.mds" />
+		<child name="Quantist_Information" key="{0CC5218B-FAE0-4F63-BA5F-66AF0984206B}" path="Quantist_Information\Quantist_Information.mds" />
+		<child name="Quantist_Analytes_Panel" key="{4FD0CCBE-6B6C-4DC1-AE9A-BE5A98A9E375}" path="Quantist_Analytes_Panel\Quantist_Analytes_Panel.mds" />
+		<child name="Quantist_Multi_Analytes" key="{71972998-884B-4EF7-9166-13481DA486EE}" path="Quantist_Multi_Analytes\Quantist_Multi_Analytes.mds" />
+		<child name="Quantist_Performance" key="{5FA3AD72-C988-47C5-9351-F226733762A9}" path="Quantist_Performance\Quantist_Performance.mds" />
+		<child name="Quantist_Calibration_Curve_Unknowns" key="{8EADDDD7-9A8D-4849-AC38-51AAD7096EC8}" path="Quantist_Calibration_Curve_2\Quantist_Calibration_Curve_Unknowns.mds" />
+		<child name="Quantist_Installation_Files" key="{FE48785D-CD4B-41CF-A8A2-0FA3BE2991B1}" path="Quantist_Installation_Files\Quantist_Installation_Files.mds" />
+		<child name="Quantist_Color_Scheme" key="{1135B5AC-72C9-4B9F-A5B2-09659E9C77EA}" path="Quantist_Colors\Quantist_Color_Scheme.mds" />
+		<child name="Quantist_UndoRedo" key="{B44BEA90-DCEB-4ED6-AD64-5B3F86791EA6}" path="Quantist_UndoRedo\Quantist_UndoRedo.mds" />
+	</children>
+	<testItems key="{D54C4582-0551-4EDE-BDA1-A49B6216256C}">
+		<children>
+			<testItem key="{1980E724-E6B9-449A-8112-F3A23F18711B}" enabled="True" timeout="0" stopOnError="False" description="" />
+			<testItem key="{700570DB-E507-4320-AA17-6D7068AB22D0}" enabled="True" timeout="0" stopOnError="False" description="" />
+			<testItem key="{87ECD5D2-E7C6-4781-8725-12953827FACF}" enabled="True" timeout="0" stopOnError="False" description="" />
+			<testItem key="{D195603E-77FB-49AE-A159-67293441391F}" enabled="True" timeout="0" stopOnError="False" description="" />
+			<testItem key="{30FD7668-4E9E-408F-A560-1FE37A818FE7}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{0CC5218B-FAE0-4F63-BA5F-66AF0984206B}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{4FD0CCBE-6B6C-4DC1-AE9A-BE5A98A9E375}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{71972998-884B-4EF7-9166-13481DA486EE}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{5FA3AD72-C988-47C5-9351-F226733762A9}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{8EADDDD7-9A8D-4849-AC38-51AAD7096EC8}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{FE48785D-CD4B-41CF-A8A2-0FA3BE2991B1}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{1135B5AC-72C9-4B9F-A5B2-09659E9C77EA}" enabled="True" timeout="0" stopOnError="True" description="" />
+			<testItem key="{B44BEA90-DCEB-4ED6-AD64-5B3F86791EA6}" enabled="True" timeout="0" stopOnError="True" description="" />
+		</children>
+	</testItems>
+	<variables key="{6FE45476-97CC-4C43-BDDA-0FC886107226}">
+		<data Version="4">
+			<Items>
+				<Variable Name="Short_Delay" Type="Integer" Local="False">
+					<DefValue IntValue="1000" />
+				</Variable>
+				<Variable Name="Long_Delay" Type="Integer" Local="False">
+					<DefValue IntValue="5000" />
+				</Variable>
+				<Variable Name="SampleDataFolder_Edrive" Type="String" Local="True">
+					<DefValue StrValue="E:\TestComplete\Quantist\SampleQuantistFile\" />
+				</Variable>
+				<Variable Name="SampleDataFolder_bk" Type="String" Local="True">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\" />
+				</Variable>
+				<Variable Name="sample_csv_pm8800" Type="String" Local="False">
+					<DefValue StrValue="PM8800.csv" />
+				</Variable>
+				<Variable Name="OUTPUT_DIRECTORY" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\Output\" />
+				</Variable>
+				<Variable Name="IMAGE_EXTENSION" Type="String" Local="False">
+					<DefValue StrValue=".png" />
+				</Variable>
+				<Variable Name="PIXEL_TOLERANCE" Type="Integer" Local="False" Descr="Image Comparision - Tolerance Pixel -OLD 2000">
+					<DefValue IntValue="500" />
+				</Variable>
+				<Variable Name="COLOR_TOLERANCE" Type="Integer" Local="False" Descr="Image Comparision - Tolerance Color -OLD 25">
+					<DefValue IntValue="10" />
+				</Variable>
+				<Variable Name="sample_csv_TestData" Type="String" Local="False">
+					<DefValue StrValue="TestData.csv" />
+				</Variable>
+				<Variable Name="Long_Delay_10" Type="String" Local="False">
+					<DefValue StrValue="10000" />
+				</Variable>
+				<Variable Name="sample_csv_unknown_control" Type="String" Local="False">
+					<DefValue StrValue="Standard-Control-Unknown_Xponent.csv" />
+				</Variable>
+				<Variable Name="SampleDataFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\" />
+				</Variable>
+				<Variable Name="WellAssignmentsFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\WellAssignments\" />
+				</Variable>
+				<Variable Name="sample_csv_not_support_region" Type="String" Local="False">
+					<DefValue StrValue="NonSupportingRegion.csv" />
+				</Variable>
+				<Variable Name="SampleInvalidCSVFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\Invalid_CSV_files\" />
+				</Variable>
+				<Variable Name="sample_csv_single_analyte" Type="String" Local="False">
+					<DefValue StrValue="OneAnalyte.csv" />
+				</Variable>
+				<Variable Name="SampleSingleAnalyteFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\SingleAnalyteRunFile\" />
+				</Variable>
+				<Variable Name="Sample67FilesFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\67 files\" />
+				</Variable>
+				<Variable Name="sample_csv_mod_metadata" Type="String" Local="False">
+					<DefValue StrValue="MetaData-Mod.csv" />
+				</Variable>
+				<Variable Name="sample_csv_silent_failed" Type="String" Local="False">
+					<DefValue StrValue="Silent_Failed.csv" />
+				</Variable>
+				<Variable Name="SavedChangesFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA_Quantist_2.0\Test_Data\SampleQuantistFiles\Saved_Changes\" />
+				</Variable>
+				<Variable Name="Quantist_Installation_Dir" Type="String" Local="False">
+					<DefValue StrValue="C:\Program Files\Bio-Techne\Quantist\" />
+				</Variable>
+				<Variable Name="Quantist_License_Dir" Type="String" Local="False">
+					<DefValue StrValue="C:\ProgramData\Bio-techne\Quantist\" />
+				</Variable>
+				<Variable Name="SampleQuantistFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Quantist\SQA-Quantist_2.0\Test_Data\SampleQuantistFiles\Saved_Changes\" />
+				</Variable>
+				<Variable Name="sample_quantist_pm8800" Type="String" Local="False">
+					<DefValue StrValue="PM8800.quantist" />
+				</Variable>
+				<Variable Name="ErrorFileFolder" Type="String" Local="False">
+					<DefValue StrValue="C:\Users\duc\AppData\Local\Bio-techne\Quantist\AppLogs\" />
+				</Variable>
+			</Items>
+		</data>
+	</variables>
+	<analysis key="{DE3D4FF0-0E7F-41EF-B422-6E82E3D84F6D}" />
+	<scc key="{00000000-0000-0000-0000-000000000000}" name="">
+		<data />
+	</scc>
+</Root>

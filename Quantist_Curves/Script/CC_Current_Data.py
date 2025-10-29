@@ -1,0 +1,212 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def CC_Current_Data():
+  
+  mainWindowView = Aliases.Quantist.MainWindowView  
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView
+  Xbutton = treeView.TreeViewItem.Button
+  
+  flag = True
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)
+  
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleDataFolder, "PM8800.csv")
+
+  # Verify not include Std 7 into calculation -
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)    
+  
+  # Uncheck Standard7 box
+  inplaceBaseEdit = Aliases.Quantist.MainWindowView.MainView.CurveData.InplaceBaseEdit24
+  aqObject.CheckProperty(inplaceBaseEdit, "DisplayText", cmpEqual, "Checked")
+  inplaceBaseEdit.Click(31, 8)  
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)    
+  Regions.PM8800_5PL_1Y2_80_120_Unchecked_Std7_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+  Regions.PM8800_5PL_1Y2_80_120_Unchecked_Std7_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  Regions.PM8800_5PL_1Y2_80_120_Unchecked_Std7_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel)
+  
+  analyte = Aliases.Quantist.MainWindowView.MainView.CurvePanel.AnalyteBox.wText
+  Log.Message(" ")
+  Log.Message("Analyte: " + analyte)
+  
+  curveData = Aliases.Quantist.MainWindowView.MainView.CurvePanel
+
+  a = curveData.AValue.WPFControlText
+  b = curveData.BValue.WPFControlText
+  c = curveData.CValue.WPFControlText
+  d = curveData.DValue.WPFControlText
+  g = curveData.GValue.WPFControlText
+
+  grid = Aliases.Quantist.MainWindowView.MainView.CurveData
+  grid.InplaceBaseEdit13.Click()
+  grid.RowMarginControl2.Click()
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+    
+  conc_B1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for B1
+  conc_B2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for B2
+  netMFI_B1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI B1 ("6639.00")
+  netMFI_B2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NnetMFI B2,("6276.00")
+
+  Log.Message("Standard1")
+  if ((conc_B1 != "") and (conc_B2 != "")):
+    # perform 5PL calculation and verify displayed NetMFI value
+    netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_B1), float(netMFI_B1))  
+    netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_B2), float(netMFI_B2))  
+  else:
+    Log.Message("Concentration cannot be calculated. Net MFI > d coefficient!")
+    Log.Message("Coeff d: "   + float(d))
+    Log.Message("NetMFI B1: " + float(netMFI_B1))
+    Log.Message("NetMFI B2: " + float(netMFI_B2))
+  
+  ###################################################
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  grid.RowMarginControl2.Click() # Collapse Standard1
+  grid.InplaceBaseEdit16.Click()  
+  grid.RowMarginControl3.Click() # Expand Standard2
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+
+  conc_C1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for C1
+  conc_C2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for C2
+  netMFI_C1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI C1
+  netMFI_C2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NetMFI C2
+        
+  # perform 5PL calculation and verify displayed NetMFI value
+  Log.Message("Standard2")
+  if ((conc_C1 != "") and (conc_C2 != "")):
+    netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_C1), float(netMFI_C1))  
+    netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_C2), float(netMFI_C2))  
+  else:
+    Log.Message("Concentration cannot be calculated. Net MFI > d coefficient!")
+    Log.Message("Coeff d: "   + float(d))
+    Log.Message("NetMFI C1: " + float(netMFI_C1))
+    Log.Message("NetMFI C2: " + float(netMFI_C2))
+
+  ###################################################
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  grid.RowMarginControl3.Click() # Collapse Standard2
+  grid.InplaceBaseEdit17.Click()
+  grid.RowMarginControl4.Click() # Expand Standard3
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+
+  conc_D1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for D1
+  conc_D2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for D2
+  netMFI_D1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI D1
+  netMFI_D2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NetMFI D2
+        
+  Log.Message("Standard3")
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_D1), float(netMFI_D1))  
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_D2), float(netMFI_D2))  
+
+  ###################################################
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  grid.RowMarginControl4.Click() # Collapse Standard3
+  grid.InplaceBaseEdit18.Click()
+  grid.RowMarginControl5.Click() # Expand Standard4
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+
+  conc_E1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for E1
+  conc_E2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for E2
+  netMFI_E1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI E1
+  netMFI_E2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NetMFI E2
+
+  Log.Message("Standard4")
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_E1), float(netMFI_E1))  
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_E2), float(netMFI_E2))    
+
+  ###################################################
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  grid.RowMarginControl5.Click() # Collapse Standard4
+  grid.InplaceBaseEdit19.Click()
+  grid.RowMarginControl6.Click() # Expand Standard5
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+
+  conc_F1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for F1
+  conc_F2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for F2
+  netMFI_F1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI F1
+  netMFI_F2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NetMFI F2
+
+  Log.Message("Standard5")
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_F1), float(netMFI_F1))  
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_F2), float(netMFI_F2))        
+  
+  ###################################################
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  grid.RowMarginControl6.Click() # Collapse Standard5
+  grid.InplaceBaseEdit20.Click()
+  grid.RowMarginControl7.Click() # Expand Standard6
+  grid.GridData.InplaceBaseEdit4.Click()  # To highlight the rows for reviewing task
+  grid.GridData.InplaceBaseEdit3.Click()  
+
+  conc_G1 = grid.GridData.InplaceBaseEdit2.DisplayText    # Get Concentration value for D1
+  conc_G2 = grid.GridData.InplaceBaseEdit7.DisplayText    # Get Concentration value for D2
+  netMFI_G1 = grid.GridData.InplaceBaseEdit.DisplayText   # NetFMI D1
+  netMFI_G2 = grid.GridData.InplaceBaseEdit6.DisplayText  # NetMFI D2
+
+  Log.Message("Standard6")
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_G1), float(netMFI_G1))  
+  netMFI_5PL (float(a), float(b), float(c), float(d), float(g), float(conc_G2), float(netMFI_G2))
+
+def netMFI_5PL(a, b, c, d, g, conc, netMFI):
+  netMFI_calc = (d + ((a-d) / pow((1+ pow((conc/c), b)), g)))
+  if (int(netMFI_calc) == int(netMFI) or ((netMFI_calc / netMFI) < 1.0)):
+    Log.Message("  netMFI displayed: " + str(netMFI))
+    Log.Message("  netMFI value calculated: " + str(netMFI_calc))
+    Log.Message("  netMFI 5PL verification Passed")
+    Log.Message(" ")
+    #Log.Message((netMFI_calc / netMFI))  
+    
+  else:
+    Log.Message("  netMFI displayed: " + str(netMFI))
+    Log.Message("  netMFI value calculated: " + str(netMFI_calc))
+    Log.Message("  netMFI 5PL verification Failed")
+    Log.Message(" ")
+              
+def Test():
+  mainWindowView = Aliases.Quantist.MainWindowView
+  mainWindowView.InplaceBaseEdit5.Click(78, 11)
+  rowMarginControl = mainWindowView.RowMarginControl
+  rowMarginControl.Click(11, 9)
+  mainWindowView.InplaceBaseEdit6.Click(32, 9)
+  #aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "Enabled", cmpEqual, True)
+  #aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "Id", cmpEqual, 355) #Not a constant
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "displayText_2", cmpEqual, "1")
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "Enabled", cmpEqual, True)
+  #aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "Id", cmpEqual, 692) #Not a constant
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "displayText_2", cmpEqual, "2")
+  rowMarginControl.Click(11, 12)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.Std7_5PL_None_60_140, "Enabled", cmpEqual, True)
+  #aqObject.CheckProperty(Aliases.Quantist.MainWindowView.Std7_5PL_None_60_140, "Id", cmpEqual, 732)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.Std7_5PL_None_60_140, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.Std7_5PL_None_60_140, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.Std7_5PL_None_60_140, "displayText_2", cmpEqual, "98.15")
+
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "displayText_2", cmpEqual, "1")
+
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "displayText_2", cmpEqual, "2")
+
+  Aliases.Quantist.MainWindowView.RowMarginControl2.Click(11, 9)
+
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit3, "displayText_2", cmpEqual, "1")
+
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlIndex", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "WPFControlOrdinalNo", cmpEqual, 1)
+  aqObject.CheckProperty(Aliases.Quantist.MainWindowView.InplaceBaseEdit4, "displayText_2", cmpEqual, "2")
+
+

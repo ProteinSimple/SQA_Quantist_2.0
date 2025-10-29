@@ -1,0 +1,27 @@
+﻿def Expanding():
+  mainWindowView = Aliases.Quantist_WPF.HwndSource_MainWindowView.MainWindowView
+  treeView = mainWindowView.RunTreeView
+  treeView.ExpandItem("|[0]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ExpandItem("|[1]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ExpandItem("|[2]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ExpandItem("|[3]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  mainWindowView.Togglebutton.ClickButton(cbChecked)
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ClickItem("|[0]|[2]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ClickItem("|[1]|[2]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  treeView.ClickItem("|[2]|[2]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  #treeView.MouseWheel(-1)
+  #treeView.TreeViewItem3.TreeViewItem.MouseWheel(-1)
+  treeView.ClickItem("|[3]|[2]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  mainWindowView.Togglebutton2.ClickButton(cbChecked)
+  mainWindowView.Button2.ClickButton()
+  BuiltIn.ShowMessage("Successfully expanding Kit Results!")
+  

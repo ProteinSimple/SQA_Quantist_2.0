@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test13">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The file checkpoint &quot;Quantist_Installation_Files&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1560_Installation_Files"/>
+						<Prp name="duration" type="I" value="22297"/>
+						<Prp name="durationwithoutchildren" type="I" value="22297"/>
+						<Prp name="starttime" type="D" value="45938.623951412"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBFAEEAMwA3ADMARgBBAEUALQAxADkAOAAyAC0ANAAzADYANgAtADgARABEAEIALQAyAEEARgA4ADgAMwBFAEUANwAxAEMARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test12">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1550_Saved_Notes"/>
+						<Prp name="duration" type="I" value="29655"/>
+						<Prp name="durationwithoutchildren" type="I" value="29655"/>
+						<Prp name="starttime" type="D" value="45938.6236081018"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADAAQwBFADcAMABGAEUALQBEAEEANgBGAC0ANAAxADQAQQAtADgAMwBEADgALQA2ADIAOQAwADkANgA4ADAAMwAxADgARQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1100_Launch"/>
+						<Prp name="duration" type="I" value="7622"/>
+						<Prp name="durationwithoutchildren" type="I" value="7622"/>
+						<Prp name="starttime" type="D" value="45938.6192312384"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADkANAA5ADIANwA4ADcALQA2ADgAQgBGAC0ANAAwADQAMQAtAEEANwA1AEQALQAxAEUAQwAwADgANgA3AEMARABDADcAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test6">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1400_Removing_Files_From_Tree"/>
+						<Prp name="duration" type="I" value="28890"/>
+						<Prp name="durationwithoutchildren" type="I" value="28890"/>
+						<Prp name="starttime" type="D" value="45938.6201818982"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAyADEAMAA5AEMAOQA5ADcALQAwADYARQBGAC0ANABFADgAQQAtADkANAA5AEIALQBCADYAQQA3ADMAOABCADQANgA5ADMAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test15">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1600_Close"/>
+						<Prp name="duration" type="I" value="5729"/>
+						<Prp name="durationwithoutchildren" type="I" value="5729"/>
+						<Prp name="starttime" type="D" value="45938.6244827546"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwADMAQwAwADEAMQBFADgALQA4AEMANwA2AC0ANAA4ADEARAAtAEEANAAxADMALQBFAEYANABDADMANwA1ADMAMABDADcAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;RunTreeView_Expanse&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;RunTreeView_Collapse&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1300_Expand_Tree_Files"/>
+						<Prp name="duration" type="I" value="10516"/>
+						<Prp name="durationwithoutchildren" type="I" value="10516"/>
+						<Prp name="starttime" type="D" value="45938.6200601852"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDAEUAOABEADUAMwA4AEUALQA5ADgAOAA1AC0ANAA4AEEAMgAtAEEAOQAwADAALQBGAEQANwAzADMAMwA3AEIAQwA1AEIAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test8">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1210_Verify_Rsquared_value"/>
+						<Prp name="duration" type="I" value="75224"/>
+						<Prp name="durationwithoutchildren" type="I" value="75224"/>
+						<Prp name="starttime" type="D" value="45938.6208826736"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADMARQAwADQAOABGAEIALQA0ADIANABCAC0ANABCADUANAAtAEIAQwAzADkALQA3AEYANwA1ADYANAA0ADkAMAA3ADkAOQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test14">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;Two_96_Well_Plates_HighLighted&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;Two_96_Well_Plates&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1530_Well_Assignments_View"/>
+						<Prp name="duration" type="I" value="23607"/>
+						<Prp name="durationwithoutchildren" type="I" value="23607"/>
+						<Prp name="starttime" type="D" value="45938.6242095255"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEUAQgA0ADAAMwA3ADEALQBBAEYANgA3AC0ANAAyADEANgAtADkANgAzADMALQBCADkANgAzAEUAMABDAEYAQQBGAEUAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test10">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error13">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_None_80_120"/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverYsq_70_130Pct"/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Ysq_70_130"/>
+							</Node>
+							<Node name="error20">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverY_80_120Pct"/>
+							</Node>
+							<Node name="error18">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverY_70_130Pct"/>
+							</Node>
+							<Node name="error17">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Y_60_140"/>
+							</Node>
+							<Node name="error15">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_None_90_110"/>
+							</Node>
+							<Node name="error6">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverYsq_90_110Pct"/>
+							</Node>
+							<Node name="error21">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Y_80_120"/>
+							</Node>
+							<Node name="error11">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_None_70_130"/>
+							</Node>
+							<Node name="error19">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Y_70_130"/>
+							</Node>
+							<Node name="error5">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Ysq_80_120"/>
+							</Node>
+							<Node name="error12">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_None_80_120Pct"/>
+							</Node>
+							<Node name="error23">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Y_90_110"/>
+							</Node>
+							<Node name="error10">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_None_70_130Pct"/>
+							</Node>
+							<Node name="error14">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_None_90_110Pct"/>
+							</Node>
+							<Node name="error26">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CD40_4PL_1Y_70_130"/>
+							</Node>
+							<Node name="error16">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverY_60_140Pct"/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverYsq_60_140Pct"/>
+							</Node>
+							<Node name="error7">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Ysq_90_110"/>
+							</Node>
+							<Node name="error9">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_None_60_140"/>
+							</Node>
+							<Node name="error24">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CD40_4PL_None_60_140"/>
+							</Node>
+							<Node name="error28">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_CD40_4PL_None_80_120"/>
+							</Node>
+							<Node name="error29">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CD40_4PL_1Ysq_90_110"/>
+							</Node>
+							<Node name="error22">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverY_90_110Pct"/>
+							</Node>
+							<Node name="error4">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_1OverYsq_80_120Pct"/>
+							</Node>
+							<Node name="error1">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_B7_H1_5PL_1Ysq_60_140"/>
+							</Node>
+							<Node name="error27">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CD40_4PL_None_80_120"/>
+							</Node>
+							<Node name="error25">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : CurveData_CD40_4PL_None_60_140"/>
+							</Node>
+							<Node name="error8">
+								<Prp name="msg" type="S" value=" : IMAGE MISMATCH @ 500 : 10    Ref Image : B7_H1_5PL_None_60_140Pct"/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1510_Analytes_Curve_Plots"/>
+						<Prp name="duration" type="I" value="76594"/>
+						<Prp name="durationwithoutchildren" type="I" value="76594"/>
+						<Prp name="starttime" type="D" value="45938.6220922454"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwADUAMAAwADAAMAA0ADEALQAzADYAMAA1AC0ANABGADQANgAtAEEANQAxAEUALQA3AEIARABBAEQARQA5ADIAQgA5AEUAQgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1210_CsvFile_CRC_Calculator"/>
+						<Prp name="duration" type="I" value="17568"/>
+						<Prp name="durationwithoutchildren" type="I" value="17568"/>
+						<Prp name="starttime" type="D" value="45938.6195175231"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEMANAAxAEQAQQAwADIALQA4AEEAOABDAC0ANAAyADcAMwAtADgARAAwADAALQBDAEYANQBBADcAQwAxADgARQBEADYAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="Unable to verify a value with the property checkpoint, because the target object does not exist."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1150_About"/>
+						<Prp name="duration" type="I" value="11215"/>
+						<Prp name="durationwithoutchildren" type="I" value="11215"/>
+						<Prp name="starttime" type="D" value="45938.6193195486"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBAEQAMwA2ADEANgAwADQALQBFADcAOQA4AC0ANABEAEMARgAtADgANgAwADgALQBEADUARABCADAAMQBCADUANABBADEARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test7">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1220_Entering_Notes"/>
+						<Prp name="duration" type="I" value="31650"/>
+						<Prp name="durationwithoutchildren" type="I" value="31650"/>
+						<Prp name="starttime" type="D" value="45938.620516331"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxADYAOQA1AEIAMgA1AEEALQBCAEEANQA0AC0ANABDAEMANgAtADkANwA4ADcALQAzADcANwBDAEUAMAA1ADAAOQAyAEUANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test9">
+						<Node name="warnings">
+							<Node name="warning0">
+								<Prp name="msg" type="S" value="There may be an error (or errors) caused by test self-healing."/>
+							</Node>
+						</Node>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_Tree&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error5">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;GroupboxCurrentCurveData_PM8800&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error4">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;GroupboxConfigureCurve_PM8800&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error8">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_GridCurveData&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error7">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;GroupboxTableOptions_PM8800&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_Options&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_main&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;PM8800_CurvePlot&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error6">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;GroupboxGraphOptions_PM8800&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1500_Analyte_Results_Curve_Configuration"/>
+						<Prp name="duration" type="I" value="29274"/>
+						<Prp name="durationwithoutchildren" type="I" value="29274"/>
+						<Prp name="starttime" type="D" value="45938.6217534028"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGADAAMQAyADAAOABFADcALQAxADQARQA3AC0ANAA5ADcAOQAtADkAOAA5ADcALQBDADMAQwA5AEEAMQAwADcAMgAzADcARQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test11">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MIP_3alpha_before&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error5">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MIP_1alpha_after&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error4">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MDC_after&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error2">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MIP_1alpha_before&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error3">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MIP_3alpha_after&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;CurveView_MDC_before&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1520_Remove_Outliers"/>
+						<Prp name="duration" type="I" value="54366"/>
+						<Prp name="durationwithoutchildren" type="I" value="54366"/>
+						<Prp name="starttime" type="D" value="45938.62297875"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADkANQA4ADEAQwAyADkALQA0ADgAMwBDAC0ANAA4AEMAMwAtAEIANgA2ADIALQAzADcARAAxAEQARAAwADUARQAzAEQAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;MainWin_vert_shareview&quot; failed. See Details for additional information."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;MainWin_horz_shareview&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="status" type="I" value="2"/>
+						<Prp name="name" type="S" value="SQA_1200_Load_CSV_Files"/>
+						<Prp name="duration" type="I" value="29318"/>
+						<Prp name="durationwithoutchildren" type="I" value="29318"/>
+						<Prp name="starttime" type="D" value="45938.6197208565"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADAAQQA0ADIAMAA4AEYALQA3AEQARgBCAC0ANAA1AEIAOQAtAEIAOQA3ADcALQBCADMAOQBFADcAMQAzADEANQBFADEANwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="name" type="S" value="SQA_1160_Main_Menu"/>
+						<Prp name="duration" type="I" value="5876"/>
+						<Prp name="durationwithoutchildren" type="I" value="5876"/>
+						<Prp name="starttime" type="D" value="45938.6194494676"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5AEUARQAxADIAOQBGADMALQA0AEQANAA3AC0ANAA2AEQANgAtAEEAQgA3ADcALQBEADAAQQA2ADIARQBBADAANQAxADMANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+					</Node>
+				</Node>
+				<Prp name="failedtests" type="I" value="8"/>
+				<Prp name="name" type="S" value="Quantist_SmokeTest"/>
+				<Prp name="duration" type="I" value="459401"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="45938.6192312384"/>
+				<Prp name="warningtests" type="I" value="0"/>
+			</Node>
+		</Node>
+		<Prp name="host" type="S" value="USSJO-3DXZNK3-D"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="key" type="S" value="{CAAF9F15-34F5-4A0C-9040-4DFE24FEB5B5}"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="user" type="S" value="duc-khac.nguyen"/>
+		<Prp name="stop" type="D" value="45938.6245510301"/>
+		<Prp name="starttime" type="D" value="45938.6192310995"/>
+		<Prp name="name" type="S" value="Quantist"/>
+		<Prp name="testname" type="S" value="Quantist_SmokeTest: Quantist_1000_SmokeTest"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="tests" type="I" value="16"/>
+		<Prp name="failedtests" type="I" value="8"/>
+	</Node>
+</Nodes>

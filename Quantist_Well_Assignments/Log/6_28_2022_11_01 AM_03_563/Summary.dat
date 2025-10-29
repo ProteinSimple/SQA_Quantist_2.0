@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;WA_2Plates_CurvePlot&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="17125"/>
+						<Prp name="name" type="S" value="WA_2_Plates_Layout"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADEAMQA2ADkAQgA1ADYALQA1ADIAQwAyAC0ANABCADUARQAtAEEAQgAzADIALQA4ADMARgA4ADkANgBCAEIAMgA5ADIAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44740.459339294"/>
+						<Prp name="durationwithoutchildren" type="I" value="17125"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors">
+							<Node name="error1">
+								<Prp name="msg" type="S" value="The test run has stopped because your test project is configured to stop on errors."/>
+							</Node>
+							<Node name="error0">
+								<Prp name="msg" type="S" value="The region checkpoint &quot;WA_buttons&quot; failed. See Details for additional information."/>
+							</Node>
+						</Node>
+						<Prp name="duration" type="I" value="23321"/>
+						<Prp name="name" type="S" value="WA_Layout_Basis"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA0ADYAMQA1AEUANgA3ADAALQAzADYANwAzAC0ANAA2ADIANgAtADkAMgBCAEIALQA5AEIANgA5ADEAOABCAEUANAA5AEUAMAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="starttime" type="D" value="44740.459069375"/>
+						<Prp name="durationwithoutchildren" type="I" value="23321"/>
+						<Prp name="status" type="I" value="2"/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="Quantist_Well_Assignments"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="40446"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44740.459069375"/>
+				<Prp name="failedtests" type="I" value="2"/>
+			</Node>
+		</Node>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="user" type="S" value="duc-khac.nguyen"/>
+		<Prp name="executionstatus" type="I" value="2"/>
+		<Prp name="key" type="S" value="{20D846F6-E0D9-4043-BA5C-01243F2ED409}"/>
+		<Prp name="tests" type="I" value="2"/>
+		<Prp name="stop" type="D" value="44740.4595384259"/>
+		<Prp name="testname" type="S" value="Quantist_Well_Assignments: Quantist_SQA_Well_Assignments"/>
+		<Prp name="name" type="S" value="Quantist"/>
+		<Prp name="failedtests" type="I" value="2"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="starttime" type="D" value="44740.4590690162"/>
+		<Prp name="host" type="S" value="USSJO-3DXZNK3-D"/>
+	</Node>
+</Nodes>

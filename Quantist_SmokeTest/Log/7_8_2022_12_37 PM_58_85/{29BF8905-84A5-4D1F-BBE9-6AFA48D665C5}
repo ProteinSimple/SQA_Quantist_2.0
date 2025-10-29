@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="message 2">
+			<Prp name="id" type="I" value="2"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="32"/>
+			<Prp name="message" type="S" value="No more run file from Run Control View"/>
+			<Prp name="date" type="D" value="44750.5289739583"/>
+		</Node>
+		<Node name="n-1">
+			<Node name="data">
+				<Prp name="val12" type="D" value="4"/>
+				<Prp name="val6" type="D" value="13"/>
+				<Prp name="val4" type="D" value="4"/>
+				<Prp name="val10" type="D" value="5"/>
+				<Prp name="val15" type="D" value="14"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val2" type="D" value="7"/>
+				<Prp name="val8" type="D" value="5"/>
+				<Prp name="val5" type="D" value="7"/>
+				<Prp name="val9" type="D" value="5"/>
+				<Prp name="val3" type="D" value="3"/>
+				<Prp name="val1" type="D" value="4"/>
+				<Prp name="val7" type="D" value="7"/>
+				<Prp name="val13" type="D" value="18"/>
+				<Prp name="val14" type="D" value="18"/>
+				<Prp name="val11" type="D" value="4"/>
+			</Node>
+			<Prp name="description" type="S" value="Percentage of non-idle processor time."/>
+			<Prp name="id" type="S" value="{75FED2EA-D9D8-4D47-AADE-DFAF34C5C6EB}"/>
+			<Prp name="name" type="S" value="% CPU [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="0"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="4106722"/>
+			<Prp name="datatype" type="I" value="1"/>
+		</Node>
+		<Node name="message 1">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="268"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.RunTreeView.TreeViewItem.DeleteButton"/>
+					<Prp name="line #" type="I" value="17"/>
+					<Prp name="object right" type="I" value="276"/>
+					<Prp name="object bottom" type="I" value="165"/>
+					<Prp name="object left" type="I" value="260"/>
+					<Prp name="click point y" type="I" value="157"/>
+					<Prp name="object top" type="I" value="149"/>
+					<Prp name="image file name" type="S" value="visImage170.png"/>
+					<Prp name="datetime" type="D" value="44750.8205821991"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="kind" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="1"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.RunTreeView.TreeViewItem.DeleteButton&#xA;(Sys.Process(&quot;Quantist&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;RunMenuView&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;RunTreeView&quot;).WPFObject(&quot;TreeViewItem&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;❌&quot;, 1))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="17"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="date" type="D" value="44750.5289186806"/>
+		</Node>
+		<Node name="message 3">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="41"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.MainWindowView.LoadButton"/>
+					<Prp name="line #" type="I" value="6"/>
+					<Prp name="object right" type="I" value="67"/>
+					<Prp name="object bottom" type="I" value="125"/>
+					<Prp name="object left" type="I" value="16"/>
+					<Prp name="click point y" type="I" value="112"/>
+					<Prp name="object top" type="I" value="99"/>
+					<Prp name="image file name" type="S" value="visImage171.png"/>
+					<Prp name="datetime" type="D" value="44750.8206535301"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="kind" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="3"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="Tested object:&#xA;Aliases.Quantist.MainWindowView.LoadButton&#xA;(Sys.Process(&quot;Quantist&quot;).WPFObject(&quot;HwndSource: MainWindow&quot;).WPFObject(&quot;MainWindow&quot;).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Grid&quot;, &quot;&quot;, 1).WPFObject(&quot;Border&quot;, &quot;&quot;, 1).WPFObject(&quot;ContentPresenter&quot;, &quot;&quot;, 1).WPFObject(&quot;RunMenuView&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;DockPanel&quot;, &quot;&quot;, 1).WPFObject(&quot;Button&quot;, &quot;&quot;, 3))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="6"/>
+			<Prp name="message" type="S" value="The button was clicked with the left mouse button."/>
+			<Prp name="date" type="D" value="44750.528989919"/>
+		</Node>
+		<Node name="message 14">
+			<Prp name="id" type="I" value="14"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture58.png;Picture59.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{2D23189B-0C5B-4CDD-8885-B84C12FE4C4A}&quot;&gt; Click here to show or modify data of the checkpoint &quot;GroupboxTableOptions_PM8800&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="30"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;GroupboxTableOptions_PM8800&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290721991"/>
+		</Node>
+		<Node name="message 12">
+			<Prp name="id" type="I" value="12"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture54.png;Picture55.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{C2D5D82A-8BB5-4290-BCCF-567A822C867B}&quot;&gt; Click here to show or modify data of the checkpoint &quot;GroupboxCurrentCurveData_PM8800&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="28"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;GroupboxCurrentCurveData_PM8800&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290679051"/>
+		</Node>
+		<Node name="message 8">
+			<Prp name="id" type="I" value="8"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture47.png;Picture48.png;Picture49.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{EDEE7247-C333-4E34-9F18-772ED40C2304}&quot;&gt; Click here to show or modify data of the checkpoint &quot;PM8800_main&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;The images are not equal.&lt;br&gt;&lt;br&gt;The pixel difference is 1 %.&lt;br&gt;The color difference is 72 %.&lt;br&gt;&lt;br&gt;There is a slight difference between the compared images. If you want the checkpoint to report them as equal, set its Pixel Tolerance parameter to 4288.&lt;br&gt;&lt;br&gt;&lt;a href=&quot;checkpointupdate://1|{A3C3CAF2-8A82-4853-B117-9BA139E13DCA}|{1980E724-E6B9-449A-8112-F3A23F18711B}|PM8800_main|CheckpointData\checkpoint_7_8_2022_3.bmp|&quot;&gt;Update the &quot;PM8800_main&quot; checkpoint data.&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="stack beginning" type="I" value="0"/>
+			<Prp name="type" type="I" value="3"/>
+			<Prp name="stack end" type="I" value="0"/>
+			<Prp name="line no" type="I" value="23"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;PM8800_main&quot; failed. See Details for additional information."/>
+			<Prp name="date" type="D" value="44750.5290600463"/>
+		</Node>
+		<Node name="n-3">
+			<Node name="data">
+				<Prp name="val12" type="D" value="1"/>
+				<Prp name="val6" type="D" value="1"/>
+				<Prp name="val4" type="D" value="0"/>
+				<Prp name="val10" type="D" value="1"/>
+				<Prp name="val15" type="D" value="1"/>
+				<Prp name="val0" type="D" value="0"/>
+				<Prp name="val2" type="D" value="0"/>
+				<Prp name="val8" type="D" value="1"/>
+				<Prp name="val5" type="D" value="0"/>
+				<Prp name="val9" type="D" value="1"/>
+				<Prp name="val3" type="D" value="0"/>
+				<Prp name="val1" type="D" value="1"/>
+				<Prp name="val7" type="D" value="1"/>
+				<Prp name="val13" type="D" value="10"/>
+				<Prp name="val14" type="D" value="10"/>
+				<Prp name="val11" type="D" value="1"/>
+			</Node>
+			<Prp name="description" type="S" value="Percentage of time the drives were busy."/>
+			<Prp name="id" type="S" value="{63C12B6D-EB29-4857-90D7-F9F9DA0BB62F}"/>
+			<Prp name="name" type="S" value="% Disk Time [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="3"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="6577528"/>
+			<Prp name="datatype" type="I" value="1"/>
+		</Node>
+		<Node name="message 15">
+			<Prp name="id" type="I" value="15"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture60.png;Picture61.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{45C41748-A37E-405B-8240-657469475EF9}&quot;&gt; Click here to show or modify data of the checkpoint &quot;PM8800_GridCurveData&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="31"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;PM8800_GridCurveData&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290767708"/>
+		</Node>
+		<Node name="n-0">
+			<Node name="data">
+				<Prp name="val12" type="D" value="44750.5290679051"/>
+				<Prp name="val6" type="D" value="44750.5290348727"/>
+				<Prp name="val4" type="D" value="44750.5290140625"/>
+				<Prp name="val10" type="D" value="44750.5290629051"/>
+				<Prp name="val15" type="D" value="44750.5290767708"/>
+				<Prp name="val0" type="D" value="44750.5289148958"/>
+				<Prp name="val2" type="D" value="44750.5289739583"/>
+				<Prp name="val8" type="D" value="44750.5290600463"/>
+				<Prp name="val5" type="D" value="44750.5290298843"/>
+				<Prp name="val9" type="D" value="44750.5290618171"/>
+				<Prp name="val3" type="D" value="44750.528989919"/>
+				<Prp name="val1" type="D" value="44750.5289186806"/>
+				<Prp name="val7" type="D" value="44750.5290381713"/>
+				<Prp name="val13" type="D" value="44750.5290700579"/>
+				<Prp name="val14" type="D" value="44750.5290721991"/>
+				<Prp name="val11" type="D" value="44750.5290654861"/>
+			</Node>
+			<Prp name="description" type="S" value=""/>
+			<Prp name="id" type="S" value="{5C4EF7C7-C2C9-43CB-85AE-66E5E6E35778}"/>
+			<Prp name="name" type="S" value="Date&amp;Time"/>
+			<Prp name="valuetype" type="I" value="2"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="0"/>
+			<Prp name="datatype" type="I" value="2"/>
+		</Node>
+		<Node name="message 6">
+			<Prp name="id" type="I" value="6"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture43.png;Picture44.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{12D981E2-A986-4F02-A23C-DA1A33F1269D}&quot;&gt; Click here to show or modify data of the checkpoint &quot;PM8800_CurvePlot&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="21"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;PM8800_CurvePlot&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290348727"/>
+		</Node>
+		<Node name="message 11">
+			<Prp name="id" type="I" value="11"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture52.png;Picture53.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{4B807DDB-1E3D-45E0-B589-C127F032716C}&quot;&gt; Click here to show or modify data of the checkpoint &quot;GroupboxConfigureCurve_PM8800&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="27"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;GroupboxConfigureCurve_PM8800&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290654861"/>
+		</Node>
+		<Node name="stack"/>
+		<Node name="message 13">
+			<Prp name="id" type="I" value="13"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture56.png;Picture57.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{A06566FE-9441-4145-8500-9243DE915517}&quot;&gt; Click here to show or modify data of the checkpoint &quot;GroupboxGraphOptions_PM8800&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="29"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;GroupboxGraphOptions_PM8800&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290700579"/>
+		</Node>
+		<Node name="message 4">
+			<Node name="visualizer">
+				<Node name="current">
+					<Prp name="rect color" type="I" value="255"/>
+					<Prp name="version" type="I" value="2"/>
+					<Prp name="storage file name" type="S" value=""/>
+					<Prp name="click point x" type="I" value="-1"/>
+					<Prp name="object name" type="S" value="Aliases.Quantist.dlgOpen"/>
+					<Prp name="line #" type="I" value="11"/>
+					<Prp name="object right" type="I" value="1259"/>
+					<Prp name="object bottom" type="I" value="736"/>
+					<Prp name="object left" type="I" value="0"/>
+					<Prp name="click point y" type="I" value="-1"/>
+					<Prp name="object top" type="I" value="0"/>
+					<Prp name="image file name" type="S" value="visImage173.png"/>
+					<Prp name="datetime" type="D" value="44750.8206728009"/>
+					<Prp name="need update" type="B" value="0"/>
+					<Prp name="signature" type="S" value="{87B03792-E854-4F5D-9F33-165F1F874209}"/>
+					<Prp name="kind" type="I" value="0"/>
+				</Node>
+			</Node>
+			<Prp name="id" type="I" value="4"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="1"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="The file 'C:\Quantist\SQA-Quantist\Test_Data\SampleQuantistFiles\PM8800.csv' was opened as a 'Supported Files (*csv;*.quantist)' file.&#xA;&#xA;&#xA;Tested object:&#xA;Aliases.Quantist.dlgOpen&#xA;(Sys.Process(&quot;Quantist&quot;).Window(&quot;#32770&quot;, &quot;Open&quot;, 1))"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="1"/>
+			<Prp name="line no" type="I" value="11"/>
+			<Prp name="message" type="S" value="The file 'PM8800.csv' was selected in the Open dialog."/>
+			<Prp name="date" type="D" value="44750.5290140625"/>
+		</Node>
+		<Node name="n-5">
+			<Node name="data">
+				<Prp name="val12" type="D" value="48"/>
+				<Prp name="val6" type="D" value="49"/>
+				<Prp name="val4" type="D" value="48"/>
+				<Prp name="val10" type="D" value="49"/>
+				<Prp name="val15" type="D" value="49"/>
+				<Prp name="val0" type="D" value="48"/>
+				<Prp name="val2" type="D" value="48"/>
+				<Prp name="val8" type="D" value="49"/>
+				<Prp name="val5" type="D" value="48"/>
+				<Prp name="val9" type="D" value="49"/>
+				<Prp name="val3" type="D" value="48"/>
+				<Prp name="val1" type="D" value="48"/>
+				<Prp name="val7" type="D" value="48"/>
+				<Prp name="val13" type="D" value="48"/>
+				<Prp name="val14" type="D" value="48"/>
+				<Prp name="val11" type="D" value="48"/>
+			</Node>
+			<Prp name="description" type="S" value="Memory usage in percent."/>
+			<Prp name="id" type="S" value="{793344E6-C83C-4D4A-A169-D86E25E4A708}"/>
+			<Prp name="name" type="S" value="% Memory [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="1"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="12274561"/>
+			<Prp name="datatype" type="I" value="1"/>
+		</Node>
+		<Node name="message 7">
+			<Prp name="id" type="I" value="7"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture45.png;Picture46.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{6EB6C390-C9E1-4D1F-B76C-0DB2202627AB}&quot;&gt; Click here to show or modify data of the checkpoint &quot;PM8800_Options&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="22"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;PM8800_Options&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290381713"/>
+		</Node>
+		<Node name="units">
+			<Prp name="unit 1" type="S" value="{1E8BB097-D155-4D5E-8E4E-46803FC70B84}"/>
+			<Prp name="unit 0" type="S" value="{A28FD0F7-9E69-41FC-8B7F-C9D16F08359A}"/>
+			<Prp name="unit 2" type="S" value="{9FE8B1CD-7E14-4815-8906-09AF4B9FDAB4}"/>
+		</Node>
+		<Node name="child data"/>
+		<Node name="message 9">
+			<Prp name="id" type="I" value="9"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture50.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;h3&gt;Result&lt;/h3&gt;&lt;span&gt;The property checkpoint &lt;img style = &quot;width: 14px; height: 14px; vertical-align: text-bottom; margin: 2px;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wIUBiMun01WOAAAAlZJREFUWMPdly1s20AUx/+ODCptij0FGERrKhsEbF2mTQqoWsk8JIXugAOTkRiabTAwJWvZErAGriTcUqKCkq1KBwJcpZ0KDKr5Kk0qsOShWf64+CNzFWnH7Du/3//ee773jnFdF+scBax5sGkXEscWT6yBObENTImBe4cE5ossh11Oxh4v40BoSRzLX6WxyySFgDi2qJuaObKGmXamCCp6Uj9RSKyA8d2p25m3IrtNO4osh6PqAI1Sk8ksQDc19/j2MJc4t8td9KQ+kzoJ84QDwPHtIXRTc1N5YHx36r77sf8oGf/lxddIOAICiGOL2+db5qoxT5MTs/oikJiFkOsfDQ4A9w6BbmomNQeIY4tZf7W4neqVD3j5pBaZG1lDEMcWIwJOrIGZF3z8yoBe+YhxzaCK8LM8ARPbyA2+/fQ1AIBjeYxrBoosF1jnZ3kCpmS5ANoukuBxw88q+BOEZnTy5humb7/jU/VzZjhxbDQu5Iht/3NsNfQbPRBaVBFJ8MvfF1TbNw8LN1bA841KxGhYxKpwANjc2GJiBfx8uEZn3oq8/yviX+DUk3DzjHdpeaAIKo6qg7Q9Qyp4keVws2MHPbDLydTFI2tI9cSq8DDLE7DHy0s/SBKR1e1+lhcC4thi5eyZmdTlhMORFQ4A1zu/vILkeYBj+StFUGM/DHtiFbgiqPBXw5XKsSKoeF/W0Jm3MsFp5XjtDUnkHGiUmky73M0d3i53qc0p9SDqSf1cRcQ1pWtvy2OLUaPUZGb1hZT0dyxL1Fl9IcXBU92M1n41++9vx38AoNJrUz8FYVwAAAAASUVORK5CYII=&quot;&gt;&lt;b&gt;passed&lt;/b&gt;: Aliases.Quantist.MainWin...CurvePanel.LabelAnalyte.Enabled&lt;b&gt; equals &lt;/b&gt;True.&lt;/span&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;div class=&quot;table-border full-width&quot;&gt;&lt;table class=&quot;table-borderless table-vertical&quot;&gt;&lt;tr&gt;&lt;th style=&quot;width: 16em;&quot;&gt;Object&lt;/th&gt;&lt;td&gt;&lt;a href='lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.{BB06743B-39FB-4DD3-A1F0-09D45CC50341}'&gt;Aliases.Quantist.MainWindowView.MainView.CurvePanel.LabelAnalyte&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Property&lt;/th&gt;&lt;td&gt;Enabled&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Condition&lt;/th&gt;&lt;td&gt;equals&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Actual value&lt;/th&gt;&lt;td&gt;&lt;span style=&quot;white-space: pre-wrap; &quot;&gt;True&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Expected value&lt;/th&gt;&lt;td&gt;&lt;span style=&quot;white-space: pre-wrap; &quot;&gt;True&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="25"/>
+			<Prp name="message" type="S" value="The property checkpoint passed: Enabled equals True."/>
+			<Prp name="date" type="D" value="44750.5290618171"/>
+		</Node>
+		<Node name="message 0">
+			<Prp name="id" type="I" value="0"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="0"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value=""/>
+			<Prp name="as html" type="B" value="0"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value=""/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="0"/>
+			<Prp name="line no" type="I" value="14"/>
+			<Prp name="message" type="S" value="Total Number of loading items: 1"/>
+			<Prp name="date" type="D" value="44750.5288677083"/>
+		</Node>
+		<Node name="n-4">
+			<Node name="data">
+				<Prp name="val12" type="D" value="2168612"/>
+				<Prp name="val6" type="D" value="2164072"/>
+				<Prp name="val4" type="D" value="2213324"/>
+				<Prp name="val10" type="D" value="2147372"/>
+				<Prp name="val15" type="D" value="2151452"/>
+				<Prp name="val0" type="D" value="2213444"/>
+				<Prp name="val2" type="D" value="2220208"/>
+				<Prp name="val8" type="D" value="2147372"/>
+				<Prp name="val5" type="D" value="2183016"/>
+				<Prp name="val9" type="D" value="2147372"/>
+				<Prp name="val3" type="D" value="2204952"/>
+				<Prp name="val1" type="D" value="2212380"/>
+				<Prp name="val7" type="D" value="2172108"/>
+				<Prp name="val13" type="D" value="2171496"/>
+				<Prp name="val14" type="D" value="2171496"/>
+				<Prp name="val11" type="D" value="2168612"/>
+			</Node>
+			<Prp name="description" type="S" value="Available KBytes is the amount of physical memory, in Kilobytes, immediately available for allocation to a process or for system use. It is equal to the sum of memory assigned to the standby (cached), free and zero page lists."/>
+			<Prp name="id" type="S" value="{65E9F74A-3CB1-4B09-A4D8-6CA0D347A7D2}"/>
+			<Prp name="name" type="S" value="Available KBytes [localhost]"/>
+			<Prp name="valuetype" type="I" value="1"/>
+			<Prp name="countertype" type="I" value="4"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="14288002"/>
+			<Prp name="datatype" type="I" value="1"/>
+		</Node>
+		<Node name="message 10">
+			<Prp name="id" type="I" value="10"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture51.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;h3&gt;Result&lt;/h3&gt;&lt;span&gt;The property checkpoint &lt;img style = &quot;width: 14px; height: 14px; vertical-align: text-bottom; margin: 2px;&quot; src=&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wIUBiMun01WOAAAAlZJREFUWMPdly1s20AUx/+ODCptij0FGERrKhsEbF2mTQqoWsk8JIXugAOTkRiabTAwJWvZErAGriTcUqKCkq1KBwJcpZ0KDKr5Kk0qsOShWf64+CNzFWnH7Du/3//ee773jnFdF+scBax5sGkXEscWT6yBObENTImBe4cE5ossh11Oxh4v40BoSRzLX6WxyySFgDi2qJuaObKGmXamCCp6Uj9RSKyA8d2p25m3IrtNO4osh6PqAI1Sk8ksQDc19/j2MJc4t8td9KQ+kzoJ84QDwPHtIXRTc1N5YHx36r77sf8oGf/lxddIOAICiGOL2+db5qoxT5MTs/oikJiFkOsfDQ4A9w6BbmomNQeIY4tZf7W4neqVD3j5pBaZG1lDEMcWIwJOrIGZF3z8yoBe+YhxzaCK8LM8ARPbyA2+/fQ1AIBjeYxrBoosF1jnZ3kCpmS5ANoukuBxw88q+BOEZnTy5humb7/jU/VzZjhxbDQu5Iht/3NsNfQbPRBaVBFJ8MvfF1TbNw8LN1bA841KxGhYxKpwANjc2GJiBfx8uEZn3oq8/yviX+DUk3DzjHdpeaAIKo6qg7Q9Qyp4keVws2MHPbDLydTFI2tI9cSq8DDLE7DHy0s/SBKR1e1+lhcC4thi5eyZmdTlhMORFQ4A1zu/vILkeYBj+StFUGM/DHtiFbgiqPBXw5XKsSKoeF/W0Jm3MsFp5XjtDUnkHGiUmky73M0d3i53qc0p9SDqSf1cRcQ1pWtvy2OLUaPUZGb1hZT0dyxL1Fl9IcXBU92M1n41++9vx38AoNJrUz8FYVwAAAAASUVORK5CYII=&quot;&gt;&lt;b&gt;passed&lt;/b&gt;: Aliases.Quantist.MainWin...CurvePanel.LabelAnalyte.WPFControlText&lt;b&gt; equals (case-sensitive) &lt;/b&gt;&quot;Analyte:&quot;.&lt;/span&gt;&lt;h3&gt;Details&lt;/h3&gt;&lt;div class=&quot;table-border full-width&quot;&gt;&lt;table class=&quot;table-borderless table-vertical&quot;&gt;&lt;tr&gt;&lt;th style=&quot;width: 16em;&quot;&gt;Object&lt;/th&gt;&lt;td&gt;&lt;a href='lnamemapping://{2BEB5543-52CE-4385-9632-FFDF41AAE28B}.{BB06743B-39FB-4DD3-A1F0-09D45CC50341}'&gt;Aliases.Quantist.MainWindowView.MainView.CurvePanel.LabelAnalyte&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Property&lt;/th&gt;&lt;td&gt;WPFControlText&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Condition&lt;/th&gt;&lt;td&gt;equals (case-sensitive)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Actual value&lt;/th&gt;&lt;td&gt;&lt;span style=&quot;white-space: pre-wrap; &quot;&gt;&quot;Analyte:&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th&gt;Expected value&lt;/th&gt;&lt;td&gt;&lt;span style=&quot;white-space: pre-wrap; &quot;&gt;&quot;Analyte:&quot;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="26"/>
+			<Prp name="message" type="S" value="The property checkpoint passed: WPFControlText equals (case-sensitive) &quot;Analyte:&quot;."/>
+			<Prp name="date" type="D" value="44750.5290629051"/>
+		</Node>
+		<Node name="n-2">
+			<Node name="data">
+				<Prp name="val12" type="I" value="6814"/>
+				<Prp name="val6" type="I" value="6826"/>
+				<Prp name="val4" type="I" value="6775"/>
+				<Prp name="val10" type="I" value="6836"/>
+				<Prp name="val15" type="I" value="6835"/>
+				<Prp name="val0" type="I" value="6774"/>
+				<Prp name="val2" type="I" value="6773"/>
+				<Prp name="val8" type="I" value="6836"/>
+				<Prp name="val5" type="I" value="6806"/>
+				<Prp name="val9" type="I" value="6836"/>
+				<Prp name="val3" type="I" value="6785"/>
+				<Prp name="val1" type="I" value="6779"/>
+				<Prp name="val7" type="I" value="6814"/>
+				<Prp name="val13" type="I" value="6816"/>
+				<Prp name="val14" type="I" value="6816"/>
+				<Prp name="val11" type="I" value="6814"/>
+			</Node>
+			<Prp name="description" type="S" value="Memory usage in kilobytes."/>
+			<Prp name="id" type="S" value="{40614808-A9F6-47BC-A9E2-A3894CD5B389}"/>
+			<Prp name="name" type="S" value="Memory (MB) [localhost]"/>
+			<Prp name="valuetype" type="I" value="0"/>
+			<Prp name="countertype" type="I" value="2"/>
+			<Prp name="length" type="I" value="16"/>
+			<Prp name="color" type="I" value="14544240"/>
+			<Prp name="datatype" type="I" value="0"/>
+		</Node>
+		<Node name="message 5">
+			<Prp name="id" type="I" value="5"/>
+			<Prp name="child index" type="I" value="-1"/>
+			<Prp name="owner id" type="I" value="-1"/>
+			<Prp name="unit id" type="I" value="2"/>
+			<Prp name="pictype" type="I" value="0"/>
+			<Prp name="picture" type="S" value="Picture41.png;Picture42.png"/>
+			<Prp name="as html" type="B" value="-1"/>
+			<Prp name="priority" type="I" value="300"/>
+			<Prp name="remarks" type="S" value="&lt;html&gt;&lt;body&gt;&lt;a href=&quot;projectnode://{038FAD95-0651-422C-8FDE-C63A4C8B9BFA}&quot;&gt; Click here to show or modify data of the checkpoint &quot;PM8800_Tree&quot;. &lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;"/>
+			<Prp name="link" type="S" value=""/>
+			<Prp name="type" type="I" value="7"/>
+			<Prp name="line no" type="I" value="20"/>
+			<Prp name="message" type="S" value="The region checkpoint &quot;PM8800_Tree&quot; passed."/>
+			<Prp name="date" type="D" value="44750.5290298843"/>
+		</Node>
+		<Node name="item 0">
+			<Prp name="stacktext" type="S" value="Analyte_Results_Curve_Configuration_View"/>
+			<Prp name="line no" type="I" value="23"/>
+			<Prp name="unit id" type="I" value="2"/>
+		</Node>
+		<Prp name="status" type="I" value="2"/>
+		<Prp name="perfcounterslength" type="I" value="6"/>
+	</Node>
+</Nodes>

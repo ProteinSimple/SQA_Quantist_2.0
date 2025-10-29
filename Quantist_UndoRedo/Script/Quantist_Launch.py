@@ -1,0 +1,22 @@
+﻿def Launch():
+  
+  q = Sys.WaitProcess("Quantist", 2000)
+  if q.Exists:
+    q.Terminate()
+
+  try:
+    TestedApps.Quantist.Run(1, True)
+  
+  except ValueError as Error:
+    Log.Warning("Can not Launch Quantist {Error}")
+        
+  except OSError as err:
+    print("OS error: {0}".format(err))
+    
+  except BaseException as err:
+    print(f"Unexpected {err=}, {type(err)=}")
+    raise
+    
+    
+
+

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row1">
+				<Prp name="name" type="S" value="SQA_2100_CC_Configure_Curve [Script\CC_Configure_Curve - CC_Configuration]"/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="details" type="S" value="{5A239440-6A26-45CF-9B9C-E9C93655098A}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.7628031019"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7628903819"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row5">
+				<Prp name="name" type="S" value="SQA_2400_CC_Remove_Outliers_Current_Curve [Script\CC_Remove_Outliers - CC_Remove_Outliers_Current]"/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="details" type="S" value="{501660E6-C37A-464A-8CD0-BF7EEB7CD95C}"/>
+				<Prp name="status" type="I" value="2"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.7644914236"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7646405324"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row2">
+				<Prp name="name" type="S" value="SQA_2200_CC_Current_Data [Script\CC_Current_Data - CC_Current_Data]"/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="details" type="S" value="{B7C5E935-99CB-463F-B080-7650C267D380}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.7628904167"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7630214583"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row4">
+				<Prp name="name" type="S" value="SQA_2350_CC_4PL [Script\CC_5PL_4PL - Calculate_netMFI_4PL]"/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="details" type="S" value="{6C5BB430-7FC7-4E83-9653-D810452C8438}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.764302037"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7644913773"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row3">
+				<Prp name="name" type="S" value="SQA_2300_CC_5PL [Script\CC_5PL_4PL - Calculate_netMFI_5PL]"/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="details" type="S" value="{8E9B635B-B31B-47D1-B9D2-3FAE6419C9F8}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.7630215278"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7643019792"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+			<Node name="row0">
+				<Prp name="name" type="S" value="SQA_2000_CC_Loading_Curve_File [Script\CC_Loading_Curve_Files - Launch]"/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="details" type="S" value="{6D8DDECD-7CCD-484B-AA32-6BA1D205F9A6}"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="start time" type="D" value="44589.7626749421"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="end time" type="D" value="44589.7628030093"/>
+				<Prp name="extended message" type="S" value=""/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

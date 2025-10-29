@@ -1,0 +1,70 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def MA_Curve_Data():
+  
+  mainWindowView = Aliases.Quantist.MainWindowView  
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView
+  Xbutton = treeView.TreeViewItem.ButtonMA_Curve_Data
+  
+  flag = True
+  if (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)
+  
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleDataFolder, "PM8800.csv")
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  
+  hwndSource = Aliases.Quantist.MainWindowView
+  main = hwndSource.MainView
+  groupBox = main.CurvePanel #.ConfigureCurve
+  
+  #Aliases.Quantist.MainWindowView.MainView.CurMA_All_Curve_DatavePanel.CurveFitBox
+
+  groupBox.CurveFitBox.ClickItem("FivePL")
+  groupBox.Btn_CopyToAll_CurveFit.ClickButton()
+  groupBox.CurveWeightingBox.ClickItem("OneOverY")
+  groupBox.Btn_CopyToAll_CurveWeighting.ClickButton()
+  groupBox.RecoverRangeBox.ClickItem("From90To110")
+  groupBox.ConcCVLimBox.ClickItem("LessThanOrEqualTo5Percent")
+  groupBox.Btn_CopyToAll_RecoveryRange.ClickButton()
+  
+  hwndSource.RunTreeView.ClickItem("|[0]|[1]")
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.MA_CurveData_All_5PL_1OverY.Check(Aliases.Quantist.MainWindowView.MainView.MA_Panel, False, False, 21869, 17)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  border = Aliases.Quantist.MainWindowView.MainView
+  border.GridSplitter.Drag(0, 617, -1151, -16)
+  Regions.Expand_Panel_top.Check(Aliases.Quantist.MainWindowView.MainView.MA_Panel)
+          
+  border = Aliases.Quantist.MainWindowView.MainView
+  border.GridSplitter.Drag(0, 561, 1184, 76)
+  treeListView = border.CurveData.All_Curve_Data
+  treeListView.GridColumnHeader.Click(48, 6)
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_MA_Sorting_B7_H1.Check(Aliases.Quantist.MainWindowView.MainView)
+  gridColumnHeader = treeListView.GridColumnHeader2
+  gridColumnHeader.Click(61, 14)
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  gridColumnHeader.Click(61, 14)
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_MA_Sorting_CD40.Check(Aliases.Quantist.MainWindowView.MainView)
+  
+  border.MA_Panel.SelectedField.ClickItem("ExpectedConcentration")
+  treeListView.GridColumnHeader3.Click(35, 10)
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_MA_Sorting_EGF.Check(Aliases.Quantist.MainWindowView.MainView)
+  
+  textBlock = treeListView.PART_Content
+  OCR.Recognize(textBlock).BlockByText("Eotaxin").Click()
+  OCR.Recognize(textBlock).BlockByText("Eotaxin").Click()
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Regions.PM8800_MA_Sorting_Eotaxin.Check(Aliases.Quantist.MainWindowView.MainView)

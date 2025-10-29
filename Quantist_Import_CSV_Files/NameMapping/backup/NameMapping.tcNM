@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{9BA55ED8-D3E3-4683-AD62-4C1F7A2F405B}">
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="Quantist_Wpf" Key="{4E31B521-A9F9-4AB2-B50D-B6C07E42D9E4}">
+						<Properties>
+							<Property Name="ProcessName">
+								<Value Value="Quantist.Wpf" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="HwndSource_MainWindowView" Key="{09F4EB48-DC10-417A-9991-36D90E054A0F}">
+								<Image FileName="-1029961866" Left="0" Top="0" Right="1501" Bottom="878" />
+								<Properties>
+									<Property Name="RootVisual.ClrClassName">
+										<Value Value="MainWindowView" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Quantist" />
+									</Property>
+								</Properties>
+								<Children>
+									<Child Name="MainWindowView" Key="{C5159E1B-C1CB-4943-8C5C-3E4975E8A6E7}">
+										<Image FileName="-1029961866" Left="8" Top="31" Right="1510" Bottom="910" />
+										<Properties>
+											<Property Name="ClrFullClassName">
+												<Value Value="Quantist.Wpf.Views.MainWindowView" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="Menu" Key="{DE0986DF-7466-47C3-9285-8E4F6B0FC0D1}" ExtendedFind="True">
+												<Image FileName="-1029961866" Left="15" Top="38" Right="1487" Bottom="67" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.Menu" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="Button" Key="{A9F22C9E-AD8C-4AF8-A2E4-A8684C320F23}" ExtendedFind="True">
+												<Image FileName="-1934826131" Left="16" Top="101" Right="67" Bottom="127" />
+												<TypeInfo Item0="{8D9EDAEC-0EC8-4F7B-B733-64671774E440}" />
+												<Properties>
+													<Property Name="ClrFullClassName">
+														<Value Value="System.Windows.Controls.Button" />
+													</Property>
+													<Property Name="WPFControlText">
+														<Value Value="📂" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="dlgOpen" Key="{D76FAC99-03E2-402D-9544-1852528003AA}">
+								<Image FileName="536788655" Left="0" Top="0" Right="819" Bottom="524" />
+								<Properties>
+									<Property Name="WndClass">
+										<Value Value="#32770" />
+									</Property>
+									<Property Name="WndCaption">
+										<Value Value="Open" />
+									</Property>
+								</Properties>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="Quantist_Wpf" Owner="{4E31B521-A9F9-4AB2-B50D-B6C07E42D9E4}">
+			<Child Name="HwndSource_MainWindowView" Owner="{09F4EB48-DC10-417A-9991-36D90E054A0F}">
+				<Child Name="MainWindowView" Owner="{C5159E1B-C1CB-4943-8C5C-3E4975E8A6E7}">
+					<Child Name="Menu" Owner="{DE0986DF-7466-47C3-9285-8E4F6B0FC0D1}" />
+					<Child Name="Button" Owner="{A9F22C9E-AD8C-4AF8-A2E4-A8684C320F23}" />
+				</Child>
+			</Child>
+			<Child Name="dlgOpen" Owner="{D76FAC99-03E2-402D-9544-1852528003AA}" />
+		</Child>
+	</LogicalNodes>
+</Root>

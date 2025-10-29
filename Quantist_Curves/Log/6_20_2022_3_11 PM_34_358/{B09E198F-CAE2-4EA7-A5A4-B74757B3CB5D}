@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="log data">
+			<Node name="row6">
+				<Prp name="end time" type="D" value="44732.637310463"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2410_CC_Remove_Outliers_All [Script\CC_Remove_Outliers - CC_Remove_Outliers_All]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{FB6A6854-9A0B-4503-A257-717F01CD73F8}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="6"/>
+				<Prp name="start time" type="D" value="44732.6367537037"/>
+			</Node>
+			<Node name="row2">
+				<Prp name="end time" type="D" value="44732.6337172106"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2200_CC_Current_Data [Script\CC_Current_Data - CC_Current_Data]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{B0E4F6EB-20DD-41FE-8317-30B75A389273}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="2"/>
+				<Prp name="start time" type="D" value="44732.6334601273"/>
+			</Node>
+			<Node name="row4">
+				<Prp name="end time" type="D" value="44732.6365985995"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2350_CC_4PL [Script\CC_5PL_4PL - Calculate_netMFI_4PL]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{F3A42375-8E90-4D2E-9A42-9895D04FB093}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="4"/>
+				<Prp name="start time" type="D" value="44732.6355460532"/>
+			</Node>
+			<Node name="row5">
+				<Prp name="end time" type="D" value="44732.6367536343"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2400_CC_Remove_Outliers_Current_Curve [Script\CC_Remove_Outliers - CC_Remove_Outliers_Current]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{3D35A513-F089-4094-97A9-31AA6492725D}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="5"/>
+				<Prp name="start time" type="D" value="44732.6365986458"/>
+			</Node>
+			<Node name="row14">
+				<Prp name="end time" type="D" value="44732.6386070139"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2720_CC_Copy_All_Recovery_Range [Script\CC_Copy_All - Copy_All_Recovery_Range]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{3B2E4F71-D570-4619-BA0B-5ADC0493FF02}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="14"/>
+				<Prp name="start time" type="D" value="44732.6385818982"/>
+			</Node>
+			<Node name="row8">
+				<Prp name="end time" type="D" value="44732.6376742361"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2660_CC_SingleAnalyte_Table_operations [Script\CC_Table_Options - SingleAnalyte_Table_operations]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{D051D9F7-FEBD-4004-B3CE-3381EE81AEA4}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="8"/>
+				<Prp name="start time" type="D" value="44732.63754375"/>
+			</Node>
+			<Node name="row10">
+				<Prp name="end time" type="D" value="44732.6379688889"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2630_CC_Table_Copy_Row_Replicates [Script\CC_Table_Options - Copy_Rows_To_Clipboard_Replicates]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{0D40A9BE-602E-496B-A9BA-8464BD6E6E43}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="10"/>
+				<Prp name="start time" type="D" value="44732.6379008912"/>
+			</Node>
+			<Node name="row1">
+				<Prp name="end time" type="D" value="44732.6334600694"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2100_CC_Configure_Curve [Script\CC_Configure_Curve - CC_Configuration]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{1A3FBDFC-8975-4A64-9A56-022B15119C5A}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="1"/>
+				<Prp name="start time" type="D" value="44732.6331276389"/>
+			</Node>
+			<Node name="row11">
+				<Prp name="end time" type="D" value="44732.6382470833"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2640_CC_Table_Reset_Include_Standards [Script\CC_Table_Options - Reset_Included_Standards]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{B628475F-83A9-41F7-83C4-9B1203BC64EA}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="11"/>
+				<Prp name="start time" type="D" value="44732.6379689468"/>
+			</Node>
+			<Node name="row0">
+				<Prp name="end time" type="D" value="44732.633127581"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2000_CC_Loading_Curve_File [Script\CC_Loading_Curve_Files - Launch]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{CB4F242E-ABA7-42E3-9110-43459391B681}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="0"/>
+				<Prp name="start time" type="D" value="44732.6330394213"/>
+			</Node>
+			<Node name="row3">
+				<Prp name="end time" type="D" value="44732.6355459722"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2300_CC_5PL [Script\CC_5PL_4PL - Calculate_netMFI_5PL]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{77AAFA0E-7EAD-4323-A7A1-7EA210A73CA3}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="3"/>
+				<Prp name="start time" type="D" value="44732.6337172685"/>
+			</Node>
+			<Node name="row7">
+				<Prp name="end time" type="D" value="44732.6375436806"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2510_CC_Graph_Show_Unknows_Controls [Script\CC_Graph_Options - Graph_Options_Show_Unknowns_Controls]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{A33652D1-76A4-4896-AEBA-67E9378A28A5}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="7"/>
+				<Prp name="start time" type="D" value="44732.6373105208"/>
+			</Node>
+			<Node name="row13">
+				<Prp name="end time" type="D" value="44732.6385818519"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2710_CC_Copy_All_Curve_Weighting [Script\CC_Copy_All - Copy_All_Curve_Weighting]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{9040E309-38F9-4051-A115-4FB8CEDBC747}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="13"/>
+				<Prp name="start time" type="D" value="44732.6385388079"/>
+			</Node>
+			<Node name="row9">
+				<Prp name="end time" type="D" value="44732.6379008333"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2620_CC_Table_Copy_Row_Aggregate [Script\CC_Table_Options - Copy_Rows_To_Clipboard_Agg]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{659AE024-BE6E-4F71-ADA4-C26702750FAC}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="9"/>
+				<Prp name="start time" type="D" value="44732.6376743056"/>
+			</Node>
+			<Node name="row12">
+				<Prp name="end time" type="D" value="44732.63853875"/>
+				<Prp name="testdata item" type="B" value="0"/>
+				<Prp name="name" type="S" value="SQA_2700_CC_Copy_All_Curve_Fit [Script\CC_Copy_All - Copy_All_Curve_Fit]"/>
+				<Prp name="status" type="I" value="0"/>
+				<Prp name="details" type="S" value="{58C23DE3-9C43-4F31-9741-ACEF55A74BE2}"/>
+				<Prp name="ownerid" type="I" value="-1"/>
+				<Prp name="extended message" type="S" value=""/>
+				<Prp name="index" type="I" value="12"/>
+				<Prp name="start time" type="D" value="44732.6382471412"/>
+			</Node>
+		</Node>
+	</Node>
+</Nodes>

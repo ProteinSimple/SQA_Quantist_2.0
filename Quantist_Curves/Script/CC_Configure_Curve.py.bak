@@ -1,0 +1,164 @@
+﻿def CC_Configuration():
+
+  RecoverRange_CVLimit_ComboBoxes()
+  
+  config = Aliases.Quantist.MainWindowView.MainView.CurvePanel
+  Regions.PM8800_B7_H1_5PL_1Y2_80_120.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel) #, False, False, 21869, 17)
+  Regions.PM8800_B7_H1_5PL_1Y2_80_120_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData) #, False, False, 22513, 17)
+  Regions.PM8800_B7_H1_5PL_1y2_80_120_20Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+
+  config = Aliases.Quantist.MainWindowView.MainView.CurvePanel#
+  config.CurveWeightingBox.ClickItem("None")
+  Regions.PM8800_B7_H1_5PL_None_80_120.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel)#, False, False, 21869, 17)
+  Regions.PM8800_B7_H1_5PL_None_80_120_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)#, False, False, 22513, 17)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  panel = Aliases.Quantist.MainWindowView.MainView.CurvePanel
+  ConcCVLimBox = panel.ConcCVLimBox
+  ConcCVLimBox.ClickItem("LessThanOrEqualTo5Percent")
+  Regions.PM8800_B7_H1_5PL_None_80_120_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  Regions.PM8800_B7_H1_5PL_None_80_120_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)  
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Aliases.Quantist.MainWindowView.MainView.CurvePanel.RecoverRangeBox.ClickItem("From90To110")
+  Regions.PM8800_B7_H1_5PL_None_90_110_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+  Regions.PM8800_B7_H1_5PL_None_90_110_5Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_5PL_None_90_110_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  config.CurveWeightingBox.ClickItem("OneOverY")
+  Regions.PM8800_B7_H1_5PL_1Y_90_110_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)#, False, False, 21869, 17)
+  Regions.PM8800_B7_H1_5PL_1Y_90_110_5Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_5PL_1Y_90_110_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+    
+  config.CurveFitBox.ClickItem("FourPL")
+  Regions.PM8800_B7_H1_4PL_1Y_90_110_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane) #, False, False, 21869, 17)
+  Regions.PM8800_B7_H1_4PL_1Y_90_110_5Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_4PL_1Y_90_110_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  
+  config.CurveWeightingBox.ClickItem("None")
+  Regions.PM8800_B7_H1_4PL_None_90_110_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+  Regions.PM8800_B7_H1_4PL_None_90_110_5Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_4PL_None_90_110_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  
+  #PM8800_B7_H1_4PL_1Y_90_110_5Pct_CurvePlot
+  config.CurveWeightingBox.ClickItem("OneOverYSquared")
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_5Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_5Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_5Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+
+  ConcCVLimBox.ClickItem("LessThanOrEqualTo20Percent")
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_20Pct_CurvePlot.Check(Aliases.Quantist.MainWindowView.MainView.Pane)
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_20Pct_CurveData.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData)
+  Regions.PM8800_B7_H1_4PL_1Y2_90_110_20Pct_GridData.Check(Aliases.Quantist.MainWindowView.MainView.CurveData.GridData)
+  
+  
+def CC_Configuration_BK():
+  
+  config = Aliases.Quantist.MainWindowView.MainView.CurvePanel.ConfigureCurve
+  config.CurveFitBox.ClickItem("FourPL")
+  config.CurveWeightingBox.ClickItem("None")
+  config.RecoverRangeBox.ClickItem("From60To140")
+  Regions.PM8800_B7_H1_CurveData_4PL_None_60.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData, False, False, 6591, 17)
+  Regions.PM8800_B7_H1_CurveConfig_4PL_None_60.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.ConfigureCurve, False, False, 4515, 17)
+
+  ############################################  
+  config.CurveFitBox.ClickItem("FivePL")
+  config.CurveWeightingBox.ClickItem("None")
+  config.RecoverRangeBox.ClickItem("From60To140")
+  Regions.PM8800_B7_H1_CurveData_5PL_None_60.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData, False, False, 6591, 17)    
+
+  gridData = Aliases.Quantist.MainWindowView.MainView.CurveData
+  #aqObject.CheckProperty(gridData.InplaceBaseEdit, "DisplayText", cmpEqual, "88.35")
+  
+  # Verify Standard7 (both H1/H2) are out of recovery range: 60-140%
+  aqObject.CheckProperty(gridData.InplaceBaseEdit2, "DisplayText", cmpEqual, "55.13")
+  
+  # Verify Standard6 and Standard7 Concentration are < LLOQ= 192.06
+  aqObject.CheckProperty(gridData.InplaceBaseEdit5, "DisplayText", cmpEqual, "<LLOQ")
+  aqObject.CheckProperty(gridData.InplaceBaseEdit6, "DisplayText", cmpEqual, "<LLOQ")
+  aqObject.CheckProperty(gridData.InplaceBaseEdit3, "DisplayText", cmpEqual, "175.99")
+  aqObject.CheckProperty(gridData.InplaceBaseEdit4, "DisplayText", cmpEqual, "35.29")
+
+  # Verify Standard1 Concentration is > ULOQ= 46670  
+  aqObject.CheckProperty(gridData.InplaceBaseEdit7, "DisplayText", cmpEqual, "46743.60") #std 1 Conc
+  aqObject.CheckProperty(gridData.GridData.InplaceBaseEdit5, "DisplayText", cmpEqual, ">ULOQ")   #std 1 status
+
+  ############################################
+  config.CurveFitBox.ClickItem("FivePL")
+  config.CurveWeightingBox.ClickItem("None")
+  config.RecoverRangeBox.ClickItem("From90To110")
+  Regions.PM8800_B7_H1_CurveData_5PL_None_90.Check(Aliases.Quantist.MainWindowView.MainView.CurvePanel.GroupboxCurrentCurveData, False, False, 6591, 17)
+
+  # Verify Standard7 is out of recovery range: 90-110%  
+  aqObject.CheckProperty(gridData.InplaceBaseEdit2, "DisplayText", cmpEqual, "55.13")
+  
+  # Verify Standard6 and Standard7 Concentration are < LLOQ= 192.06  
+  aqObject.CheckProperty(gridData.InplaceBaseEdit5, "DisplayText", cmpEqual, "<LLOQ")  #std 6 status
+  aqObject.CheckProperty(gridData.InplaceBaseEdit6, "DisplayText", cmpEqual, "<LLOQ")  #std 7 status
+
+  aqObject.CheckProperty(gridData.InplaceBaseEdit3, "DisplayText", cmpEqual, "175.99") #std 6 Conc
+  aqObject.CheckProperty(gridData.InplaceBaseEdit4, "DisplayText", cmpEqual, "35.29")  #std 7 Conc
+  
+  # Verify Standard1 Concentration is > ULOQ= 46670   
+  aqObject.CheckProperty(gridData.GridData.InplaceBaseEdit, "DisplayText", cmpEqual, "46743.60") #std 1 Conc
+  aqObject.CheckProperty(gridData.GridData.InplaceBaseEdit5, "DisplayText", cmpEqual, ">ULOQ")   #std 1 status
+
+def RecoverRange_CVLimit_ComboBoxes():
+  scrollViewer = Aliases.Quantist.MainWindowView.MainView.CurvePanel
+
+  RR_Box = scrollViewer.RecoverRangeBox
+  RR_count = RR_Box.wItemCount
+  
+  Log.Message("Concentration CV Limit combo box")
+  RR_Box.ClickItem("None")
+  aqUtils.Delay(500)
+  RR_Box.ClickItem("From60To140")
+  aqUtils.Delay(500)
+  RR_Box.ClickItem("From70To130")
+  aqUtils.Delay(500)
+  RR_Box.ClickItem("From80To120")
+  aqUtils.Delay(500)
+  RR_Box.ClickItem("From90To110")
+  
+  Log.Message("Total number of Items count: "+ str(RR_count))
+    
+  if RR_Box.wItem[0] == "None":
+     Log.Message("Do Not Check")
+  if RR_Box.wItem[1] == "From60To140":
+     Log.Message("60% to 140%")
+  if RR_Box.wItem[2] == "From70To130":
+     Log.Message("70% to 130%")
+  if RR_Box.wItem[3] == "From80To120":
+     Log.Message("80% to 120%")
+  if RR_Box.wItem[4] == "From90To110":
+     Log.Message("90% to 110%")
+          
+ 
+  CV_LimitBox = scrollViewer.ConcCVLimBox
+  CV_Limitcount = CV_LimitBox.wItemCount
+
+  Log.Message(" ")
+  Log.Message("Recovery Range combo box")
+
+  CV_LimitBox.ClickItem("None")
+  Log.Message("Total number of Items count: "+ str(CV_Limitcount))
+  if CV_LimitBox.wItem[0] == "None":
+     Log.Message("Do Not Check")
+  if CV_LimitBox.wItem[1] == "LessThanOrEqualTo5Percent":
+     Log.Message("5%")
+  if CV_LimitBox.wItem[2] == "LessThanOrEqualTo10Percent":
+     Log.Message("10%")  
+  if CV_LimitBox.wItem[3] == "LessThanOrEqualTo15Percent":
+     Log.Message("15%")  
+  if CV_LimitBox.wItem[4] == "LessThanOrEqualTo20Percent":
+     Log.Message("20%")
+  if CV_LimitBox.wItem[5] == "LessThanOrEqualTo25Percent":
+     Log.Message("25%")  
+  if CV_LimitBox.wItem[6] == "LessThanOrEqualTo30Percent":
+     Log.Message("30%")  
+  if CV_LimitBox.wItem[7] == "LessThanOrEqualTo35Percent":
+     Log.Message("35%")  
+  if CV_LimitBox.wItem[8] == "LessThanOrEqualTo40Percent":
+     Log.Message("40%")  
+

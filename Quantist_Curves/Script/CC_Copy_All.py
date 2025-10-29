@@ -1,0 +1,58 @@
+﻿import Load_CSV_File 
+import Quantist_Removing_Files
+
+def Copy_All_Curve_Fit():
+
+  mainWindowView = Aliases.Quantist.MainWindowView  
+  treeView = Aliases.Quantist.MainWindowView.RunTreeView
+  
+  flag = True
+  while (treeView.HasItems):
+    Quantist_Removing_Files.Removing_CSV_Files(flag)
+  
+  if (not treeView.HasItems):
+    Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleDataFolder, "PM8800.csv")
+    #Load_CSV_File.Import_Data_File(ProjectSuite.Variables.SampleQuantistFolder, "PM8800_ConcCV5pct.quantist")    
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Aliases.Quantist.MainWindowView.MainView.CurvePanel.CurveFitBox.ClickItem("FourPL")
+  Aliases.Quantist.MainWindowView.MainView.CurvePanel.Btn_CopyToAll_CurveFit.ClickButton()
+  
+  Aliases.Quantist.MainWindowView.RunTreeView.ClickItem("|[0]|[1]")
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+    
+  Aliases.Quantist.MainWindowView.MainView.GridSplitter3.Drag(2, 417, -1111, -29)
+  Regions.PM8800_4PL_All.Check(Aliases.Quantist.MainWindowView.MainView.dockPanel)
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)
+  Aliases.Quantist.MainWindowView.RunTreeView.ClickItem("|[0]|[0]")
+      
+  
+def Copy_All_Curve_Weighting():
+  
+  hwndSource = Aliases.Quantist.MainWindowView
+  scrollViewer = hwndSource.MainView.CurvePanel
+  comboBox = scrollViewer.CurveWeightingBox
+  comboBox.ClickItem("None")
+  scrollViewer.Btn_CopyToAll_CurveWeighting.ClickButton()
+  treeView = hwndSource.RunTreeView
+  treeView.ClickItem("|[0]|[1]")
+  Regions.PM8800_None_All.Check(Aliases.Quantist.MainWindowView.MainView.dockPanel)  
+
+  aqUtils.Delay(ProjectSuite.Variables.Short_Delay)  
+  treeView.ClickItem("|[0]|[0]")
+
+  
+def Copy_All_Recovery_Range():
+  
+  hwndSource = Aliases.Quantist.MainWindowView
+  border = hwndSource.MainView
+  scrollViewer = border.CurvePanel
+  comboBox = scrollViewer.RecoverRangeBox
+  comboBox.ClickItem("None")
+  scrollViewer.Btn_CopyToAll_RecoveryRange.ClickButton()
+  
+  hwndSource.RunTreeView.ClickItem("|[0]|[1]")
+  Regions.PM8800_DoNotCheck_All.Check(Aliases.Quantist.MainWindowView.MainView.dockPanel)
+
+

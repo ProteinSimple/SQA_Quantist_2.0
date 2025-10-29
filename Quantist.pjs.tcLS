@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="data">
+			<Node name="{0cc5218b-fae0-4f63-ba5f-66af0984206b}">
+				<Prp name="relpath" type="S" value="Quantist_Information\Quantist_Information.mds.tcLS"/>
+			</Node>
+			<Node name="{1135b5ac-72c9-4b9f-a5b2-09659e9c77ea}">
+				<Prp name="relpath" type="S" value="Quantist_Colors\Quantist_Color_Scheme.mds.tcLS"/>
+			</Node>
+			<Node name="{1980e724-e6b9-449a-8112-f3a23f18711b}">
+				<Prp name="relpath" type="S" value="Quantist_SmokeTest\Quantist_SmokeTest.mds.tcLS"/>
+			</Node>
+			<Node name="{24b6fa0b-0143-461a-9758-aeb9e9a9428b}">
+				<Prp name="default project" type="S" value="{1980E724-E6B9-449A-8112-F3A23F18711B}"/>
+			</Node>
+			<Node name="{30fd7668-4e9e-408f-a560-1fe37a818fe7}">
+				<Prp name="relpath" type="S" value="Quantist_Well_Assignments\Quantist_Well_Assignments.mds.tcLS"/>
+			</Node>
+			<Node name="{4fd0ccbe-6b6c-4dc1-ae9a-be5a98a9e375}">
+				<Prp name="relpath" type="S" value="Quantist_Analytes_Panel\Quantist_Analytes_Panel.mds.tcLS"/>
+			</Node>
+			<Node name="{5fa3ad72-c988-47c5-9351-f226733762a9}">
+				<Prp name="relpath" type="S" value="Quantist_Performance\Quantist_Performance.mds.tcLS"/>
+			</Node>
+			<Node name="{700570db-e507-4320-aa17-6d7068ab22d0}">
+				<Prp name="relpath" type="S" value="Quantist_Import_CSV_Files\Quantist_Import_Data_Files.mds.tcLS"/>
+			</Node>
+			<Node name="{71972998-884b-4ef7-9166-13481da486ee}">
+				<Prp name="relpath" type="S" value="Quantist_Multi_Analytes\Quantist_Multi_Analytes.mds.tcLS"/>
+			</Node>
+			<Node name="{804401bb-0d83-4916-a69a-a16a9dd4841f}">
+				<Prp name="relpath" type="S" value="Quantist_Installation\Quantist_Installation.mds.tcLS"/>
+			</Node>
+			<Node name="{87ecd5d2-e7c6-4781-8725-12953827facf}">
+				<Prp name="relpath" type="S" value="Quantist_Curves\Quantist_Calibration_Curves.mds.tcLS"/>
+			</Node>
+			<Node name="{8eadddd7-9a8d-4849-ac38-51aad7096ec8}">
+				<Prp name="relpath" type="S" value="Quantist_Calibration_Curve_2\Quantist_Calibration_Curve_Unknowns.mds.tcLS"/>
+			</Node>
+			<Node name="{b44bea90-dceb-4ed6-ad64-5b3f86791ea6}">
+				<Prp name="relpath" type="S" value="Quantist_UndoRedo\Quantist_UndoRedo.mds.tcLS"/>
+			</Node>
+			<Node name="{d195603e-77fb-49ae-a159-67293441391f}">
+				<Prp name="relpath" type="S" value="Quantist_Results\Quantist_Results.mds.tcLS"/>
+			</Node>
+			<Node name="{e819f85e-a1aa-44da-a675-cd1cf16dbafa}">
+				<Prp name="relpath" type="S" value="..\Quantist_SmokeTest\SmokeTest\SmokeTest.mds.tcLS"/>
+			</Node>
+			<Node name="{ecd150ca-dda2-41a6-8a95-408799501a1a}">
+				<Prp name="relpath" type="S" value="Quantist_SmokeTest\Quantist_SmokeTest.mds.tcLS"/>
+			</Node>
+			<Node name="{fe48785d-cd4b-41cf-a8a2-0fa3be2991b1}">
+				<Prp name="relpath" type="S" value="Quantist_Installation_Files\Quantist_Installation_Files.mds.tcLS"/>
+			</Node>
+			<Node name="logs">
+				<Prp name="key" type="S" value="{898DB28A-E7B7-4117-85D1-9B169D9AE69C}"/>
+				<Prp name="relpath" type="S" value="Log"/>
+			</Node>
+			<Node name="variables">
+				<Node name="datav4">
+					<Node name="var0">
+						<Prp name="name" type="S" value="Short_Delay"/>
+					</Node>
+					<Node name="var1">
+						<Prp name="name" type="S" value="Long_Delay"/>
+					</Node>
+					<Node name="var10">
+						<Prp name="name" type="S" value="Long_Delay_10"/>
+					</Node>
+					<Node name="var11">
+						<Prp name="name" type="S" value="sample_csv_unknown_control"/>
+					</Node>
+					<Node name="var12">
+						<Prp name="name" type="S" value="SampleDataFolder"/>
+					</Node>
+					<Node name="var13">
+						<Prp name="name" type="S" value="WellAssignmentsFolder"/>
+					</Node>
+					<Node name="var14">
+						<Prp name="name" type="S" value="sample_csv_not_support_region"/>
+					</Node>
+					<Node name="var15">
+						<Prp name="name" type="S" value="SampleInvalidCSVFolder"/>
+					</Node>
+					<Node name="var16">
+						<Prp name="name" type="S" value="sample_csv_single_analyte"/>
+					</Node>
+					<Node name="var17">
+						<Prp name="name" type="S" value="SampleSingleAnalyteFolder"/>
+					</Node>
+					<Node name="var18">
+						<Prp name="name" type="S" value="Sample67FilesFolder"/>
+					</Node>
+					<Node name="var19">
+						<Prp name="name" type="S" value="sample_csv_mod_metadata"/>
+					</Node>
+					<Node name="var2">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value=" "/>
+						</Node>
+						<Prp name="name" type="S" value="SampleDataFolder_Edrive"/>
+					</Node>
+					<Node name="var20">
+						<Prp name="name" type="S" value="sample_csv_silent_failed"/>
+					</Node>
+					<Node name="var21">
+						<Prp name="name" type="S" value="SavedChangesFolder"/>
+					</Node>
+					<Node name="var22">
+						<Prp name="name" type="S" value="Quantist_Installation_Dir"/>
+					</Node>
+					<Node name="var23">
+						<Prp name="name" type="S" value="Quantist_License_Dir"/>
+					</Node>
+					<Node name="var24">
+						<Prp name="name" type="S" value="SampleQuantistFolder"/>
+					</Node>
+					<Node name="var25">
+						<Prp name="name" type="S" value="sample_quantist_pm8800"/>
+					</Node>
+					<Node name="var26">
+						<Prp name="name" type="S" value="ErrorFileFolder"/>
+					</Node>
+					<Node name="var3">
+						<Node name="value">
+							<Prp name="strvalue" type="H" value=" "/>
+						</Node>
+						<Prp name="name" type="S" value="SampleDataFolder_bk"/>
+					</Node>
+					<Node name="var4">
+						<Prp name="name" type="S" value="sample_csv_pm8800"/>
+					</Node>
+					<Node name="var5">
+						<Prp name="name" type="S" value="OUTPUT_DIRECTORY"/>
+					</Node>
+					<Node name="var6">
+						<Prp name="name" type="S" value="IMAGE_EXTENSION"/>
+					</Node>
+					<Node name="var7">
+						<Prp name="name" type="S" value="PIXEL_TOLERANCE"/>
+					</Node>
+					<Node name="var8">
+						<Prp name="name" type="S" value="COLOR_TOLERANCE"/>
+					</Node>
+					<Node name="var9">
+						<Prp name="name" type="S" value="sample_csv_TestData"/>
+					</Node>
+				</Node>
+				<Prp name="version" type="I" value="4"/>
+			</Node>
+		</Node>
+		<Prp name="signature" type="S" value="{71078212-FAEB-4856-A901-B237C89E6B5C}"/>
+	</Node>
+</Nodes>

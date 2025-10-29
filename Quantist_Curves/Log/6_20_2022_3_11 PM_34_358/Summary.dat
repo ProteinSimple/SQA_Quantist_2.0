@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE Nodes [
+
+<!ENTITY % NameValue "CDATA">
+<!ENTITY % PropType "(I|S|D|L|H|B)">
+<!ENTITY % VersionValue "CDATA">
+
+<!ELEMENT Prp (#PCDATA)>
+<!ELEMENT Node (Node|Prp)*>
+<!ELEMENT Nodes (Node)+>
+
+<!ATTLIST Nodes version CDATA "1">
+
+<!ATTLIST Node name CDATA #REQUIRED>
+
+<!ATTLIST Prp name CDATA #REQUIRED>
+<!ATTLIST Prp type CDATA #REQUIRED>
+<!ATTLIST Prp value CDATA #REQUIRED>
+]>
+<Nodes version="1">
+	<Node name="root">
+		<Node name="projects">
+			<Node name="project0">
+				<Node name="tests">
+					<Node name="test2">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADAARQA0AEYANgBFAEIALQAyADAARABEAC0ANAAxAEYARQAtADgAMwAxADcALQAzADAAQgA3ADUAQQAzADgAOQAyADcAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2200_CC_Current_Data"/>
+						<Prp name="duration" type="I" value="22212"/>
+						<Prp name="starttime" type="D" value="44732.6334601273"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="22212"/>
+					</Node>
+					<Node name="test8">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBEADAANQAxAEQAOQBGADcALQBGAEUAQgBEAC0ANAAwADAANAAtAEIAMwBDAEUALQAzADMAOAAxAEUARQA4ADEAQQBFAEEANAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2660_CC_SingleAnalyte_Table_operations"/>
+						<Prp name="duration" type="I" value="11274"/>
+						<Prp name="starttime" type="D" value="44732.63754375"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="11274"/>
+					</Node>
+					<Node name="test0">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBDAEIANABGADIANAAyAEUALQBBAEIAQQA3AC0ANAAyAEUAMwAtADkAMQAxADAALQA0ADMANAA1ADkAMwA5ADEAQgA2ADgAMQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2000_CC_Loading_Curve_File"/>
+						<Prp name="duration" type="I" value="7617"/>
+						<Prp name="starttime" type="D" value="44732.6330394213"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="7617"/>
+					</Node>
+					<Node name="test7">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBBADMAMwA2ADUAMgBEADEALQA3ADYAQQA0AC0ANAA4ADkANgAtAEEARQBCAEEALQA2ADcARQA5ADMANwA4AEEAMgA4AEEANQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2510_CC_Graph_Show_Unknows_Controls"/>
+						<Prp name="duration" type="I" value="20145"/>
+						<Prp name="starttime" type="D" value="44732.6373105208"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="20145"/>
+					</Node>
+					<Node name="test11">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBCADYAMgA4ADQANwA1AEYALQA4ADMAQQA5AC0ANAAxAEYANwAtADgAMwBDADQALQA5AEIAMQAyADAAMwBCAEMANgA0AEUAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2640_CC_Table_Reset_Include_Standards"/>
+						<Prp name="duration" type="I" value="24031"/>
+						<Prp name="starttime" type="D" value="44732.6379689468"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="24031"/>
+					</Node>
+					<Node name="test9">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA2ADUAOQBBAEUAMAAyADQALQBCAEUANgBFAC0ANABGADcAMQAtAEEARABBADQALQBDADIANgA3ADAAMgA3ADUAMABGAEEAQwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2620_CC_Table_Copy_Row_Aggregate"/>
+						<Prp name="duration" type="I" value="19572"/>
+						<Prp name="starttime" type="D" value="44732.6376743056"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="19572"/>
+					</Node>
+					<Node name="test6">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGAEIANgBBADYAOAA1ADQALQA5AEEAMABCAC0ANAA1ADAAMwAtAEEAMgA1ADcALQA3ADEANwBGADAAMQBDAEQANwAzAEYAOAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2410_CC_Remove_Outliers_All"/>
+						<Prp name="duration" type="I" value="48104"/>
+						<Prp name="starttime" type="D" value="44732.6367537037"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="48104"/>
+					</Node>
+					<Node name="test3">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA3ADcAQQBBAEYAQQAwAEUALQA3AEUAQQBEAC0ANAAzADIAMwAtAEEANwBBADEALQA3AEUAQQAyADEAMABBADcAMwBDAEEAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2300_CC_5PL"/>
+						<Prp name="duration" type="I" value="158000"/>
+						<Prp name="starttime" type="D" value="44732.6337172685"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="158000"/>
+					</Node>
+					<Node name="test12">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA1ADgAQwAyADMARABFADMALQA5AEMANAAzAC0ANABGADMAMQAtADkANwA0ADEALQBBAEMARQBGADUANQBBADcANABCAEUAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2700_CC_Copy_All_Curve_Fit"/>
+						<Prp name="duration" type="I" value="25195"/>
+						<Prp name="starttime" type="D" value="44732.6382471412"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="25195"/>
+					</Node>
+					<Node name="test1">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAxAEEAMwBGAEIARABGAEMALQA4ADkANwA1AC0ANABBADYANAAtADkAQQA1ADYALQAwADIAMgBCADEANQAxADEAOQBDADUAQQB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2100_CC_Configure_Curve"/>
+						<Prp name="duration" type="I" value="28722"/>
+						<Prp name="starttime" type="D" value="44732.6331276389"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="28722"/>
+					</Node>
+					<Node name="test13">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewA5ADAANAAwAEUAMwAwADkALQAzADgARgA5AC0ANAAwADUAMQAtAEEAMQAxADUALQA0AEYAQgA4AEMARQBEAEIAQwA3ADQANwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2710_CC_Copy_All_Curve_Weighting"/>
+						<Prp name="duration" type="I" value="3719"/>
+						<Prp name="starttime" type="D" value="44732.6385388079"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="3719"/>
+					</Node>
+					<Node name="test10">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAwAEQANAAwAEEAOQBCAEUALQA2ADAAMgBFAC0ANAA5ADYAQgAtAEEAOQBCAEEALQA4ADQANgA0AEIARAA2AEUANgBFADQAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2630_CC_Table_Copy_Row_Replicates"/>
+						<Prp name="duration" type="I" value="5875"/>
+						<Prp name="starttime" type="D" value="44732.6379008912"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="5875"/>
+					</Node>
+					<Node name="test4">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewBGADMAQQA0ADIAMwA3ADUALQA4AEUAOQAwAC0ANABEADIARQAtADkAQQA0ADIALQA5ADgAOQA1AEQAMAA0AEYAQgAwADkAMwB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2350_CC_4PL"/>
+						<Prp name="duration" type="I" value="90940"/>
+						<Prp name="starttime" type="D" value="44732.6355460532"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="90940"/>
+					</Node>
+					<Node name="test5">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzAEQAMwA1AEEANQAxADMALQBGADAAOAA5AC0ANAAwADkANAAtADkANwBBADkALQAzADEAQQBBADYANAA5ADIANwAyADUARAB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2400_CC_Remove_Outliers_Current_Curve"/>
+						<Prp name="duration" type="I" value="13391"/>
+						<Prp name="starttime" type="D" value="44732.6365986458"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="13391"/>
+					</Node>
+					<Node name="test14">
+						<Node name="warnings"/>
+						<Node name="errors"/>
+						<Prp name="executionpoint" type="S" value="executionpoint://ewAzAEIAMgBFADQARgA3ADEALQBEADUANwAwAC0ANAA2ADEAOQAtAEIAQQAwAEIALQA1AEEARABDADAANAA5ADMARgBGADAAMgB9AC8AewAwADAAMAAwADAAMAAwADAALQAwADAAMAAwAC0AMAAwADAAMAAtADAAMAAwADAALQAwADAAMAAwADAAMAAwADAAMAAwADAAMAB9AC8AZQBtAHAAdAB5AC8AZQBtAHAAdAB5AA=="/>
+						<Prp name="name" type="S" value="SQA_2720_CC_Copy_All_Recovery_Range"/>
+						<Prp name="duration" type="I" value="2170"/>
+						<Prp name="starttime" type="D" value="44732.6385818982"/>
+						<Prp name="status" type="I" value="0"/>
+						<Prp name="durationwithoutchildren" type="I" value="2170"/>
+					</Node>
+				</Node>
+				<Prp name="name" type="S" value="Quantist_Calibration_Curves"/>
+				<Prp name="failedtests" type="I" value="0"/>
+				<Prp name="warningtests" type="I" value="0"/>
+				<Prp name="duration" type="I" value="480967"/>
+				<Prp name="incompletedtests" type="I" value="0"/>
+				<Prp name="starttime" type="D" value="44732.6330394213"/>
+			</Node>
+		</Node>
+		<Prp name="incompletedtests" type="I" value="0"/>
+		<Prp name="name" type="S" value="Quantist"/>
+		<Prp name="testname" type="S" value="Quantist_Calibration_Curves: Quantist_SQA_Configuration_Curves"/>
+		<Prp name="warningtests" type="I" value="0"/>
+		<Prp name="stop" type="D" value="44732.6386100116"/>
+		<Prp name="key" type="S" value="{B02F59F2-D1A8-4633-93B4-2A773F08B067}"/>
+		<Prp name="tests" type="I" value="15"/>
+		<Prp name="user" type="S" value="duc"/>
+		<Prp name="starttime" type="D" value="44732.6330393982"/>
+		<Prp name="host" type="S" value="USSJO-WKS05-V"/>
+		<Prp name="failedtests" type="I" value="0"/>
+		<Prp name="warningtestwithretries" type="I" value="0"/>
+		<Prp name="successtestwithretries" type="I" value="0"/>
+		<Prp name="executionstatus" type="I" value="0"/>
+	</Node>
+</Nodes>
