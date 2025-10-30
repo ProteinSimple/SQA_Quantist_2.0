@@ -36,8 +36,8 @@ def Analytes_Panel_Edit_Units():
   treeListControl.InplaceBaseEdit13.Click(29, 12)
   inplaceBaseEdit = treeListControl.MA_dataGrid.InplaceBaseEdit4
   inplaceBaseEdit.Click(36, 4, skShift)
-  inplaceBaseEdit.Keys("p")
-  inplaceBaseEdit.ComboBoxEdit.Keys("g/mL")
+  inplaceBaseEdit.Keys("pg/mL")
+  #inplaceBaseEdit.ComboBoxEdit.Keys("g/mL")
   
   Regions.PM8800_Selected_Rows_3.Check(Aliases.Quantist.MA_GridView)  
  
@@ -59,8 +59,8 @@ def Analytes_Panel_Edit_Units():
   treeListControl.InplaceBaseEdit13.Click(37, 12)
   inplaceBaseEdit = treeListControl.MA_dataGrid.InplaceBaseEdit4
   inplaceBaseEdit.Click(55, 6, skShift)
-  inplaceBaseEdit.Keys("t")
-  inplaceBaseEdit.ComboBoxEdit.Keys("est/mL")
+  inplaceBaseEdit.Keys("test/mL")
+  #inplaceBaseEdit.ComboBoxEdit.Keys("est/mL")
   Regions.PM8800_Selected_Rows_6.Check(Aliases.Quantist.MA_GridView)
 
 
